@@ -364,7 +364,8 @@ $[-0.0025, +0.0099]$, which contains zero.
 \caption{LightGBM across the five feature tiers. The single-split column is the
 seed-42 evaluation this pipeline first reported; the remaining columns are ten
 repetitions of the same protocol. $p_{\mathrm{NB}}$ is the corrected resampled
-$t$-test against RFM; no tier reaches significance.}
+$t$-test against RFM (Sect.~\ref{sec:sig}); no tier reaches significance.
+Why the single-split column misleads is taken up in Sect.~\ref{sec:disc}.}
 \label{tab:main}
 \setlength{\tabcolsep}{9pt}
 \begin{tabular}{lrrrr}
@@ -397,7 +398,9 @@ them favour logistic regression over the gradient-boosted graph model.
 
 \begin{table}[t]
 \centering
-\caption{Cross-model comparisons over the same 50 paired folds.}
+\caption{Cross-model comparisons over the same 50 paired folds. The intervals are
+bootstrap and are given for magnitude only; significance is read from
+$p_{\mathrm{NB}}$, for the reason set out in Sect.~\ref{sec:sig}.}
 \label{tab:cross}
 \begin{tabular}{lrrr}
 \toprule
@@ -613,7 +616,10 @@ scores, so it cannot drift from the tables. The full pipeline runs in under ten
 minutes on a consumer laptop with no GPU: feature construction and the main
 evaluation take $3.2$ minutes, the clustering comparison $2.2$, the auxiliary
 improvement run $2.3$, and the repeated-CV significance test $1.4$.
-[TODO: commit hash of the submitted revision; AI-use disclosure per the venue's
+The state of the repository described here is tagged \texttt{v1.0-submission}.
+
+\subsubsection{Disclosure.}
+[TODO: authors to insert the AI-use disclosure required by the target venue's
 policy.]
 
 \bibliographystyle{splncs04}
