@@ -99,17 +99,15 @@ rates---and we evaluate it against progressively simpler feature sets. The
 evaluation is where the contribution lies. Two controls turn out to be decisive:
 
 \begin{enumerate}
-\item \textbf{Fold-local recomputation of the neighbourhood features.} The
-neighbour churn rate and the community churn rate are aggregates of the target
-variable. Computing them once over the full dataset and then cross-validating
-places test labels inside the training features. We recompute both inside every
-training fold from training labels only.
+\item \textbf{Fold-local recomputation of the neighbourhood features.} Both are
+aggregates of the target, so computing them once over the full dataset places
+test labels inside the training features. We recompute them inside every training
+fold from training labels only.
 \item \textbf{Repeated cross-validation with a variance-corrected test.} A single
-five-fold split produces a point estimate with no uncertainty attached. We use
-ten repetitions with a fold partition shared across feature sets within each
-repetition, and report the corrected resampled $t$-test of Nadeau and Bengio
-\cite{nadeau2003inference}, which adjusts for the training-set overlap that makes
-the naive paired $t$-test anti-conservative
+split gives a point estimate with no uncertainty attached. We use ten repetitions
+on a shared fold partition and report the corrected resampled $t$-test of Nadeau
+and Bengio \cite{nadeau2003inference}, which adjusts for the training-set overlap
+that makes the naive paired test anti-conservative
 \cite{dietterich1998approximate,bouckaert2004replicability}.
 \end{enumerate}
 
@@ -338,13 +336,10 @@ repeated folds share training data, so those intervals are narrower than the
 correlation structure warrants. This is the same overlap that makes the naive
 paired $t$-test anti-conservative \cite{dietterich1998approximate}.
 
-\subsection{Harness Verification}
-
-Before running the repeated protocol we verified that the significance harness
-reproduces the pipeline it is meant to test. Run with the single seed used by the
-original pipeline, it reproduces that pipeline's per-tier ROC-AUC to four decimal
-places on all five tiers. Any divergence reported below is therefore attributable
-to the fold partition, not to a re-implementation difference.
+Run with the single seed used by the original pipeline, the significance harness
+reproduces that pipeline's per-tier ROC-AUC to four decimal places on all five
+tiers, so any divergence below is attributable to the fold partition rather than
+to a re-implementation difference.
 
 \section{Results}
 \label{sec:results}
@@ -502,35 +497,26 @@ clustering-quality claim. For reference, on its own scoring space the baseline
 reaches a silhouette of $0.398$ at $k = 4$ as published, which we reproduce at
 $0.398$; K-means on our nine-dimensional space reaches $0.219$ and Louvain
 reaches $-0.050$ on the same measure. The relationship between the two works is
-scope extension, not improvement.
-
-\subsection{Segment-Level Output}
-
-The community structure remains usable for prioritisation even though it does not
-improve prediction. Ranking Louvain communities by expected retention value
-(churn probability $\times$ monetary value) separates a high-value at-risk
-community ($327$ customers, $82\%$ churn) from a high-value loyal one ($418$
-customers, $24\%$ churn, mean monetary value $13{,}916$). The dataset carries no
-campaign-response labels, so this is descriptive only.
+scope extension, not improvement. The communities remain
+usable for prioritisation even though they do not improve prediction: ranked by
+churn probability times monetary value, they separate a high-value at-risk group
+($327$ customers, $82\%$ churn) from a high-value loyal one ($418$ customers,
+$24\%$ churn). With no campaign-response labels in the data, that is a
+descriptive output only.
 
 \section{Discussion}
 \label{sec:disc}
 
 \subsection{Effect Sizes Below the Noise Floor}
 
-Two independent sources of variation on this dataset are the same size as the
-effects the pipeline was built to detect. The fold partition contributes roughly
-$0.003$ ROC-AUC, as the sign reversal above shows. Library versions contribute a
-comparable amount: re-running the auxiliary improvement pipeline under a newer
-set of libraries moved its best configuration by $-0.0033$ ROC-AUC and changed
-the Leiden community count from $20$ to $21$. Re-running the significance harness
-itself on the same machine with the same seeds moves the tier means by about
-$10^{-4}$ ROC-AUC and the $p$-values in the third decimal.
-
-We therefore treat differences below approximately $0.005$ ROC-AUC on this
-dataset as uninformative, and we suggest that comparisons in this application
-area either report a variance-corrected significance test or refrain from ranking
-configurations that fall inside that band.
+Two independent sources of variation are the same size as the effects the
+pipeline was built to detect. The fold partition contributes roughly $0.003$
+ROC-AUC, as the sign reversal above shows. Library versions contribute as much:
+re-running the auxiliary improvement pipeline under newer libraries moved its best
+configuration by $-0.0033$ ROC-AUC and the Leiden community count from $20$ to
+$21$. We therefore treat differences below roughly $0.005$ ROC-AUC on this dataset
+as uninformative, and suggest that comparisons here either report a
+variance-corrected test or refrain from ranking configurations inside that band.
 
 \subsection{Why the Contagion Hypothesis Might Still Hold}
 \label{sec:contagion}
@@ -589,14 +575,12 @@ untested.
 
 \section{Conclusion}
 
-We built the pipeline that the behavioural-peer-effect hypothesis calls for and
-evaluated it under fold-local recomputation of the label-derived neighbourhood
-features and repeated cross-validation with a corrected significance test. Under
-that protocol the hypothesis is not supported on this dataset: no feature tier
-improves on a three-variable RFM baseline, and the only significant comparison
-favours logistic regression on those three variables over the full graph model by
-$+0.0099$ ROC-AUC ($p = 0.010$). A $+0.0033$ gap visible on a single fold
-partition reverses sign across repetitions.
+We built the pipeline the behavioural-peer-effect hypothesis calls for and
+evaluated it under fold-local recomputation of the label-derived features and
+repeated cross-validation with a corrected test. The hypothesis is not supported
+on this dataset at any graph degree tested, and the only significant comparison
+favours logistic regression on three raw RFM variables over the full graph model
+($p = 0.010$).
 
 The methodological point generalises further than the negative result. An
 evaluation that reports one cross-validated number per configuration cannot
@@ -612,10 +596,8 @@ Code, per-fold scores, significance summaries and raw run logs are available at
 versions are pinned to the environment that produced every reported number,
 because unpinned ranges shifted results by the same magnitude as the effects
 under discussion. The result figure is generated from the committed per-fold
-scores, so it cannot drift from the tables. The full pipeline runs in under ten
-minutes on a consumer laptop with no GPU: feature construction and the main
-evaluation take $3.2$ minutes, the clustering comparison $2.2$, the auxiliary
-improvement run $2.3$, and the repeated-CV significance test $1.4$.
+scores, so it cannot drift from the tables. The full pipeline runs in
+under ten minutes on a consumer laptop with no GPU.
 The state of the repository described here is tagged \texttt{v1.0-submission}.
 
 \subsubsection{Disclosure.}

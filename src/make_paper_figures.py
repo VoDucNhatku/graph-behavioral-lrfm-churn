@@ -66,8 +66,8 @@ folds = pd.read_csv(os.path.join(RES, "significance_folds.csv"))
 pivot = folds.pivot_table(index=["Repeat", "Fold"], columns=["Model", "Tier"], values="AUC")
 
 # ── The one result figure: tier means per classifier, with fold spread ───────────
-fig, ax = plt.subplots(figsize=(TEXT_WIDTH_IN, 3.0))
-fig.subplots_adjust(left=0.135, right=0.985, top=0.715, bottom=0.165)
+fig, ax = plt.subplots(figsize=(TEXT_WIDTH_IN, 2.55))
+fig.subplots_adjust(left=0.135, right=0.985, top=0.665, bottom=0.195)
 
 face = {"LightGBM": "#c6d4e1", "Logistic Regression": "#bcd9c9"}
 edge = {"LightGBM": "#2c5d8a", "Logistic Regression": HIGHLIGHT}
@@ -104,9 +104,9 @@ ax.set_ylim(0.7855, 0.8325)
 ax.grid(axis="y", color=GRID, lw=0.6, alpha=0.7)
 ax.set_axisbelow(True)
 
-fig.text(0.022, 0.978, "Adding features moves nothing; the classifier moves everything",
+fig.text(0.022, 0.985, "Adding features moves nothing; the classifier moves everything",
          fontsize=8.4, fontweight="bold", color=INK, va="top")
-fig.text(0.022, 0.938, "Lines are mean ROC-AUC over 50 folds. Shaded bands are the fold-to-fold "
+fig.text(0.022, 0.940, "Lines are mean ROC-AUC over 50 folds. Shaded bands are the fold-to-fold "
                        "spread ($\\pm$1 SD),\nfar wider than any movement along a line.",
          fontsize=6.9, color=MUTED, va="top", linespacing=1.5)
 
