@@ -232,10 +232,8 @@ covering December 2009 to December 2011, distributed through the UCI Machine
 Learning Repository \cite{uci2019onlineretail} and introduced in the RFM
 segmentation study of Chen et al.\ \cite{chen2012datamining}. The raw file
 contains $1{,}067{,}371$ transaction rows
-across its two worksheets ($525{,}461$ for 2009--2010 and $541{,}910$ for
-2010--2011). We state this explicitly because the figure of approximately
-$541{,}000$ records, frequently quoted for this dataset, corresponds to the
-2010--2011 worksheet alone.
+across two worksheets ($525{,}461$ and $541{,}910$); the $541{,}000$ figure often
+quoted for this dataset is the second worksheet alone.
 
 Features and labels are separated in time. The observation window runs from
 2009-12-01 to 2011-06-30 and is the only period from which features are computed.
@@ -271,11 +269,10 @@ edges. Louvain \cite{blondel2008louvain} yields 20 communities with modularity
 $0.8385$; Leiden \cite{traag2019leiden} yields 20 communities with modularity
 $0.8323$.
 
-The high modularity is worth reading carefully. A $k$-NN graph built with a fixed
-$k$ imposes near-uniform degree and strong local clustering by construction, so a
-modularity above $0.8$ reflects the construction of the graph at least as much as
-any structure in the customer base. We therefore do not treat modularity as
-evidence that the communities are behaviourally meaningful.
+The high modularity should not be over-read: a $k$-NN graph with fixed $k$ imposes
+near-uniform degree and strong local clustering by construction, so a value above
+$0.8$ reflects how the graph was built at least as much as any structure in the
+customer base.
 
 Six graph-derived features are appended: degree, weighted degree, PageRank,
 clustering coefficient, and the two neighbourhood aggregates that motivate the
@@ -592,17 +589,18 @@ would argue they belong in the default protocol rather than in an appendix.
 
 \subsubsection{Reproducibility.}
 Code, per-fold scores, significance summaries and raw run logs are available at
-\url{https://github.com/VoDucNhatku/graph-behavioral-lrfm-churn}. Library
-versions are pinned to the environment that produced every reported number,
-because unpinned ranges shifted results by the same magnitude as the effects
-under discussion. The result figure is generated from the committed per-fold
-scores, so it cannot drift from the tables. The full pipeline runs in
-under ten minutes on a consumer laptop with no GPU.
-The state of the repository described here is tagged \texttt{v1.0-submission}.
+\url{https://github.com/VoDucNhatku/graph-behavioral-lrfm-churn}, tagged
+\texttt{v1.0-submission}. Library versions are pinned to the environment that
+produced every reported number, and the result figure is generated from the
+committed per-fold scores, so it cannot drift from the tables. The full pipeline
+runs in under ten minutes on a laptop with no GPU.
 
-\subsubsection{Disclosure.}
-[TODO: authors to insert the AI-use disclosure required by the target venue's
-policy.]
+\subsubsection{Declaration on generative AI.}
+During the preparation of this work the author used a large language model
+(Claude, Anthropic) to draft and revise the manuscript, to implement parts of the
+evaluation and figure code, and to cross-check reported numbers against the
+result files. The author verified every reported number against the archived runs
+and takes full responsibility for the content.
 
 \bibliographystyle{splncs04}
 \bibliography{refs}
