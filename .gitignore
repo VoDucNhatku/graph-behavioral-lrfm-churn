@@ -60,3 +60,6 @@ paper/reports/
 
 # Planning documents: kept locally, not part of the submitted artefact
 docs/
+
+# stray LaTeX artefact from a mis-scoped invocation
+texput.log
