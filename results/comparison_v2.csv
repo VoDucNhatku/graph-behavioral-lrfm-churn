@@ -1,0 +1,36 @@
+k,Method,OwnSpace,Sil_own,DBI_own,CHI_own,Sil_ref,DBI_ref,CHI_ref
+2,[VF2026] K-means (score 1-5),3D-score-1-5,0.4715,0.8157,6983.6,0.3651,1.0061,1558.4
+2,[VF2026] Max-k-cut approx,3D-score-1-5,0.4661,0.8367,6827.5,0.318,1.1196,1397.0
+2,[VF2026] GMM (score 1-5),3D-score-1-5,0.4181,0.8539,5206.0,0.2629,1.2891,1139.0
+2,[Ours] K-means raw RFM,3D-continuous,0.9165,0.6964,2680.0,0.9165,0.6964,2680.0
+2,[Ours] K-means LRFM,4D-continuous,0.8844,0.7216,1812.8,0.9165,0.6964,2680.0
+2,[Ours] K-means B-LRFM,9D-continuous,0.277,1.722,890.1,0.3108,1.4441,895.5
+2,[Ours] Louvain B-LRFM,9D-continuous,0.023,7.8983,58.7,0.0504,7.3374,46.4
+3,[VF2026] K-means (score 1-5),3D-score-1-5,0.4453,0.9028,6458.5,0.2326,1.2066,1286.8
+3,[VF2026] Max-k-cut approx,3D-score-1-5,0.4439,0.8938,6411.6,0.2591,1.128,1370.1
+3,[VF2026] GMM (score 1-5),3D-score-1-5,0.4363,0.925,6054.6,0.2039,1.2868,1150.0
+3,[Ours] K-means raw RFM,3D-continuous,0.5827,0.6682,4326.7,0.5827,0.6682,4326.7
+3,[Ours] K-means LRFM,4D-continuous,0.3827,0.9001,2555.1,0.5665,0.6684,4208.9
+3,[Ours] K-means B-LRFM,9D-continuous,0.1992,1.6873,949.3,0.1072,1.7837,1695.0
+3,[Ours] Louvain B-LRFM,9D-continuous,-0.0404,6.7252,63.3,-0.0867,15.9185,24.5
+4,[VF2026] K-means (score 1-5),3D-score-1-5,0.4784,0.7718,7480.8,0.1329,1.2358,952.0
+4,[VF2026] Max-k-cut approx,3D-score-1-5,0.4771,0.7745,7460.6,0.0904,1.2994,905.6
+4,[VF2026] GMM (score 1-5),3D-score-1-5,0.3873,0.9501,5495.5,0.0815,1.2015,919.9
+4,[Ours] K-means raw RFM,3D-continuous,0.5905,0.6383,4735.3,0.5905,0.6383,4735.3
+4,[Ours] K-means LRFM,4D-continuous,0.4851,0.7436,3618.0,0.2785,1.0942,3218.4
+4,[Ours] K-means B-LRFM,9D-continuous,0.2185,1.4498,1022.0,0.1713,1.0591,2158.6
+4,[Ours] Louvain B-LRFM,9D-continuous,-0.0497,7.9674,68.4,-0.0978,13.6266,51.9
+5,[VF2026] K-means (score 1-5),3D-score-1-5,0.4617,0.8806,7074.9,0.0002,2.0021,822.1
+5,[VF2026] Max-k-cut approx,3D-score-1-5,0.43,0.9641,6281.5,0.1239,1.4177,820.5
+5,[VF2026] GMM (score 1-5),3D-score-1-5,0.4419,0.8686,6165.6,0.1051,1.6191,818.2
+5,[Ours] K-means raw RFM,3D-continuous,0.6029,0.6948,5168.5,0.6029,0.6948,5168.5
+5,[Ours] K-means LRFM,4D-continuous,0.4902,0.7149,3962.2,0.277,1.0232,3932.2
+5,[Ours] K-means B-LRFM,9D-continuous,0.223,1.1753,1101.8,0.3568,0.998,2415.4
+5,[Ours] Louvain B-LRFM,9D-continuous,-0.0344,7.2585,90.9,-0.1455,10.323,45.6
+6,[VF2026] K-means (score 1-5),3D-score-1-5,0.4718,0.8559,7340.0,-0.0023,1.7753,668.5
+6,[VF2026] Max-k-cut approx,3D-score-1-5,0.4564,0.8807,7145.3,0.0205,1.5385,670.3
+6,[VF2026] GMM (score 1-5),3D-score-1-5,0.3556,1.4327,3694.8,-0.0392,2.7507,599.8
+6,[Ours] K-means raw RFM,3D-continuous,0.5495,0.6854,5110.1,0.5495,0.6854,5110.1
+6,[Ours] K-means LRFM,4D-continuous,0.4844,0.7714,4018.0,0.2783,1.2201,4249.4
+6,[Ours] K-means B-LRFM,9D-continuous,0.2642,1.0552,1217.0,0.1401,2.6175,1911.6
+6,[Ours] Louvain B-LRFM,9D-continuous,-0.063,4.736,113.6,-0.1622,11.1242,43.0

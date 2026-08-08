@@ -1,0 +1,197 @@
+======================================================================
+GRAPH-ENHANCED BEHAVIORAL-LRFM PIPELINE v2 (all leakages fixed)
+======================================================================
+
+[STEP 1] Loading Online Retail II...
+
+[STEP 2] Preprocessing...
+  Valid transactions (obs): 556,212
+  Observation customers:    5,038
+  Cancellation records (obs window only): 14,070  [FIX-A]
+
+[STEP 3] Feature engineering (Behavioral-LRFM)...
+  Feature matrix: (5038, 9)
+             L        R  ...  CancellationRate  InterpurchaseTime
+count  5038.00  5038.00  ...           5038.00            5038.00
+mean    379.45   179.42  ...              0.12              78.25
+std     161.82   151.79  ...              0.17              63.70
+min       1.00     1.00  ...              0.00               0.00
+25%     256.00    43.00  ...              0.00              46.75
+50%     416.00   147.00  ...              0.00              63.31
+75%     520.00   267.00  ...              0.24              85.00
+max     576.00   576.00  ...              0.80             539.00
+
+[8 rows x 9 columns]
+
+[STEP 4] Churn label (90-day prediction window)...
+  Customers: 5,038  |  Churn rate: 65.2%
+
+[STEP 5] Baseline clustering...
+  RFM        K-means k=5: Sil=0.5261  DBI=0.6653
+  LRFM       K-means k=5: Sil=0.4416  DBI=0.7353
+  B-LRFM     K-means k=5: Sil=0.2166  DBI=1.3149
+
+[STEP 6] Building k-NN customer similarity graph (k=10)...
+  Nodes: 5,038  |  Edges: 33,426
+
+[STEP 7] Community detection — Louvain + Leiden (FIX-E)...
+  Louvain:  20 communities  Modularity=0.8385
+  Leiden:   20 communities  Modularity=0.8323
+
+[STEP 8] Static graph features (degree, PageRank, clustering coeff)...
+  Static graph features: ['Degree', 'WeightedDeg', 'PageRank', 'ClustCoeff']
+
+[STEP 9] One-hot encoding categorical segment/community IDs (FIX-D)...
+  KMeans one-hot: 4 cols
+  Louvain one-hot: 19 cols
+
+[STEP 10] Churn prediction with leak-free CV (FIX-B + FIX-C)...
+
+  [EXP 1] RFM...
+                        AUC  PR_AUC      F1  Recall
+Model                                              
+Decision Tree        0.7941  0.8421  0.7762  0.7236
+LightGBM             0.8065  0.8685  0.7927  0.7610
+Logistic Regression  0.8145  0.8735  0.7836  0.7312
+Random Forest        0.7866  0.8580  0.8116  0.8435
+XGBoost              0.8056  0.8662  0.7965  0.7659
+
+  [EXP 2] LRFM...
+                        AUC  PR_AUC      F1  Recall
+Model                                              
+Decision Tree        0.7971  0.8450  0.7810  0.7294
+LightGBM             0.8071  0.8673  0.8011  0.7775
+Logistic Regression  0.8139  0.8735  0.7843  0.7327
+Random Forest        0.7955  0.8598  0.8214  0.8594
+XGBoost              0.8050  0.8643  0.8019  0.7796
+
+  [EXP 3] Behavioral-LRFM...
+                        AUC  PR_AUC      F1  Recall
+Model                                              
+Decision Tree        0.7949  0.8418  0.7819  0.7269
+LightGBM             0.8067  0.8679  0.8036  0.7857
+Logistic Regression  0.8157  0.8736  0.7959  0.7543
+Random Forest        0.8043  0.8658  0.8270  0.8703
+XGBoost              0.8047  0.8680  0.8044  0.7869
+
+  [EXP 4] B-LRFM + Segment (one-hot, FIX-D)...
+                        AUC  PR_AUC      F1  Recall
+Model                                              
+Decision Tree        0.7944  0.8415  0.7841  0.7327
+LightGBM             0.8073  0.8687  0.8044  0.7881
+Logistic Regression  0.8148  0.8719  0.7952  0.7543
+Random Forest        0.8040  0.8659  0.8297  0.8706
+XGBoost              0.8048  0.8674  0.8033  0.7866
+
+  [EXP 5] B-LRFM + Static graph features...
+                        AUC  PR_AUC      F1  Recall
+Model                                              
+Decision Tree        0.7875  0.8326  0.7838  0.7379
+LightGBM             0.8045  0.8629  0.8029  0.7890
+Logistic Regression  0.8161  0.8731  0.7956  0.7546
+Random Forest        0.8088  0.8685  0.8293  0.8770
+XGBoost              0.8034  0.8617  0.8051  0.7921
+
+  [EXP 6] Graph-Enhanced (NCR+CCR leak-free, FIX-B+C)...
+                        AUC  PR_AUC      F1  Recall
+Model                                              
+Decision Tree        0.7860  0.8291  0.7824  0.7388
+LightGBM             0.8098  0.8689  0.8108  0.8009
+Logistic Regression  0.8161  0.8732  0.7961  0.7546
+Random Forest        0.8109  0.8711  0.8317  0.8813
+XGBoost              0.8095  0.8692  0.8109  0.8000
+
+======================================================================
+FINAL RESULTS — AUC (5-fold CV, all leakage-free)
+======================================================================
+                                     Best Model ROC-AUC      F1  Recall  PR-AUC
+RFM                         Logistic Regression  0.8145  0.7836  0.7312  0.8735
+LRFM                        Logistic Regression  0.8139  0.7843  0.7327  0.8735
+B-LRFM                      Logistic Regression  0.8157  0.7959  0.7543  0.8736
+B-LRFM+Seg                  Logistic Regression  0.8148  0.7952  0.7543  0.8719
+B-LRFM+StaticGraph          Logistic Regression  0.8161  0.7956  0.7546  0.8731
+Graph-Enhanced (leak-free)  Logistic Regression  0.8161  0.7961  0.7546  0.8732
+
+[LightGBM across all feature sets]
+                               AUC  PR_AUC      F1  Recall
+RFM                         0.8065  0.8685  0.7927  0.7610
+LRFM                        0.8071  0.8673  0.8011  0.7775
+B-LRFM                      0.8067  0.8679  0.8036  0.7857
+B-LRFM+Seg                  0.8073  0.8687  0.8044  0.7881
+B-LRFM+StaticGraph          0.8045  0.8629  0.8029  0.7890
+Graph-Enhanced (leak-free)  0.8098  0.8689  0.8108  0.8009
+
+[STEP 12] Training best model on full data for SHAP/reporting...
+  Top-10% capture rate: 15.3%
+  Lift@10%: 1.53x
+
+[STEP 13] SHAP — global + per-community (FIX-F)...
+
+  Global SHAP (Top 12):
+           Feature  Mean|SHAP|
+                 R     1.08651
+                 M     0.56023
+ NeighborChurnRate     0.24976
+ InterpurchaseTime     0.22405
+CommunityChurnRate     0.21490
+                 F     0.17404
+                 L     0.14004
+        ClustCoeff     0.13248
+        BasketSize     0.12521
+               AOV     0.12492
+  ProductDiversity     0.11299
+       WeightedDeg     0.09353
+
+  Per-community SHAP (top 3 features per community)...
+ Community   N  Churn%      Top1_feature      Top2_feature       Top3_feature
+         0 327    82.3                 R                 M CommunityChurnRate
+         1 183    55.7                 R                 M  InterpurchaseTime
+         2 424    74.8                 R                 M  NeighborChurnRate
+         3 288    63.9                 R                 M  InterpurchaseTime
+         4 372    87.1                 R                 M  NeighborChurnRate
+         5 234    45.7                 R                 M  InterpurchaseTime
+         6  53    94.3                 R                 M         ClustCoeff
+         7 162    55.6                 R InterpurchaseTime                  M
+         8 288    55.6                 R InterpurchaseTime                  M
+         9 418    24.2                 R                 M                  F
+        10 208    93.8                 R                 M  NeighborChurnRate
+        11 243    94.2                 R                 M  NeighborChurnRate
+        12 407    81.1                 R                 M  NeighborChurnRate
+        13 124    53.2                 R                 M  InterpurchaseTime
+        14 183    87.4                 R InterpurchaseTime                  M
+        15 201    89.6                 R                 M CommunityChurnRate
+        16 557    25.9                 R                 M                  F
+        17 214    72.0                 R                 M  NeighborChurnRate
+        18  66    77.3 InterpurchaseTime                 R                  M
+        19  86    83.7 InterpurchaseTime                 R                  M
+
+[STEP 14] Segment profiles and retention strategy...
+                     N  ChurnRate  AvgMonetary  AvgChurnProb               Label                               Strategy
+Louvain_Community                                                                                                      
+0                  327       0.82      2397.00          0.77  High-value at-risk  Urgent personalized retention voucher
+1                  183       0.56       927.47          0.48     Moderate active         Bundle offer / upsell campaign
+2                  424       0.75      1388.36          0.67   Low-value dormant            Low-cost reactivation email
+3                  288       0.64       521.73          0.53     Moderate active         Bundle offer / upsell campaign
+4                  372       0.87       372.32          0.82   Low-value dormant            Low-cost reactivation email
+5                  234       0.46      1409.28          0.38     Moderate active         Bundle offer / upsell campaign
+6                   53       0.94       177.44          0.93   Low-value dormant            Low-cost reactivation email
+7                  162       0.56      1824.44          0.44     Moderate active         Bundle offer / upsell campaign
+8                  288       0.56      1453.28          0.46     Moderate active         Bundle offer / upsell campaign
+9                  418       0.24     13915.93          0.19    High-value loyal           Loyalty reward / VIP program
+10                 208       0.94       188.51          0.91   Low-value dormant            Low-cost reactivation email
+11                 243       0.94       367.34          0.91   Low-value dormant            Low-cost reactivation email
+12                 407       0.81       949.63          0.73   Low-value dormant            Low-cost reactivation email
+13                 124       0.53      1949.59          0.45     Moderate active         Bundle offer / upsell campaign
+14                 183       0.87       655.48          0.82   Low-value dormant            Low-cost reactivation email
+15                 201       0.90       752.85          0.85   Low-value dormant            Low-cost reactivation email
+16                 557       0.26      4564.82          0.21    High-value loyal           Loyalty reward / VIP program
+17                 214       0.72       296.19          0.65   Low-value dormant            Low-cost reactivation email
+18                  66       0.77       763.97          0.69   Low-value dormant            Low-cost reactivation email
+19                  86       0.84       521.03          0.77   Low-value dormant            Low-cost reactivation email
+
+[OUTPUT] results/churn_results_v2.csv
+[OUTPUT] results/shap_global_v2.csv + shap_global_v2.png
+[OUTPUT] results/shap_per_community_v2.csv  [FIX-F]
+[OUTPUT] results/segment_profiles_v2.csv
+
+Done.

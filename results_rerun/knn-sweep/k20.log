@@ -1,0 +1,67 @@
+========================================================================
+REPEATED-CV SIGNIFICANCE TEST  (10 repeats x 5 folds = 50 paired folds)
+========================================================================
+
+[1] Loaded cached features: D:\DAP\lrfm-max-k-cut-segmentation-main (2)\lrfm-max-k-cut-segmentation-main\LRFM Churn PREDICT\results\feat_cache.csv
+    Customers: 5,038  |  Churn rate: 65.2%
+
+[2] Rebuilding k-NN graph + Louvain communities (deterministic, SEED=42)...
+    Nodes: 5,038  Edges: 66,652  Louvain communities: 16
+
+[3] Running 10 x 5-fold CV over 5 tiers x 2 models...
+    repeat 1/10 done
+    repeat 2/10 done
+    repeat 3/10 done
+    repeat 4/10 done
+    repeat 5/10 done
+    repeat 6/10 done
+    repeat 7/10 done
+    repeat 8/10 done
+    repeat 9/10 done
+    repeat 10/10 done
+
+    Per-fold scores -> D:\DAP\lrfm-max-k-cut-segmentation-main (2)\lrfm-max-k-cut-segmentation-main\LRFM Churn PREDICT\results\significance_folds_k20.csv
+
+========================================================================
+AUC — LightGBM  (50 paired folds, baseline = RFM)
+========================================================================
+          Tier    Mean     Std  Delta_vs_RFM  CI95_low  CI95_high  p_naive_ttest  p_NadeauBengio  p_wilcoxon
+           RFM 0.80655 0.01468       0.00000       NaN        NaN            NaN             NaN         NaN
+          LRFM 0.80744 0.01354       0.00089  -0.00060    0.00240        0.25477         0.75513     0.35217
+        B-LRFM 0.80535 0.01522      -0.00120  -0.00305    0.00081        0.22900         0.74165     0.10111
+    B-LRFM+Seg 0.80448 0.01517      -0.00208  -0.00400   -0.00007        0.04496         0.57801     0.03286
+Graph-Enhanced 0.80388 0.01381      -0.00268  -0.00472   -0.00059        0.01587         0.49968     0.01710
+
+========================================================================
+AUC — Logistic Regression  (50 paired folds, baseline = RFM)
+========================================================================
+          Tier    Mean     Std  Delta_vs_RFM  CI95_low  CI95_high  p_naive_ttest  p_NadeauBengio  p_wilcoxon
+           RFM 0.81435 0.01369       0.00000       NaN        NaN            NaN             NaN         NaN
+          LRFM 0.81368 0.01392      -0.00067  -0.00092   -0.00044        0.00000         0.14416     0.00000
+        B-LRFM 0.81572 0.01379       0.00136   0.00053    0.00218        0.00234         0.38640     0.00165
+    B-LRFM+Seg 0.81456 0.01334       0.00021  -0.00093    0.00129        0.72269         0.92301     0.54627
+Graph-Enhanced 0.81689 0.01347       0.00254   0.00124    0.00385        0.00041         0.30717     0.00025
+
+========================================================================
+PR_AUC — LightGBM  (50 paired folds, baseline = RFM)
+========================================================================
+          Tier    Mean     Std  Delta_vs_RFM  CI95_low  CI95_high  p_naive_ttest  p_NadeauBengio  p_wilcoxon
+           RFM 0.87001 0.01397       0.00000       NaN        NaN            NaN             NaN         NaN
+          LRFM 0.86831 0.01368      -0.00171  -0.00299   -0.00048        0.01103         0.47553     0.01907
+        B-LRFM 0.87050 0.01292       0.00048  -0.00126    0.00230        0.59936         0.88616     0.72326
+    B-LRFM+Seg 0.86948 0.01283      -0.00053  -0.00230    0.00129        0.57075         0.87718     0.43757
+Graph-Enhanced 0.86851 0.01296      -0.00151  -0.00387    0.00089        0.22985         0.74211     0.17810
+
+========================================================================
+PR_AUC — Logistic Regression  (50 paired folds, baseline = RFM)
+========================================================================
+          Tier    Mean     Std  Delta_vs_RFM  CI95_low  CI95_high  p_naive_ttest  p_NadeauBengio  p_wilcoxon
+           RFM 0.87417 0.01270       0.00000       NaN        NaN            NaN             NaN         NaN
+          LRFM 0.87405 0.01274      -0.00012  -0.00023   -0.00002        0.03384         0.55511     0.06070
+        B-LRFM 0.87502 0.01287       0.00085   0.00006    0.00160        0.03657         0.56124     0.01907
+    B-LRFM+Seg 0.87330 0.01255      -0.00087  -0.00241    0.00053        0.25492         0.75521     0.47238
+Graph-Enhanced 0.87598 0.01244       0.00182   0.00049    0.00308        0.00868         0.46033     0.00191
+
+Summary -> D:\DAP\lrfm-max-k-cut-segmentation-main (2)\lrfm-max-k-cut-segmentation-main\LRFM Churn PREDICT\results\significance_summary_k20.csv
+
+Read the Nadeau-Bengio p-value, not the naive one: repeated-CV folds share training data, so the naive paired t-test overstates significance.

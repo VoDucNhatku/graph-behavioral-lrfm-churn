@@ -1,0 +1,21 @@
+# Pinned to the exact environment that produced every file in results/.
+# Rationale: re-running the pipeline under a different library set shifted
+# improvements_results.csv by up to 0.0033 ROC-AUC -- the same magnitude as the
+# effects this study reports on. Unpinned ranges make the results untraceable.
+#
+# Reference interpreter: CPython 3.13.5 (Windows x64)
+
+pandas==3.0.3
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.8.0
+xgboost==3.2.0
+lightgbm==4.6.0
+networkx==3.6.1
+python-louvain==0.16
+leidenalg==0.12.0
+igraph==1.0.0
+shap==0.52.0
+matplotlib==3.10.9
+seaborn==0.13.2
+openpyxl==3.1.5

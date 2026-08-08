@@ -1,0 +1,135 @@
+======================================================================
+METHOD COMPARISON v2 — Vianna Filho (2026) vs Our Proposal
+======================================================================
+
+[1] Loading: online_retail_II.xlsx
+  Total customers:       5,878
+  Cancellation records:  18,744
+  Customers with CancellationRate > 0: 2,511 (42.7%)  max=0.800  [FIX-1 check, must be ≤1.0]
+  IPT: 1623 single-purchasers imputed with median=72.0 days
+
+  Feature spaces summary:
+    X_scores  (VF2026): discrete 1–5, 3 dims, range [1,5]
+    X_rfm_raw (Ours):   continuous standardized, 3 dims
+    X_lrfm    (Ours):   continuous standardized, 4 dims
+    X_blrfm   (Ours):   continuous standardized, 9 dims
+    X_common  (ref):    = X_rfm_raw — used for cross-method fair comparison
+
+[2] Building VF2026 graph G' (FIX-2: weighted by customer counts)...
+  G  (original): 5,878 nodes
+  G' (reduced):  25 score-groups  (max 5^3=125)
+  Customer counts per score group: min=39  max=526  mean=235.1
+  G' edges: 300
+
+[3] Running Louvain ONCE (FIX-3), then merging to k=2..6...
+  Louvain found 22 communities (auto-k)
+  Louvain merged to k=2: actual communities = 2
+  Louvain merged to k=3: actual communities = 3
+  Louvain merged to k=4: actual communities = 4
+  Louvain merged to k=5: actual communities = 5
+  Louvain merged to k=6: actual communities = 6
+
+[4] Running all methods k=2..6 ...
+    Each method evaluated on OWN space AND common 3D-RFM space
+
+  k=2
+    VF K-means (scores):     Sil_own=0.4715  Sil_ref=0.3651
+    VF Max-k-cut (approx):   Sil_own=0.4661  Sil_ref=0.3180  Obj=37675158
+    VF GMM (scores):         Sil_own=0.4181  Sil_ref=0.2629
+    Ours K-means (raw RFM):  Sil_own=0.9165  Sil_ref=0.9165
+    Ours K-means (LRFM):     Sil_own=0.8844  Sil_ref=0.9165
+    Ours K-means (B-LRFM):   Sil_own=0.2770  Sil_ref=0.3108
+    Ours Louvain (B-LRFM):   Sil_own=0.0230  Sil_ref=0.0504
+
+  k=3
+    VF K-means (scores):     Sil_own=0.4453  Sil_ref=0.2326
+    VF Max-k-cut (approx):   Sil_own=0.4439  Sil_ref=0.2591  Obj=45886421
+    VF GMM (scores):         Sil_own=0.4363  Sil_ref=0.2039
+    Ours K-means (raw RFM):  Sil_own=0.5827  Sil_ref=0.5827
+    Ours K-means (LRFM):     Sil_own=0.3827  Sil_ref=0.5665
+    Ours K-means (B-LRFM):   Sil_own=0.1992  Sil_ref=0.1072
+    Ours Louvain (B-LRFM):   Sil_own=-0.0404  Sil_ref=-0.0867
+
+  k=4
+    VF K-means (scores):     Sil_own=0.4784  Sil_ref=0.1329
+    VF Max-k-cut (approx):   Sil_own=0.4771  Sil_ref=0.0904  Obj=49701339
+    VF GMM (scores):         Sil_own=0.3873  Sil_ref=0.0815
+    Ours K-means (raw RFM):  Sil_own=0.5905  Sil_ref=0.5905
+    Ours K-means (LRFM):     Sil_own=0.4851  Sil_ref=0.2785
+    Ours K-means (B-LRFM):   Sil_own=0.2185  Sil_ref=0.1713
+    Ours Louvain (B-LRFM):   Sil_own=-0.0497  Sil_ref=-0.0978
+
+  k=5
+    VF K-means (scores):     Sil_own=0.4617  Sil_ref=0.0002
+    VF Max-k-cut (approx):   Sil_own=0.4300  Sil_ref=0.1239  Obj=51342470
+    VF GMM (scores):         Sil_own=0.4419  Sil_ref=0.1051
+    Ours K-means (raw RFM):  Sil_own=0.6029  Sil_ref=0.6029
+    Ours K-means (LRFM):     Sil_own=0.4902  Sil_ref=0.2770
+    Ours K-means (B-LRFM):   Sil_own=0.2230  Sil_ref=0.3568
+    Ours Louvain (B-LRFM):   Sil_own=-0.0344  Sil_ref=-0.1455
+
+  k=6
+    VF K-means (scores):     Sil_own=0.4718  Sil_ref=-0.0023
+    VF Max-k-cut (approx):   Sil_own=0.4564  Sil_ref=0.0205  Obj=52464847
+    VF GMM (scores):         Sil_own=0.3556  Sil_ref=-0.0392
+    Ours K-means (raw RFM):  Sil_own=0.5495  Sil_ref=0.5495
+    Ours K-means (LRFM):     Sil_own=0.4844  Sil_ref=0.2783
+    Ours K-means (B-LRFM):   Sil_own=0.2642  Sil_ref=0.1401
+    Ours Louvain (B-LRFM):   Sil_own=-0.0630  Sil_ref=-0.1622
+
+======================================================================
+RESULTS — TWO TABLES (FIX-4)
+======================================================================
+
+╔══════════════════════════════════════════════════════════════════════╗
+║  TABLE A: Silhouette on OWN feature space                           ║
+║  ⚠ Numbers NOT directly comparable across rows (different spaces)   ║
+╚══════════════════════════════════════════════════════════════════════╝
+k                                                2       3       4       5       6
+Method                       OwnSpace                                             
+[Ours] K-means B-LRFM        9D-continuous  0.2770  0.1992  0.2185  0.2230  0.2642
+[Ours] K-means LRFM          4D-continuous  0.8844  0.3827  0.4851  0.4902  0.4844
+[Ours] K-means raw RFM       3D-continuous  0.9165  0.5827  0.5905  0.6029  0.5495
+[Ours] Louvain B-LRFM        9D-continuous  0.0230 -0.0404 -0.0497 -0.0344 -0.0630
+[VF2026] GMM (score 1-5)     3D-score-1-5   0.4181  0.4363  0.3873  0.4419  0.3556
+[VF2026] K-means (score 1-5) 3D-score-1-5   0.4715  0.4453  0.4784  0.4617  0.4718
+[VF2026] Max-k-cut approx    3D-score-1-5   0.4661  0.4439  0.4771  0.4300  0.4564
+
+╔══════════════════════════════════════════════════════════════════════╗
+║  TABLE B: Silhouette on COMMON 3D standardized RFM space            ║
+║  ✅ Numbers ARE directly comparable across all methods               ║
+║  (all labels re-evaluated on same X = standardized R,F,M)           ║
+╚══════════════════════════════════════════════════════════════════════╝
+k                                  2       3       4       5       6
+Method                                                              
+[Ours] K-means raw RFM        0.9165  0.5827  0.5905  0.6029  0.5495
+[Ours] K-means LRFM           0.9165  0.5665  0.2785  0.2770  0.2783
+[Ours] K-means B-LRFM         0.3108  0.1072  0.1713  0.3568  0.1401
+[VF2026] Max-k-cut approx     0.3180  0.2591  0.0904  0.1239  0.0205
+[VF2026] K-means (score 1-5)  0.3651  0.2326  0.1329  0.0002 -0.0023
+[VF2026] GMM (score 1-5)      0.2629  0.2039  0.0815  0.1051 -0.0392
+[Ours] Louvain B-LRFM         0.0504 -0.0867 -0.0978 -0.1455 -0.1622
+
+Paper reference (Vianna Filho 2026, exact max-k-cut):
+ k  Sil(paper)
+ 2      0.4569
+ 3      0.3545
+ 4      0.3980
+ 5      0.3542
+ 6      0.2900
+(Paper uses own score-space evaluation — comparable with Table A VF rows)
+
+At k=4 — Fair ranking on COMMON space (Sil_ref):
+                      Method      OwnSpace  Sil_own  Sil_ref
+      [Ours] K-means raw RFM 3D-continuous   0.5905   0.5905
+         [Ours] K-means LRFM 4D-continuous   0.4851   0.2785
+       [Ours] K-means B-LRFM 9D-continuous   0.2185   0.1713
+[VF2026] K-means (score 1-5)  3D-score-1-5   0.4784   0.1329
+   [VF2026] Max-k-cut approx  3D-score-1-5   0.4771   0.0904
+    [VF2026] GMM (score 1-5)  3D-score-1-5   0.3873   0.0815
+       [Ours] Louvain B-LRFM 9D-continuous  -0.0497  -0.0978
+
+[OUTPUT] results/comparison_v2.png
+[OUTPUT] results/comparison_v2.csv
+
+Done.

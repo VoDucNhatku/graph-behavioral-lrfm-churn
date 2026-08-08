@@ -1,0 +1,62 @@
+# ── Large data files (download separately from UCI ML Repository) ─────────────
+*.xlsx
+*.zip
+*.tar
+*.tar.gz
+*.xls
+
+# ── Python cache ─────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── OS / IDE ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/settings.json
+*.swp
+
+# ── Legacy scripts (not needed for reproducibility) ───────────────────────────
+generate_*.py
+download_papers.py
+run_pipeline.py
+compare_methods.py
+
+# ── Unrelated image aesthetics project files ──────────────────────────────────
+arxiv_*/
+papers/
+research_papers_AI_photography.csv
+research_papers_analysis*.csv
+rfm_papers_full.txt
+research_direction_notes.md
+download_log.csv
+
+# ── Internal working files: not published ────────────────────────────────────
+# notes/ holds the frank internal audit (integrity findings, venue calibration).
+# Useful to the authors, not intended for a public research artifact.
+notes/
+docs/*BACKUP*.docx
+results/feat_cache.csv
+results_rerun/seed42/feat_cache.csv
+
+# LaTeX build artefacts
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.synctex.gz
+
+# Internal stage reports: same reason as notes/ -- author-facing, not public
+paper/reports/
+
+# Planning documents: kept locally, not part of the submitted artefact
+docs/
