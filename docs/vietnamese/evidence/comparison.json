@@ -1,0 +1,1126 @@
+{
+  "kind": "actual model rerun from raw XLSX, unchanged source and pinned reference runtime",
+  "csv_comparisons": [
+    {
+      "file": "churn_results_v2.csv",
+      "old_rows": 6,
+      "new_rows": 6,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "comparison_v2.csv",
+      "old_rows": 35,
+      "new_rows": 35,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "feat_cache.csv",
+      "old_rows": 5038,
+      "new_rows": 5038,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "improvements_results.csv",
+      "old_rows": 14,
+      "new_rows": 14,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "segment_profiles_v2.csv",
+      "old_rows": 20,
+      "new_rows": 20,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "shap_global_v2.csv",
+      "old_rows": 38,
+      "new_rows": 38,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "shap_per_community_v2.csv",
+      "old_rows": 20,
+      "new_rows": 20,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "significance_folds.csv",
+      "old_rows": 500,
+      "new_rows": 500,
+      "same_columns": true,
+      "byte_identical": false,
+      "shape_matches": true,
+      "all_cells_equal_1e12": false,
+      "max_numeric_difference": 0.006209698751555637,
+      "differences": [
+        {
+          "column": "AUC",
+          "different_cells": 17,
+          "max_absolute_difference": 0.006209698751555637
+        },
+        {
+          "column": "PR_AUC",
+          "different_cells": 17,
+          "max_absolute_difference": 0.00437233580540175
+        }
+      ]
+    },
+    {
+      "file": "significance_folds_k10.csv",
+      "old_rows": 500,
+      "new_rows": 500,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "significance_folds_k15.csv",
+      "old_rows": 500,
+      "new_rows": 500,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "significance_folds_k20.csv",
+      "old_rows": 500,
+      "new_rows": 500,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "significance_folds_k5.csv",
+      "old_rows": 500,
+      "new_rows": 500,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "significance_summary.csv",
+      "old_rows": 20,
+      "new_rows": 20,
+      "same_columns": true,
+      "byte_identical": false,
+      "shape_matches": true,
+      "all_cells_equal_1e12": false,
+      "max_numeric_difference": 0.12185080387750491,
+      "differences": [
+        {
+          "column": "Mean",
+          "different_cells": 8,
+          "max_absolute_difference": 0.00014963579315152575
+        },
+        {
+          "column": "Std",
+          "different_cells": 8,
+          "max_absolute_difference": 7.463047482000017e-05
+        },
+        {
+          "column": "Delta_vs_RFM",
+          "different_cells": 8,
+          "max_absolute_difference": 0.0001501607119366
+        },
+        {
+          "column": "CI95_low",
+          "different_cells": 8,
+          "max_absolute_difference": 0.00014151753157430006
+        },
+        {
+          "column": "CI95_high",
+          "different_cells": 8,
+          "max_absolute_difference": 0.00015317419003389992
+        },
+        {
+          "column": "p_naive_ttest",
+          "different_cells": 8,
+          "max_absolute_difference": 0.12185080387750491
+        },
+        {
+          "column": "t_NadeauBengio",
+          "different_cells": 8,
+          "max_absolute_difference": 0.04657003863907079
+        },
+        {
+          "column": "p_NadeauBengio",
+          "different_cells": 8,
+          "max_absolute_difference": 0.036670907954288956
+        },
+        {
+          "column": "p_wilcoxon",
+          "different_cells": 6,
+          "max_absolute_difference": 0.0802906329729467
+        }
+      ]
+    },
+    {
+      "file": "significance_summary_k10.csv",
+      "old_rows": 20,
+      "new_rows": 20,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "significance_summary_k15.csv",
+      "old_rows": 20,
+      "new_rows": 20,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "significance_summary_k20.csv",
+      "old_rows": 20,
+      "new_rows": 20,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "significance_summary_k5.csv",
+      "old_rows": 20,
+      "new_rows": 20,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "seed42/significance_folds.csv",
+      "old_rows": 50,
+      "new_rows": 50,
+      "same_columns": true,
+      "byte_identical": false,
+      "shape_matches": true,
+      "all_cells_equal_1e12": false,
+      "max_numeric_difference": 0.0027436023094540296,
+      "differences": [
+        {
+          "column": "AUC",
+          "different_cells": 5,
+          "max_absolute_difference": 0.0023178951946073445
+        },
+        {
+          "column": "PR_AUC",
+          "different_cells": 5,
+          "max_absolute_difference": 0.0027436023094540296
+        }
+      ]
+    },
+    {
+      "file": "cached-k10-as-published/significance_folds.csv",
+      "old_rows": 500,
+      "new_rows": 500,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    },
+    {
+      "file": "seed42/significance_summary.csv",
+      "old_rows": 20,
+      "new_rows": 20,
+      "same_columns": true,
+      "byte_identical": false,
+      "shape_matches": true,
+      "all_cells_equal_1e12": false,
+      "max_numeric_difference": 0.375,
+      "differences": [
+        {
+          "column": "Mean",
+          "different_cells": 10,
+          "max_absolute_difference": 0.0005487204618909169
+        },
+        {
+          "column": "Std",
+          "different_cells": 10,
+          "max_absolute_difference": 0.0006759545209296999
+        },
+        {
+          "column": "Delta_vs_RFM",
+          "different_cells": 8,
+          "max_absolute_difference": 0.0007678267526374
+        },
+        {
+          "column": "CI95_low",
+          "different_cells": 4,
+          "max_absolute_difference": 0.0005906760381255002
+        },
+        {
+          "column": "CI95_high",
+          "different_cells": 7,
+          "max_absolute_difference": 0.0008385705034505003
+        },
+        {
+          "column": "p_naive_ttest",
+          "different_cells": 8,
+          "max_absolute_difference": 0.11493539861276203
+        },
+        {
+          "column": "t_NadeauBengio",
+          "different_cells": 8,
+          "max_absolute_difference": 0.11454381828701321
+        },
+        {
+          "column": "p_NadeauBengio",
+          "different_cells": 8,
+          "max_absolute_difference": 0.07684959542863035
+        },
+        {
+          "column": "p_wilcoxon",
+          "different_cells": 1,
+          "max_absolute_difference": 0.375
+        }
+      ]
+    },
+    {
+      "file": "cached-k10-as-published/significance_summary.csv",
+      "old_rows": 20,
+      "new_rows": 20,
+      "same_columns": true,
+      "byte_identical": true,
+      "shape_matches": true,
+      "all_cells_equal_1e12": true,
+      "max_numeric_difference": 0.0,
+      "differences": []
+    }
+  ],
+  "paper_checks": [
+    {
+      "label": "Table1 RFM AUC",
+      "paper": 0.8066,
+      "rerun": 0.8065534044623847,
+      "difference": -4.6595537615323757e-05,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table1 LRFM AUC",
+      "paper": 0.8074,
+      "rerun": 0.8074390263212181,
+      "difference": 3.902632121810523e-05,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table1 LRFM delta",
+      "paper": 0.0009,
+      "rerun": 0.0008856218588334,
+      "difference": -1.4378141166600006e-05,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table1 LRFM pNB",
+      "paper": 0.755,
+      "rerun": 0.7554229661529623,
+      "difference": 0.0004229661529623341,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "Table1 B-LRFM AUC",
+      "paper": 0.8054,
+      "rerun": 0.8053294667675185,
+      "difference": -7.053323248151777e-05,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 B-LRFM delta",
+      "paper": -0.0012,
+      "rerun": -0.0012239376948661,
+      "difference": -2.3937694866100123e-05,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table1 B-LRFM pNB",
+      "paper": 0.742,
+      "rerun": 0.7349947348605408,
+      "difference": -0.007005265139459205,
+      "decimals": 3,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 B-LRFM+Seg AUC",
+      "paper": 0.8044,
+      "rerun": 0.8042948729718897,
+      "difference": -0.00010512702811027452,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 B-LRFM+Seg delta",
+      "paper": -0.0022,
+      "rerun": -0.0022585314904949,
+      "difference": -5.8531490494900026e-05,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 B-LRFM+Seg pNB",
+      "paper": 0.561,
+      "rerun": 0.5417188192963598,
+      "difference": -0.019281180703640266,
+      "decimals": 3,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 Graph-Enhanced AUC",
+      "paper": 0.8044,
+      "rerun": 0.8045327515147912,
+      "difference": 0.00013275151479119618,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 Graph-Enhanced delta",
+      "paper": -0.0021,
+      "rerun": -0.0020206529475935,
+      "difference": 7.934705240649972e-05,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 Graph-Enhanced pNB",
+      "paper": 0.59,
+      "rerun": 0.6061286616649466,
+      "difference": 0.016128661664946642,
+      "decimals": 3,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 single RFM AUC",
+      "paper": 0.8065,
+      "rerun": 0.8065,
+      "difference": 0.0,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table1 single LRFM AUC",
+      "paper": 0.8071,
+      "rerun": 0.8071,
+      "difference": 0.0,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table1 single B-LRFM AUC",
+      "paper": 0.8067,
+      "rerun": 0.8067,
+      "difference": 0.0,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table1 single B-LRFM+Seg AUC",
+      "paper": 0.8073,
+      "rerun": 0.8073,
+      "difference": 0.0,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table1 single Graph-Enhanced (leak-free) AUC",
+      "paper": 0.8098,
+      "rerun": 0.8098,
+      "difference": 0.0,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table2 LogReg/B-LRFM minus LGBM/Graph-Enhanced delta",
+      "paper": 0.0113,
+      "rerun": 0.011182519921028288,
+      "difference": -0.00011748007897171078,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table2 LogReg/B-LRFM minus LGBM/Graph-Enhanced ci_low",
+      "paper": 0.0096,
+      "rerun": 0.009470958551004209,
+      "difference": -0.00012904144899579008,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table2 LogReg/B-LRFM minus LGBM/Graph-Enhanced ci_high",
+      "paper": 0.013,
+      "rerun": 0.012868425589856345,
+      "difference": -0.00013157441014365404,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table2 LogReg/B-LRFM minus LGBM/Graph-Enhanced pNB",
+      "paper": 0.001,
+      "rerun": 0.0011179900136528665,
+      "difference": 0.00011799001365286649,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "Table2 LogReg/RFM minus LGBM/Graph-Enhanced delta",
+      "paper": 0.0099,
+      "rerun": 0.009820366746394154,
+      "difference": -7.963325360584722e-05,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table2 LogReg/RFM minus LGBM/Graph-Enhanced ci_low",
+      "paper": 0.008,
+      "rerun": 0.007897271536175648,
+      "difference": -0.00010272846382435204,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table2 LogReg/RFM minus LGBM/Graph-Enhanced ci_high",
+      "paper": 0.0119,
+      "rerun": 0.011759466067502602,
+      "difference": -0.00014053393249739872,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table2 LogReg/RFM minus LGBM/Graph-Enhanced pNB",
+      "paper": 0.01,
+      "rerun": 0.010489541274506709,
+      "difference": 0.0004895412745067086,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "Table2 LogReg/RFM minus LGBM/RFM delta",
+      "paper": 0.0078,
+      "rerun": 0.007799713798800556,
+      "difference": -2.862011994437738e-07,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table2 LogReg/RFM minus LGBM/RFM ci_low",
+      "paper": 0.0056,
+      "rerun": 0.0055904707761937475,
+      "difference": -9.529223806252485e-06,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table2 LogReg/RFM minus LGBM/RFM ci_high",
+      "paper": 0.01,
+      "rerun": 0.009979941294682522,
+      "difference": -2.0058705317477915e-05,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table2 LogReg/RFM minus LGBM/RFM pNB",
+      "paper": 0.068,
+      "rerun": 0.06792696809069092,
+      "difference": -7.303190930908754e-05,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "Table3 k5 delta",
+      "paper": -0.0006,
+      "rerun": -0.0006402951465356,
+      "difference": -4.029514653560004e-05,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table3 k5 pNB",
+      "paper": 0.88,
+      "rerun": 0.8797922089581647,
+      "difference": -0.0002077910418353257,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "Table3 k10 delta",
+      "paper": -0.0021,
+      "rerun": -0.0021298393246642,
+      "difference": -2.9839324664200292e-05,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table3 k10 pNB",
+      "paper": 0.59,
+      "rerun": 0.590479796414118,
+      "difference": 0.00047979641411799445,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "Table3 k15 delta",
+      "paper": 0.0017,
+      "rerun": 0.0016862326691854,
+      "difference": -1.3767330814599922e-05,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table3 k15 pNB",
+      "paper": 0.666,
+      "rerun": 0.6663250324504254,
+      "difference": 0.00032503245042536655,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "Table3 k20 delta",
+      "paper": -0.0027,
+      "rerun": -0.0026756478089811,
+      "difference": 2.435219101889997e-05,
+      "decimals": 4,
+      "within_rounding": true
+    },
+    {
+      "label": "Table3 k20 pNB",
+      "paper": 0.5,
+      "rerun": 0.4996809741796205,
+      "difference": -0.0003190258203795149,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "SHAP R",
+      "paper": 1.087,
+      "rerun": 1.08651,
+      "difference": -0.0004899999999998794,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "SHAP M",
+      "paper": 0.56,
+      "rerun": 0.56023,
+      "difference": 0.00022999999999995246,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "SHAP NeighborChurnRate",
+      "paper": 0.25,
+      "rerun": 0.24976,
+      "difference": -0.00023999999999999022,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "SHAP InterpurchaseTime",
+      "paper": 0.224,
+      "rerun": 0.22405,
+      "difference": 4.999999999999449e-05,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "SHAP CommunityChurnRate",
+      "paper": 0.215,
+      "rerun": 0.2149,
+      "difference": -9.999999999998899e-05,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "Silhouette KMeans B-LRFM",
+      "paper": 0.219,
+      "rerun": 0.2185,
+      "difference": -0.0005000000000000004,
+      "decimals": 3,
+      "within_rounding": true
+    },
+    {
+      "label": "Silhouette Louvain B-LRFM",
+      "paper": -0.05,
+      "rerun": -0.0497,
+      "difference": 0.00030000000000000165,
+      "decimals": 3,
+      "within_rounding": true
+    }
+  ],
+  "cross_model": [
+    {
+      "comparison": "Table2 LogReg/B-LRFM minus LGBM/Graph-Enhanced",
+      "delta": 0.011182519921028288,
+      "ci_low": 0.009470958551004209,
+      "ci_high": 0.012868425589856345,
+      "pNB": 0.0011179900136528665
+    },
+    {
+      "comparison": "Table2 LogReg/RFM minus LGBM/Graph-Enhanced",
+      "delta": 0.009820366746394154,
+      "ci_low": 0.007897271536175648,
+      "ci_high": 0.011759466067502602,
+      "pNB": 0.010489541274506709
+    },
+    {
+      "comparison": "Table2 LogReg/RFM minus LGBM/RFM",
+      "delta": 0.007799713798800556,
+      "ci_low": 0.0055904707761937475,
+      "ci_high": 0.009979941294682522,
+      "pNB": 0.06792696809069092
+    }
+  ],
+  "integrity": [
+    {
+      "run": "main",
+      "rows": 500,
+      "max_recomputed_p_error": 1.1102230246251565e-15
+    },
+    {
+      "run": "_k5",
+      "rows": 500,
+      "max_recomputed_p_error": 6.106226635438361e-16
+    },
+    {
+      "run": "_k10",
+      "rows": 500,
+      "max_recomputed_p_error": 1.1102230246251565e-15
+    },
+    {
+      "run": "_k15",
+      "rows": 500,
+      "max_recomputed_p_error": 8.881784197001252e-16
+    },
+    {
+      "run": "_k20",
+      "rows": 500,
+      "max_recomputed_p_error": 1.2212453270876722e-15
+    }
+  ],
+  "headline_means": [
+    {
+      "Model": "LightGBM",
+      "Tier": "RFM",
+      "Mean": 0.8065534044623847,
+      "Delta_vs_RFM": 0.0,
+      "p_NadeauBengio": null
+    },
+    {
+      "Model": "LightGBM",
+      "Tier": "LRFM",
+      "Mean": 0.8074390263212181,
+      "Delta_vs_RFM": 0.0008856218588334,
+      "p_NadeauBengio": 0.7554229661529623
+    },
+    {
+      "Model": "LightGBM",
+      "Tier": "B-LRFM",
+      "Mean": 0.8053294667675185,
+      "Delta_vs_RFM": -0.0012239376948661,
+      "p_NadeauBengio": 0.7349947348605408
+    },
+    {
+      "Model": "LightGBM",
+      "Tier": "B-LRFM+Seg",
+      "Mean": 0.8042948729718897,
+      "Delta_vs_RFM": -0.0022585314904949,
+      "p_NadeauBengio": 0.5417188192963598
+    },
+    {
+      "Model": "LightGBM",
+      "Tier": "Graph-Enhanced",
+      "Mean": 0.8045327515147912,
+      "Delta_vs_RFM": -0.0020206529475935,
+      "p_NadeauBengio": 0.6061286616649466
+    },
+    {
+      "Model": "Logistic Regression",
+      "Tier": "RFM",
+      "Mean": 0.8143531182611852,
+      "Delta_vs_RFM": 0.0,
+      "p_NadeauBengio": null
+    },
+    {
+      "Model": "Logistic Regression",
+      "Tier": "LRFM",
+      "Mean": 0.8136812900611987,
+      "Delta_vs_RFM": -0.0006718281999865,
+      "p_NadeauBengio": 0.1441629129111896
+    },
+    {
+      "Model": "Logistic Regression",
+      "Tier": "B-LRFM",
+      "Mean": 0.8157152714358195,
+      "Delta_vs_RFM": 0.0013621531746341,
+      "p_NadeauBengio": 0.3863973171478501
+    },
+    {
+      "Model": "Logistic Regression",
+      "Tier": "B-LRFM+Seg",
+      "Mean": 0.8147085256363796,
+      "Delta_vs_RFM": 0.0003554073751942,
+      "p_NadeauBengio": 0.8562199614632684
+    },
+    {
+      "Model": "Logistic Regression",
+      "Tier": "Graph-Enhanced",
+      "Mean": 0.815253306522104,
+      "Delta_vs_RFM": 0.0009001882609188,
+      "p_NadeauBengio": 0.6863195696993666
+    }
+  ],
+  "no_tier_significant_vs_rfm": true,
+  "main_min_pNB": 0.1441629129111896,
+  "cached_k10_means": [
+    {
+      "Model": "LightGBM",
+      "Tier": "RFM",
+      "Mean": 0.8065519300925693,
+      "Delta_vs_RFM": 0.0,
+      "p_NadeauBengio": null
+    },
+    {
+      "Model": "LightGBM",
+      "Tier": "LRFM",
+      "Mean": 0.8074390263212181,
+      "Delta_vs_RFM": 0.0008870962286487,
+      "p_NadeauBengio": 0.7551327582524796
+    },
+    {
+      "Model": "LightGBM",
+      "Tier": "B-LRFM",
+      "Mean": 0.8053543196867397,
+      "Delta_vs_RFM": -0.0011976104058295,
+      "p_NadeauBengio": 0.7416489465078525
+    },
+    {
+      "Model": "LightGBM",
+      "Tier": "B-LRFM+Seg",
+      "Mean": 0.8043709103118539,
+      "Delta_vs_RFM": -0.0021810197807153,
+      "p_NadeauBengio": 0.5613933491397803
+    },
+    {
+      "Model": "LightGBM",
+      "Tier": "Graph-Enhanced",
+      "Mean": 0.804422090767905,
+      "Delta_vs_RFM": -0.0021298393246642,
+      "p_NadeauBengio": 0.590479796414118
+    },
+    {
+      "Model": "Logistic Regression",
+      "Tier": "RFM",
+      "Mean": 0.8143531182611852,
+      "Delta_vs_RFM": 0.0,
+      "p_NadeauBengio": null
+    },
+    {
+      "Model": "Logistic Regression",
+      "Tier": "LRFM",
+      "Mean": 0.8136812900611987,
+      "Delta_vs_RFM": -0.0006718281999865,
+      "p_NadeauBengio": 0.1441629129111896
+    },
+    {
+      "Model": "Logistic Regression",
+      "Tier": "B-LRFM",
+      "Mean": 0.8157152714358195,
+      "Delta_vs_RFM": 0.0013621531746341,
+      "p_NadeauBengio": 0.3863973171478501
+    },
+    {
+      "Model": "Logistic Regression",
+      "Tier": "B-LRFM+Seg",
+      "Mean": 0.8147085256363796,
+      "Delta_vs_RFM": 0.0003554073751942,
+      "p_NadeauBengio": 0.8562199614632684
+    },
+    {
+      "Model": "Logistic Regression",
+      "Tier": "Graph-Enhanced",
+      "Mean": 0.815253306522104,
+      "Delta_vs_RFM": 0.0009001882609188,
+      "p_NadeauBengio": 0.6863195696993666
+    }
+  ],
+  "cached_k10_paper_table1": [
+    {
+      "tier": "RFM",
+      "metric": "AUC",
+      "paper": 0.8066,
+      "rerun": 0.8065519300925693,
+      "within_rounding": true
+    },
+    {
+      "tier": "LRFM",
+      "metric": "AUC",
+      "paper": 0.8074,
+      "rerun": 0.8074390263212181,
+      "within_rounding": true
+    },
+    {
+      "tier": "LRFM",
+      "metric": "delta",
+      "paper": 0.0009,
+      "rerun": 0.0008870962286487,
+      "within_rounding": true
+    },
+    {
+      "tier": "LRFM",
+      "metric": "pNB",
+      "paper": 0.755,
+      "rerun": 0.7551327582524796,
+      "within_rounding": true
+    },
+    {
+      "tier": "B-LRFM",
+      "metric": "AUC",
+      "paper": 0.8054,
+      "rerun": 0.8053543196867397,
+      "within_rounding": true
+    },
+    {
+      "tier": "B-LRFM",
+      "metric": "delta",
+      "paper": -0.0012,
+      "rerun": -0.0011976104058295,
+      "within_rounding": true
+    },
+    {
+      "tier": "B-LRFM",
+      "metric": "pNB",
+      "paper": 0.742,
+      "rerun": 0.7416489465078525,
+      "within_rounding": true
+    },
+    {
+      "tier": "B-LRFM+Seg",
+      "metric": "AUC",
+      "paper": 0.8044,
+      "rerun": 0.8043709103118539,
+      "within_rounding": true
+    },
+    {
+      "tier": "B-LRFM+Seg",
+      "metric": "delta",
+      "paper": -0.0022,
+      "rerun": -0.0021810197807153,
+      "within_rounding": true
+    },
+    {
+      "tier": "B-LRFM+Seg",
+      "metric": "pNB",
+      "paper": 0.561,
+      "rerun": 0.5613933491397803,
+      "within_rounding": true
+    },
+    {
+      "tier": "Graph-Enhanced",
+      "metric": "AUC",
+      "paper": 0.8044,
+      "rerun": 0.804422090767905,
+      "within_rounding": true
+    },
+    {
+      "tier": "Graph-Enhanced",
+      "metric": "delta",
+      "paper": -0.0021,
+      "rerun": -0.0021298393246642,
+      "within_rounding": true
+    },
+    {
+      "tier": "Graph-Enhanced",
+      "metric": "pNB",
+      "paper": 0.59,
+      "rerun": 0.590479796414118,
+      "within_rounding": true
+    }
+  ],
+  "raw_rebuilt_cache": {
+    "customers": 5038,
+    "churners": 3285,
+    "churn_rate": 0.6520444620881302,
+    "same_customer_ids": true,
+    "label_changes_vs_archived_cache": 0,
+    "max_numeric_difference_vs_archived_cache": 0.0
+  },
+  "original_tracked_files_unchanged": true,
+  "paper_check_count": 45,
+  "paper_rounding_matches": 31,
+  "paper_mismatches": [
+    {
+      "label": "Table1 B-LRFM AUC",
+      "paper": 0.8054,
+      "rerun": 0.8053294667675185,
+      "difference": -7.053323248151777e-05,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 B-LRFM pNB",
+      "paper": 0.742,
+      "rerun": 0.7349947348605408,
+      "difference": -0.007005265139459205,
+      "decimals": 3,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 B-LRFM+Seg AUC",
+      "paper": 0.8044,
+      "rerun": 0.8042948729718897,
+      "difference": -0.00010512702811027452,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 B-LRFM+Seg delta",
+      "paper": -0.0022,
+      "rerun": -0.0022585314904949,
+      "difference": -5.8531490494900026e-05,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 B-LRFM+Seg pNB",
+      "paper": 0.561,
+      "rerun": 0.5417188192963598,
+      "difference": -0.019281180703640266,
+      "decimals": 3,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 Graph-Enhanced AUC",
+      "paper": 0.8044,
+      "rerun": 0.8045327515147912,
+      "difference": 0.00013275151479119618,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 Graph-Enhanced delta",
+      "paper": -0.0021,
+      "rerun": -0.0020206529475935,
+      "difference": 7.934705240649972e-05,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table1 Graph-Enhanced pNB",
+      "paper": 0.59,
+      "rerun": 0.6061286616649466,
+      "difference": 0.016128661664946642,
+      "decimals": 3,
+      "within_rounding": false
+    },
+    {
+      "label": "Table2 LogReg/B-LRFM minus LGBM/Graph-Enhanced delta",
+      "paper": 0.0113,
+      "rerun": 0.011182519921028288,
+      "difference": -0.00011748007897171078,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table2 LogReg/B-LRFM minus LGBM/Graph-Enhanced ci_low",
+      "paper": 0.0096,
+      "rerun": 0.009470958551004209,
+      "difference": -0.00012904144899579008,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table2 LogReg/B-LRFM minus LGBM/Graph-Enhanced ci_high",
+      "paper": 0.013,
+      "rerun": 0.012868425589856345,
+      "difference": -0.00013157441014365404,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table2 LogReg/RFM minus LGBM/Graph-Enhanced delta",
+      "paper": 0.0099,
+      "rerun": 0.009820366746394154,
+      "difference": -7.963325360584722e-05,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table2 LogReg/RFM minus LGBM/Graph-Enhanced ci_low",
+      "paper": 0.008,
+      "rerun": 0.007897271536175648,
+      "difference": -0.00010272846382435204,
+      "decimals": 4,
+      "within_rounding": false
+    },
+    {
+      "label": "Table2 LogReg/RFM minus LGBM/Graph-Enhanced ci_high",
+      "paper": 0.0119,
+      "rerun": 0.011759466067502602,
+      "difference": -0.00014053393249739872,
+      "decimals": 4,
+      "within_rounding": false
+    }
+  ]
+}

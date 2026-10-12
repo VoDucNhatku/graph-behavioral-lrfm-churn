@@ -1,0 +1,10 @@
+{
+  "paper_id": 366956,
+  "local_pages": 12,
+  "supplied_pages": 12,
+  "text_content_render_match": true,
+  "byte_relationship": "supplied PDF = local PDF + trailing 0x0D",
+  "local_sha256": "b3803266c2d3d0601b22d5a51ce7c11e7a05e33c7e27367b2839c2a301b6bbd2",
+  "supplied_sha256": "f7278d5662d3549f86b33ba02f0b7f7e715e8d2839ce74517747e7e01e596193",
+  "provenance": "Author identified the supplied PDF as their submitted file; no fresh Confy download was performed."
+}

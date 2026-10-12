@@ -1,0 +1,21 @@
+Louvain_Community,N,ChurnRate,AvgMonetary,AvgRecency,AvgChurnProb,AvgERV,Label,Strategy
+0,327,0.82,2397.0,276.04,0.77,1348.25,High-value at-risk,Urgent personalized retention voucher
+1,183,0.56,927.47,69.97,0.48,355.11,Moderate active,Bundle offer / upsell campaign
+2,424,0.75,1388.36,257.5,0.67,884.73,Low-value dormant,Low-cost reactivation email
+3,288,0.64,521.73,70.15,0.53,233.05,Moderate active,Bundle offer / upsell campaign
+4,372,0.87,372.32,254.56,0.82,274.79,Low-value dormant,Low-cost reactivation email
+5,234,0.46,1409.28,48.0,0.38,361.43,Moderate active,Bundle offer / upsell campaign
+6,53,0.94,177.44,567.64,0.93,167.41,Low-value dormant,Low-cost reactivation email
+7,162,0.56,1824.44,62.32,0.44,630.68,Moderate active,Bundle offer / upsell campaign
+8,288,0.56,1453.28,69.65,0.46,544.76,Moderate active,Bundle offer / upsell campaign
+9,418,0.24,13915.93,53.99,0.19,1236.24,High-value loyal,Loyalty reward / VIP program
+10,208,0.94,188.51,435.02,0.91,163.32,Low-value dormant,Low-cost reactivation email
+11,243,0.94,367.34,456.07,0.91,328.82,Low-value dormant,Low-cost reactivation email
+12,407,0.81,949.63,255.14,0.73,644.68,Low-value dormant,Low-cost reactivation email
+13,124,0.53,1949.59,93.1,0.45,700.63,Moderate active,Bundle offer / upsell campaign
+14,183,0.87,655.48,297.9,0.82,504.21,Low-value dormant,Low-cost reactivation email
+15,201,0.9,752.85,258.25,0.85,592.69,Low-value dormant,Low-cost reactivation email
+16,557,0.26,4564.82,49.13,0.21,744.47,High-value loyal,Loyalty reward / VIP program
+17,214,0.72,296.19,71.85,0.65,151.03,Low-value dormant,Low-cost reactivation email
+18,66,0.77,763.97,165.06,0.69,506.23,Low-value dormant,Low-cost reactivation email
+19,86,0.84,521.03,69.22,0.77,394.35,Low-value dormant,Low-cost reactivation email

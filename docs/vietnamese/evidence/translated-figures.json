@@ -1,0 +1,79 @@
+{
+  "figures": 2,
+  "translated_labels_from": "translation-coverage.json",
+  "fold_data_source": "results/significance_folds.csv",
+  "fold_checks": [
+    {
+      "model": "Logistic Regression",
+      "tier": "RFM",
+      "mean": 0.8143531182611852,
+      "sample_sd": 0.013691453973636126,
+      "n": 50
+    },
+    {
+      "model": "Logistic Regression",
+      "tier": "LRFM",
+      "mean": 0.8136812900611987,
+      "sample_sd": 0.013917825466427542,
+      "n": 50
+    },
+    {
+      "model": "Logistic Regression",
+      "tier": "B-LRFM",
+      "mean": 0.8157152714358195,
+      "sample_sd": 0.013791196716708755,
+      "n": 50
+    },
+    {
+      "model": "Logistic Regression",
+      "tier": "B-LRFM+Seg",
+      "mean": 0.8147085256363796,
+      "sample_sd": 0.013569794865062846,
+      "n": 50
+    },
+    {
+      "model": "Logistic Regression",
+      "tier": "Graph-Enhanced",
+      "mean": 0.815253306522104,
+      "sample_sd": 0.013779857126996971,
+      "n": 50
+    },
+    {
+      "model": "LightGBM",
+      "tier": "RFM",
+      "mean": 0.8065519300925693,
+      "sample_sd": 0.014678459050617572,
+      "n": 50
+    },
+    {
+      "model": "LightGBM",
+      "tier": "LRFM",
+      "mean": 0.8074390263212181,
+      "sample_sd": 0.013542355396907763,
+      "n": 50
+    },
+    {
+      "model": "LightGBM",
+      "tier": "B-LRFM",
+      "mean": 0.8053543196867397,
+      "sample_sd": 0.01521624250645727,
+      "n": 50
+    },
+    {
+      "model": "LightGBM",
+      "tier": "B-LRFM+Seg",
+      "mean": 0.8043709103118539,
+      "sample_sd": 0.015361598002544786,
+      "n": 50
+    },
+    {
+      "model": "LightGBM",
+      "tier": "Graph-Enhanced",
+      "mean": 0.804422090767905,
+      "sample_sd": 0.014094452984627963,
+      "n": 50
+    }
+  ],
+  "annotation_is_auc_difference_not_p_value": true,
+  "note": "Source wording retained faithfully; audit qualifications are in separate study documents."
+}

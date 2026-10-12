@@ -6,6 +6,23 @@
 
 ---
 
+## Vietnamese study documents
+
+The [Vietnamese document index](docs/vietnamese/README.md) provides four PDFs with
+editable sources: a detailed knowledge handbook, the research process, a complete
+translation of the accepted paper, and an updated audit/reproduction report.
+The first two explain the topic, problem, objectives, methods and current progress
+for readers familiar with basic Python and machine learning.
+
+See the [Colab notebook](notebooks/366956-reproduce.ipynb),
+[running instructions](notebooks/HUONG_DAN_COLAB.md), and
+[actual 2026-10-12 reproduction outputs](results/reproduction-20261012).
+The translation retains the accepted paper's wording; the other documents explain
+method-description discrepancies and limits of the evidence. The accepted paper
+and experiment source files are preserved.
+
+---
+
 ## Overview
 
 This repository implements a complete machine learning pipeline for customer churn prediction in non-contractual e-commerce settings. The framework extends classical RFM analysis into a **Behavioral-LRFM** feature space, constructs a **customer similarity graph**, and applies **Louvain/Leiden community detection** to discover cohesive behavioral communities. Graph-derived node features — including **NeighborChurnRate** and **CommunityChurnRate** — are integrated into XGBoost and LightGBM classifiers. Finally, **SHAP analysis at the community level** generates actionable, segment-specific retention strategies.
@@ -23,9 +40,10 @@ a performance improvement. See [Key Results](#key-results).
 
 > **Headline finding.** Under repeated cross-validation with a variance-corrected test,
 > graph-derived features do **not** improve churn prediction. No feature tier differs
-> significantly from plain RFM. The only statistically significant effect in the entire
-> study points the other way: **logistic regression on the three raw RFM variables
-> outperforms the LightGBM graph-enhanced pipeline** (ΔAUC = +0.0099, p = 0.010).
+> significantly from plain RFM. Some cross-model comparisons favor logistic regression:
+> **logistic regression on the three raw RFM variables outperforms the LightGBM
+> graph-enhanced pipeline** (ΔAUC = +0.0099, p = 0.010). This comparison changes both
+> classifier and feature tier; it does not isolate a feature-engineering effect.
 
 ### Churn prediction — repeated CV (10 x 5-fold, paired, LightGBM)
 
@@ -287,4 +305,4 @@ Key references (full list in Research Proposal):
 ## License
 
 This project is for academic research purposes.  
-Dataset: [Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii) — UCI ML Repository (public domain).
+Dataset: [Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii) — UCI ML Repository, CC BY 4.0.

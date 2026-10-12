@@ -1,0 +1,25 @@
+{
+  "kind": "fresh raw XLSX aggregate audit; no model rerun",
+  "worksheets": [
+    {
+      "sheet": "xl/worksheets/sheet1.xml",
+      "rows": 525461
+    },
+    {
+      "sheet": "xl/worksheets/sheet2.xml",
+      "rows": 541910
+    }
+  ],
+  "raw_total": 1067371,
+  "code_obs_rows": 556212,
+  "code_obs_customers": 5038,
+  "code_churn_count": 3285,
+  "code_churn_rate": 0.6520444620881302,
+  "intended_full_day_obs_rows": 557398,
+  "intended_obs_customers": 5041,
+  "intended_churn_rate": 0.6500694306685182,
+  "june30_daytime_valid_rows_in_code_prediction": 1186,
+  "sept30_daytime_valid_rows_excluded_code_prediction": 1451,
+  "changed_labels_among_shared_observation_customers": 28,
+  "mean_continuous_analysis_date_minus_last_purchase_days": 179.86998133628867
+}

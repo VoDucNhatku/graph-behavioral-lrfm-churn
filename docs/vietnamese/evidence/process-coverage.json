@@ -1,0 +1,651 @@
+{
+  "artifact": "docs/vietnamese/02-quy-trinh-nghien-cuu.md",
+  "paper_id": "366956",
+  "date": "2026-10-13",
+  "language": "vi",
+  "audience": "Python and basic ML knowledge",
+  "skills_applied": [
+    "paper-read:summary",
+    "paper-method:recipe"
+  ],
+  "scope": "Full paper distillation and research process walkthrough; screenshots are contents references only",
+  "sources": [
+    {
+      "path": "paper/main.tex",
+      "read": "entire",
+      "role": "all sections, tables, formulas, limits and disclosure",
+      "sha256": "033087a174c85cd3e9de9a23259e37495435ec502f20503f0a96ea7f7998a984",
+      "size_bytes": 32392
+    },
+    {
+      "path": "paper/main.pdf",
+      "read": "all 12 pages via pypdf text extraction",
+      "role": "complete published-form local manuscript",
+      "pages": 12,
+      "sha256": "b3803266c2d3d0601b22d5a51ce7c11e7a05e33c7e27367b2839c2a301b6bbd2",
+      "size_bytes": 330869
+    },
+    {
+      "path": "paper/refs.bib",
+      "read": "entire",
+      "role": "17 inherited bibliography entries, not claimed as newly full-text reviewed",
+      "sha256": "e51eb14d437f93a7897214c29d3a142d33c054eb1ca0bea7882e21d7e18ef91f",
+      "size_bytes": 6383
+    },
+    {
+      "path": "src/significance_test.py",
+      "read": "entire",
+      "role": "features, directed kNN lists, Louvain, fold-local aggregates, paired folds, classifiers, corrected test",
+      "sha256": "b4352ff296055ddfe45d072f387afa5145df52e957937621b4c940e2253a5c3b",
+      "size_bytes": 16738
+    },
+    {
+      "path": "src/run_pipeline_v2.py",
+      "read": "entire in ranges",
+      "role": "single seed, preprocessing, Leiden partition, full-data SHAP and profiles",
+      "sha256": "8ab768aeeda0fdb3d35f08fc9e0aee361338ea9be65dfd456595dd97e9c30635",
+      "size_bytes": 29463
+    },
+    {
+      "path": "src/compare_methods_v2.py",
+      "read": "relevant ranges",
+      "role": "full-history features and hardcoded published .398 reference",
+      "sha256": "a6ee7089b51bf7a022f3302bf631a352c6a47b5bd3f24720f494b7718044ceb5",
+      "size_bytes": 26555
+    },
+    {
+      "path": "src/improvements_pipeline.py",
+      "read": "relevant ranges",
+      "role": "auxiliary Leiden variant includes global label aggregates",
+      "sha256": "82c0aecec5f77473bbea7b6c3c4b1479299fb6b627aae161c723c33e65257606",
+      "size_bytes": 31432
+    },
+    {
+      "path": "src/make_paper_figures.py",
+      "read": "entire",
+      "role": "fold means and +/-1 SD band; no model fitting",
+      "sha256": "905e4888b7ec2e065ca889f1ac1185e7595f67df68d14fad3817bd3244676881",
+      "size_bytes": 4689
+    },
+    {
+      "path": "notes/INDEX.md",
+      "read": "entire",
+      "role": "discover evidence and identify stale August status",
+      "sha256": "349dac0d4810471cb5566f8f5775731b2c24b50f8e789e69bb6d23d73d2d12ad",
+      "size_bytes": 7009
+    },
+    {
+      "path": "notes/fisat-2026-audit/experiment-audit.md",
+      "read": "entire",
+      "role": "method discrepancies and scoped evidence review",
+      "sha256": "b79c29de86909b186383db25a0e5ccc952f30b030afc6507a998700e1d089182",
+      "size_bytes": 15072
+    },
+    {
+      "path": "notes/reproduce-20261012/report.md",
+      "read": "entire",
+      "role": "actual 10-job rerun, timings, cache/RAM differences, non-executed Colab",
+      "sha256": "2531c4f312fb04bf059e193224ebe8ce0ee5879ac090bcb205dec037be01a851",
+      "size_bytes": 16360
+    },
+    {
+      "path": "notes/reproduce-20261012/run-manifest.json",
+      "read": "runtime/input/job records and programmatic validation",
+      "role": "completed rerun evidence",
+      "sha256": "2986fed92b26a6c7babc0097c2689a9c44ac321b4d9d859a7ccacedd6b75ddcb",
+      "size_bytes": 10221
+    },
+    {
+      "path": "notes/reproduce-20261012/comparison.json",
+      "read": "comparison records and programmatic validation",
+      "role": "byte identity and numerical comparison evidence",
+      "sha256": "b90942aa0fb16e7d730a92dccd9ef5cfd1cf6987c789a31440124dd8e7b507eb",
+      "size_bytes": 30368
+    }
+  ],
+  "pdf_page_coverage": [
+    {
+      "page": 1,
+      "contents": [
+        "title",
+        "abstract",
+        "introduction"
+      ],
+      "document": [
+        "Lời mở đầu 1–4",
+        "Chương 4.1–4.4"
+      ]
+    },
+    {
+      "page": 2,
+      "contents": [
+        "introduction controls",
+        "contributions",
+        "related work opening"
+      ],
+      "document": [
+        "Lời mở đầu 4",
+        "Chương 1.4–1.6",
+        "Chương 3.8–3.11"
+      ]
+    },
+    {
+      "page": 3,
+      "contents": [
+        "related work representation, structure, evaluation",
+        "pipeline overview"
+      ],
+      "document": [
+        "Chương 1",
+        "Chương 3.1"
+      ]
+    },
+    {
+      "page": 4,
+      "contents": [
+        "Figure 1",
+        "dataset and windows"
+      ],
+      "document": [
+        "Chương 3.1–3.4"
+      ]
+    },
+    {
+      "page": 5,
+      "contents": [
+        "nine features",
+        "graph and community detection",
+        "leakage controls"
+      ],
+      "document": [
+        "Chương 3.5–3.8"
+      ]
+    },
+    {
+      "page": 6,
+      "contents": [
+        "feature tiers",
+        "repeated CV",
+        "Equation 1",
+        "single-versus-repeat opening"
+      ],
+      "document": [
+        "Chương 2",
+        "Chương 3.9–3.11",
+        "Chương 4.1"
+      ]
+    },
+    {
+      "page": 7,
+      "contents": [
+        "Table 1",
+        "Table 2",
+        "Results 8.1–8.2"
+      ],
+      "document": [
+        "Chương 4.1–4.2"
+      ]
+    },
+    {
+      "page": 8,
+      "contents": [
+        "Figure 2",
+        "Table 3",
+        "graph degree sensitivity"
+      ],
+      "document": [
+        "Chương 3.12",
+        "Chương 4.1",
+        "Chương 4.3"
+      ]
+    },
+    {
+      "page": 9,
+      "contents": [
+        "SHAP attribution",
+        "segmentation baseline",
+        "discussion effect variation"
+      ],
+      "document": [
+        "Chương 1.2",
+        "Chương 4.4–4.5",
+        "Chương 5.2"
+      ]
+    },
+    {
+      "page": 10,
+      "contents": [
+        "contagion explanation",
+        "threats to validity"
+      ],
+      "document": [
+        "Lời mở đầu 2",
+        "Chương 1.3–1.6",
+        "Chương 5.2"
+      ]
+    },
+    {
+      "page": 11,
+      "contents": [
+        "business validity",
+        "conclusion",
+        "reproducibility",
+        "generative AI declaration",
+        "references start"
+      ],
+      "document": [
+        "Chương 5.1–5.2",
+        "Kết luận",
+        "Tài liệu tham khảo",
+        "Phụ lục A"
+      ]
+    },
+    {
+      "page": 12,
+      "contents": [
+        "remaining references"
+      ],
+      "document": [
+        "Chương 1.5",
+        "Tài liệu tham khảo"
+      ]
+    }
+  ],
+  "paper_section_coverage": [
+    {
+      "section": "Abstract",
+      "document": "Lời mở đầu 1, Chương 4",
+      "handling": "scoped negative result, not zero effect"
+    },
+    {
+      "section": "1 Introduction",
+      "document": "Lời mở đầu",
+      "handling": "problem, rationale, goals, method, incremental novelty limits"
+    },
+    {
+      "section": "2 Related Work",
+      "document": "Chương 1",
+      "handling": "three strands, edge meaning, targeted literature search"
+    },
+    {
+      "section": "3 Pipeline Overview",
+      "document": "Chương 3.1",
+      "handling": "stage recipe and Mermaid data flow"
+    },
+    {
+      "section": "4.1 Dataset and Windows",
+      "document": "Chương 3.2–3.4",
+      "handling": "two worksheets, cohort, labels, midnight boundary discrepancy"
+    },
+    {
+      "section": "4.2 Behavioural-LRFM Features",
+      "document": "Chương 3.5",
+      "handling": "all nine features and code-defined L"
+    },
+    {
+      "section": "5 Graph Construction and Community Detection",
+      "document": "Chương 3.6–3.7",
+      "handling": "weights, directed outgoing neighbour list versus undirected union, detector scope"
+    },
+    {
+      "section": "6 Leakage Controls",
+      "document": "Chương 1.4, 3.8–3.9",
+      "handling": "training labels only, transductive covariates and self-label limitation"
+    },
+    {
+      "section": "7.1 Feature Tiers",
+      "document": "Chương 3.9",
+      "handling": "five tiers, 3/4/9/32/38 features at k10"
+    },
+    {
+      "section": "7.2 Repeated Cross-Validation and Significance",
+      "document": "Chương 3.10–3.11",
+      "handling": "paired 10x5 folds, corrected p, bootstrap dependence caveat"
+    },
+    {
+      "section": "8.1 One Split Says the Opposite of Ten",
+      "document": "Chương 4.1",
+      "handling": "chronology and exact Table 1 numbers"
+    },
+    {
+      "section": "8.2 The One Significant Effect",
+      "document": "Chương 4.2",
+      "handling": "exact Table 2 numbers; correct two significant rows and cross-model scope"
+    },
+    {
+      "section": "8.3 The Result Does Not Depend on the Graph Degree",
+      "document": "Chương 4.3",
+      "handling": "exact Table 3, completed sweep, limited graph family"
+    },
+    {
+      "section": "8.4 Attribution Is Not Contribution",
+      "document": "Chương 2.3, 4.4",
+      "handling": "full-data exploratory SHAP, graph-block evidence, no NCR-only ablation"
+    },
+    {
+      "section": "8.5 Relation to the Segmentation Baseline",
+      "document": "Chương 1.2, 4.4",
+      "handling": "different tasks/spaces, missing .398 local reproduction provenance, descriptive profiles"
+    },
+    {
+      "section": "9.1 Effect Sizes Below the Noise Floor",
+      "document": "Chương 4.5, 5.2",
+      "handling": "variation described, .005 heuristic not established threshold"
+    },
+    {
+      "section": "9.2 Why the Contagion Hypothesis Might Still Hold",
+      "document": "Lời mở đầu 2, Chương 1.6, 5.2",
+      "handling": "possible redundant graph signal, interaction graph proposal labelled"
+    },
+    {
+      "section": "10 Threats to Validity",
+      "document": "Chương 5.2",
+      "handling": "all six stated threats plus audit discrepancies"
+    },
+    {
+      "section": "11 Conclusion",
+      "document": "Kết luận",
+      "handling": "failure-to-detect improvement scoped to tested setup"
+    },
+    {
+      "section": "Reproducibility",
+      "document": "Lời mở đầu 5, Chương 4.5, Phụ lục A",
+      "handling": "actual rerun supersedes old not-rerun note; 17m42 suite versus under-10 claim"
+    },
+    {
+      "section": "Declaration on generative AI",
+      "document": "Tài liệu tham khảo và hồ sơ bằng chứng",
+      "handling": "paper disclosure retained as source coverage; no new attribution or authorship claims"
+    },
+    {
+      "section": "References",
+      "document": "Chương 1.5, Tài liệu tham khảo",
+      "handling": "all 17 entries grouped and original bib linked"
+    }
+  ],
+  "figures_tables_equations": [
+    {
+      "source": "Figure 1",
+      "document": "Chương 3.1",
+      "covered": true
+    },
+    {
+      "source": "Figure 2",
+      "document": "Chương 4.1",
+      "covered": true,
+      "scope": "mean and fold SD, not paired CI"
+    },
+    {
+      "source": "Table 1",
+      "document": "Chương 4.1",
+      "covered": true,
+      "numbers": "all rows and columns preserved"
+    },
+    {
+      "source": "Table 2",
+      "document": "Chương 4.2",
+      "covered": true,
+      "numbers": "all rows and columns preserved"
+    },
+    {
+      "source": "Table 3",
+      "document": "Chương 4.3",
+      "covered": true,
+      "numbers": "all rows and columns preserved"
+    },
+    {
+      "source": "Equation 1",
+      "document": "Chương 3.11",
+      "covered": true,
+      "formula_scope": "paper equation"
+    },
+    {
+      "source": "graph edge weight",
+      "document": "Chương 3.6",
+      "covered": true,
+      "formula_scope": "paper formula"
+    },
+    {
+      "source": "feature and NCR/CCR equations",
+      "document": "Chương 3.5, 3.8",
+      "covered": true,
+      "formula_scope": "code reconstruction explicitly labelled"
+    }
+  ],
+  "image_heading_mapping": [
+    {
+      "image_heading": "Tính cấp thiết; lý do thực tiễn/lý thuyết",
+      "replacement": "retail inactivity, decision cost, similarity versus interaction signal",
+      "document": "Lời mở đầu 1–2"
+    },
+    {
+      "image_heading": "Mục tiêu tổng quát/cụ thể; câu hỏi nghiên cứu",
+      "replacement": "incremental prediction value, folds, leakage and sensitivity questions",
+      "document": "Lời mở đầu 3"
+    },
+    {
+      "image_heading": "Đối tượng/phạm vi",
+      "replacement": "transaction-defined customer cohort and tested dataset/models/graph family",
+      "document": "Lời mở đầu 3"
+    },
+    {
+      "image_heading": "Phương pháp; kết cấu",
+      "replacement": "secondary transactional-data empirical ML, five-chapter walkthrough",
+      "document": "Lời mở đầu 4, opening metadata"
+    },
+    {
+      "image_heading": "Các khái niệm liên quan",
+      "replacement": "RFM, LRFM, graph, communities, leakage, prediction versus segmentation",
+      "document": "Chương 1.1–1.4"
+    },
+    {
+      "image_heading": "Tổng quan quốc tế",
+      "replacement": "representation/structure/evaluation strands inherited from paper bibliography",
+      "document": "Chương 1.5"
+    },
+    {
+      "image_heading": "Tổng quan trong nước",
+      "replacement": "no fabricated domestic review; separate verified search needed if required",
+      "document": "Chương 1.6"
+    },
+    {
+      "image_heading": "Khoảng hở nghiên cứu",
+      "replacement": "small gains evaluated on one partition and potentially redundant graph signal",
+      "document": "Chương 1.6"
+    },
+    {
+      "image_heading": "Cơ sở lý thuyết và mô hình giả thuyết",
+      "replacement": "conceptual data-to-risk model and operational reconstruction, no preregistration claim",
+      "document": "Chương 2"
+    },
+    {
+      "image_heading": "Quy trình nghiên cứu",
+      "replacement": "10 ordered stages with inputs/actions/outputs",
+      "document": "Chương 3.1"
+    },
+    {
+      "image_heading": "Phương pháp nghiên cứu",
+      "replacement": "empirical ML with paired repeated CV",
+      "document": "Chương 3.2–3.12"
+    },
+    {
+      "image_heading": "Thang đo nghiên cứu",
+      "replacement": "operational features and future inactivity labels, not Likert scales",
+      "document": "Chương 3.4–3.5"
+    },
+    {
+      "image_heading": "Thiết kế bảng hỏi",
+      "replacement": "transaction processing/schema/window/feature rules, no questionnaire",
+      "document": "Chương 3.2–3.5, Phụ lục B"
+    },
+    {
+      "image_heading": "Khảo sát thử và thu thập dữ liệu",
+      "replacement": "raw dataset fingerprint and counts; no survey respondents",
+      "document": "Chương 3.2–3.3"
+    },
+    {
+      "image_heading": "Chọn mẫu nghiên cứu",
+      "replacement": "observation-active valid-transaction cohort",
+      "document": "Chương 3.4"
+    },
+    {
+      "image_heading": "Phân tích và xử lý dữ liệu",
+      "replacement": "feature engineering, graph, target aggregates, training and metrics",
+      "document": "Chương 3.5–3.12"
+    },
+    {
+      "image_heading": "Mô tả mẫu nghiên cứu",
+      "replacement": "raw sheets, observation rows, 5038 customers and 3285 churners",
+      "document": "Chương 3.2–3.4"
+    },
+    {
+      "image_heading": "Kiểm định thang đo",
+      "replacement": "feature/label validation, tier comparisons and paired statistical test",
+      "document": "Chương 3.5, 3.11, 4.1"
+    },
+    {
+      "image_heading": "EFA",
+      "replacement": "not used; tier/feature validation replaces the borrowed heading",
+      "document": "Lời mở đầu 4, Phụ lục B"
+    },
+    {
+      "image_heading": "CFA",
+      "replacement": "not used; no latent survey measurement model",
+      "document": "Lời mở đầu 4, Phụ lục B"
+    },
+    {
+      "image_heading": "Kết quả kiểm định giả thuyết/mô hình",
+      "replacement": "same-classifier and cross-classifier comparisons separated",
+      "document": "Chương 4.1–4.3"
+    },
+    {
+      "image_heading": "Kiến nghị cho doanh nghiệp",
+      "replacement": "simple baseline, engineering cost and untested retention prioritization",
+      "document": "Chương 5.1"
+    },
+    {
+      "image_heading": "Kiến nghị thương mại điện tử",
+      "replacement": "retail similarity graph scope and need for business validation",
+      "document": "Chương 5.1–5.2"
+    },
+    {
+      "image_heading": "Giải pháp cơ quan quản lý",
+      "replacement": "no study-specific policy evidence; no invented legal recommendation",
+      "document": "Chương 5.1, Phụ lục B"
+    },
+    {
+      "image_heading": "Hạn chế và hướng tiếp theo",
+      "replacement": "paper threats, audit findings, ordered future experiments",
+      "document": "Chương 5.2–5.3"
+    },
+    {
+      "image_heading": "Tóm tắt chương",
+      "replacement": "chapter checkpoints/discussion prompts, conclusions after results",
+      "document": "Chương 1–5"
+    },
+    {
+      "image_heading": "Kết luận, tài liệu tham khảo, phụ lục",
+      "replacement": "scoped conclusion, original bibliography/evidence links and reproducibility checklist",
+      "document": "final sections"
+    }
+  ],
+  "status_and_supersession": [
+    {
+      "fact": "10-job CPU suite completed 2026-10-12",
+      "status": "completed",
+      "evidence": "run-manifest.json and report.md",
+      "supersedes": "audit and older INDEX note saying no full model rerun"
+    },
+    {
+      "fact": "k5/10/15/20 sensitivity",
+      "status": "completed",
+      "evidence": "paper Table 3 and actual rerun outputs",
+      "supersedes": "August INDEX missing-sweep note"
+    },
+    {
+      "fact": "new k10 cached main scores and summary",
+      "status": "byte-identical to archived main",
+      "evidence": "comparison.json/report.md",
+      "qualification": "cache was newly built from raw; first RAM run differs slightly"
+    },
+    {
+      "fact": "corrected whole-day window fitting",
+      "status": "not performed",
+      "qualification": "counts and 28 shared labels changed in audit only"
+    },
+    {
+      "fact": "Leiden",
+      "status": "partition computed",
+      "qualification": "controlled repeated prediction comparison not performed"
+    },
+    {
+      "fact": "NCR-only repeated ablation",
+      "status": "not performed"
+    },
+    {
+      "fact": "full-data SHAP",
+      "status": "completed descriptive branch",
+      "qualification": "not held-out attribution or controlled NCR ablation"
+    },
+    {
+      "fact": "Country encoding/SpectralClustering",
+      "status": "not implemented",
+      "evidence": "paper Threats to Validity"
+    },
+    {
+      "fact": "Colab execution",
+      "status": "not performed",
+      "qualification": "notebook and helper checks completed only"
+    },
+    {
+      "fact": "paper #366956 acceptance",
+      "status": "Accepted verified in existing report",
+      "qualification": "registration/payment/camera-ready/presenter status not inferred"
+    },
+    {
+      "fact": "new team task assignments",
+      "status": "proposed only",
+      "qualification": "no completed contribution/authorship claim"
+    }
+  ],
+  "constraints_respected": {
+    "no_original_artifact_edits": true,
+    "no_pdf_generation": true,
+    "no_publication_or_git_push": true,
+    "no_index_edits": true,
+    "no_survey_or_efa_cfa_sem_fabrication": true,
+    "no_domestic_literature_fabrication": true,
+    "no_new_member_contribution_claim": true
+  },
+  "validation": {
+    "status": "passed",
+    "verified_at": "2026-10-13",
+    "words_whitespace": 7964,
+    "characters": 43293,
+    "lines": 411,
+    "pdf_pages": 12,
+    "bibliography_entries": 17,
+    "all_five_chapters": true,
+    "all_source_paths_exist": true,
+    "all_local_markdown_links_exist": true,
+    "local_link_count": 9,
+    "tables_max_columns": 5,
+    "balanced_code_fences": true,
+    "mathtext_formulas_parsed": 35,
+    "no_email_output": true,
+    "original_script_hashes_unchanged": true,
+    "actual_rerun_manifest": "completed: 10/10 jobs exit 0",
+    "actual_rerun_csv_comparison_records": 21,
+    "document_sha256": "b8f0a46fcb02562ac3b6b4ed17ff8ce66b949bd372b609750fffe748daddd3ed",
+    "pdf_rendering": "root handles; not generated by worker",
+    "new_model_fits": "none during document authoring"
+  },
+  "final_public_source_sha256": "335835a71e71208eac463080ed5e9401706fa9fd3c45fe365ac1d983629be700",
+  "root_editorial_updates": [
+    "Normalized publication links",
+    "Clarified node row indices",
+    "Clarified multiple-comparison scope",
+    "Clarified raw-margin SHAP scale"
+  ],
+  "root_rendering_status": "Final PDF rendered and checked; editable source retained."
+}

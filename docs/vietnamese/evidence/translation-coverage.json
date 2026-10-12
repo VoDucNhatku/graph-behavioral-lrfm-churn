@@ -1,0 +1,1964 @@
+{
+  "paper_id": "366956",
+  "worker": "vi-translate",
+  "date": "2026-10-13",
+  "target_language": "vi",
+  "source_pdf": "paper/main.pdf",
+  "source_tex": "paper/main.tex",
+  "source_bibliography": "paper/refs.bib",
+  "source_rendered_bibliography": "paper/main.bbl",
+  "source_sha256": {
+    "paper/main.tex": "033087a174c85cd3e9de9a23259e37495435ec502f20503f0a96ea7f7998a984",
+    "paper/main.pdf": "b3803266c2d3d0601b22d5a51ce7c11e7a05e33c7e27367b2839c2a301b6bbd2",
+    "paper/refs.bib": "e51eb14d437f93a7897214c29d3a142d33c054eb1ca0bea7882e21d7e18ef91f",
+    "paper/main.bbl": "452dfa257932c6885c7844eedcd7fd9d57e07dbd7d386279b191d23cbac1226f",
+    "paper/figures/fig_folds.pdf": "c437cf5b116b3057e4d0d7cae8ff623c102293ffffa5873d3a17113b0f74097c"
+  },
+  "editable_translation": "docs/vietnamese/03-ban-dich-paper.md",
+  "skill_output_copy": "notes/366956-vi.md",
+  "version_note": "Bản dịch phiên bản đã nộp và được chấp nhận; chưa sửa theo khuyến nghị audit hoặc camera-ready.",
+  "completeness": {
+    "pdf_pages_read": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "main_sections": 11,
+    "subsections": 11,
+    "subsubsections": 2,
+    "prose_and_list_units": 52,
+    "prose_paragraphs": 47,
+    "numbered_list_items": 2,
+    "bullet_list_items": 3,
+    "numbered_equations": 1,
+    "figures": 2,
+    "tables": 3,
+    "bibliography_entries": 17,
+    "algorithms": 0,
+    "footnotes": 0,
+    "glossary_terms": 96,
+    "omitted_substantive_units": 0
+  },
+  "frontmatter": {
+    "original_title": "When Graph-Derived Neighbourhood Features Do Not Help: A Leakage-Controlled Evaluation of Behavioural-LRFM Churn Prediction in Non-Contractual Retail",
+    "translated_title": "Khi các đặc trưng lân cận suy ra từ đồ thị không giúp ích: Đánh giá có kiểm soát rò rỉ dữ liệu đối với dự báo khách hàng rời bỏ bằng Behavioural-LRFM trong bán lẻ phi hợp đồng",
+    "author": "Duc Nhat Vo",
+    "original_affiliation": "FPT University, Ho Chi Minh City, Vietnam",
+    "translated_affiliation": "FPT University, Thành phố Hồ Chí Minh, Việt Nam",
+    "email": "voducnhat242006@gmail.com",
+    "abstract_unit": "P001",
+    "keywords_original": [
+      "Churn prediction",
+      "RFM",
+      "Customer similarity graph",
+      "Community detection",
+      "Repeated cross-validation",
+      "Negative result"
+    ],
+    "keywords_translated": [
+      "Dự báo khách hàng rời bỏ",
+      "RFM",
+      "Đồ thị tương đồng khách hàng",
+      "Phát hiện cộng đồng",
+      "Kiểm định chéo lặp lại",
+      "Kết quả âm tính"
+    ],
+    "coverage": "complete"
+  },
+  "sections": [
+    {
+      "section_id": "abstract",
+      "original_heading": "Abstract",
+      "translated_heading": "Tóm tắt",
+      "text_units": [
+        "P001"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "1",
+      "original_heading": "Introduction",
+      "translated_heading": "1 Giới thiệu",
+      "text_units": [
+        "P002",
+        "P003",
+        "P004",
+        "P005",
+        "P006",
+        "P007",
+        "P008",
+        "P009",
+        "P010"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "2",
+      "original_heading": "Related Work",
+      "translated_heading": "2 Công trình liên quan",
+      "text_units": [
+        "P011",
+        "P012",
+        "P013",
+        "P014",
+        "P015",
+        "P016"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "3",
+      "original_heading": "Pipeline Overview",
+      "translated_heading": "3 Tổng quan quy trình",
+      "text_units": [
+        "P017"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "4",
+      "original_heading": "Data and Feature Construction",
+      "translated_heading": "4 Dữ liệu và xây dựng đặc trưng",
+      "text_units": [],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "4.1",
+      "original_heading": "Dataset and Windows",
+      "translated_heading": "4.1 Bộ dữ liệu và các cửa sổ thời gian",
+      "text_units": [
+        "P018",
+        "P019",
+        "P020"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "4.2",
+      "original_heading": "Behavioural-LRFM Features",
+      "translated_heading": "4.2 Các đặc trưng Behavioural-LRFM",
+      "text_units": [
+        "P021"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "5",
+      "original_heading": "Graph Construction and Community Detection",
+      "translated_heading": "5 Xây dựng đồ thị và phát hiện cộng đồng",
+      "text_units": [
+        "P022",
+        "P023",
+        "P024"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "6",
+      "original_heading": "Leakage Controls",
+      "translated_heading": "6 Các biện pháp kiểm soát rò rỉ",
+      "text_units": [
+        "P025",
+        "P026"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "7",
+      "original_heading": "Evaluation Protocol",
+      "translated_heading": "7 Giao thức đánh giá",
+      "text_units": [],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "7.1",
+      "original_heading": "Feature Tiers",
+      "translated_heading": "7.1 Các tầng đặc trưng",
+      "text_units": [
+        "P027"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "7.2",
+      "original_heading": "Repeated Cross-Validation and Significance",
+      "translated_heading": "7.2 Kiểm định chéo lặp lại và ý nghĩa thống kê",
+      "text_units": [
+        "P028",
+        "P029",
+        "P030"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "8",
+      "original_heading": "Results",
+      "translated_heading": "8 Kết quả",
+      "text_units": [],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "8.1",
+      "original_heading": "One Split Says the Opposite of Ten",
+      "translated_heading": "8.1 Một lần chia cho thấy điều ngược lại so với mười lần",
+      "text_units": [
+        "P031",
+        "P032"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "8.2",
+      "original_heading": "The One Significant Effect",
+      "translated_heading": "8.2 Hiệu ứng duy nhất có ý nghĩa thống kê",
+      "text_units": [
+        "P033",
+        "P034",
+        "P035"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "8.3",
+      "original_heading": "The Result Does Not Depend on the Graph Degree",
+      "translated_heading": "8.3 Kết quả không phụ thuộc vào bậc đồ thị",
+      "text_units": [
+        "P036",
+        "P037"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "8.4",
+      "original_heading": "Attribution Is Not Contribution",
+      "translated_heading": "8.4 Quy gán đóng góp không phải là đóng góp thực tế",
+      "text_units": [
+        "P038",
+        "P039"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "8.5",
+      "original_heading": "Relation to the Segmentation Baseline",
+      "translated_heading": "8.5 Quan hệ với mô hình cơ sở phân khúc",
+      "text_units": [
+        "P040"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "9",
+      "original_heading": "Discussion",
+      "translated_heading": "9 Thảo luận",
+      "text_units": [],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "9.1",
+      "original_heading": "Effect Sizes Below the Noise Floor",
+      "translated_heading": "9.1 Các độ lớn hiệu ứng dưới ngưỡng nhiễu",
+      "text_units": [
+        "P041"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "9.2",
+      "original_heading": "Why the Contagion Hypothesis Might Still Hold",
+      "translated_heading": "9.2 Vì sao giả thuyết lan truyền vẫn có thể đúng",
+      "text_units": [
+        "P042"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "10",
+      "original_heading": "Threats to Validity",
+      "translated_heading": "10 Các mối đe dọa đối với tính hợp lệ",
+      "text_units": [
+        "P043",
+        "P044",
+        "P045",
+        "P046",
+        "P047",
+        "P048"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "11",
+      "original_heading": "Conclusion",
+      "translated_heading": "11 Kết luận",
+      "text_units": [
+        "P049",
+        "P050"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "11.reproducibility",
+      "original_heading": "Reproducibility.",
+      "translated_heading": "Khả năng tái lập",
+      "text_units": [
+        "P051"
+      ],
+      "coverage": "complete"
+    },
+    {
+      "section_id": "11.generative_ai",
+      "original_heading": "Declaration on generative AI.",
+      "translated_heading": "Tuyên bố về AI tạo sinh",
+      "text_units": [
+        "P052"
+      ],
+      "coverage": "complete"
+    }
+  ],
+  "paragraphs": [
+    {
+      "unit_id": "P001",
+      "section_id": "abstract",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        49,
+        65
+      ],
+      "target_md_lines": [
+        14,
+        14
+      ],
+      "source_excerpt": "Customer similarity graphs are an appealing addition to RFM-style churn models. If churn spreads through behavioural peer groups, the churn rate among a customer's nearest neighbou",
+      "target_excerpt": "Đồ thị tương đồng khách hàng (customer similarity graph) là một thành phần bổ sung hấp dẫn cho các mô hình khách hàng rời bỏ (churn) theo kiểu RFM. Nếu sự rời bỏ lan truyền trong c",
+      "source_sha256": "b3f3945c4e8376121a5e24db338b6320310da64dc1575d42eeff41d7b4009e60",
+      "target_sha256": "8b6f8bb810ebd564259d2f11b0ae0c41ffe57996e02e3dceb34030d0aa91d24d",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P002",
+      "section_id": "1",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        73,
+        80
+      ],
+      "target_md_lines": [
+        20,
+        20
+      ],
+      "source_excerpt": "Non-contractual retail gives no cancellation signal. A customer who stops buying does not announce it, so churn has to be defined by inactivity over a chosen horizon, and the model",
+      "target_excerpt": "Bán lẻ phi hợp đồng (non-contractual retail) không cung cấp tín hiệu hủy bỏ quan hệ. Một khách hàng ngừng mua hàng không thông báo điều đó, nên sự rời bỏ phải được định nghĩa bằng ",
+      "source_sha256": "5976ae9bd8e701532fc0758a5aa17eaeaa85da4f60d09e697617f0285c09ba5f",
+      "target_sha256": "cbc6f740b499ca27a08ef191004102bfc4ba5a1a8c14244f5e7d319b2c804ef2",
+      "citation_numbers": [
+        [
+          9
+        ],
+        [
+          14
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P003",
+      "section_id": "1",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        82,
+        92
+      ],
+      "target_md_lines": [
+        22,
+        22
+      ],
+      "source_excerpt": "A more recent line treats the customer base as a graph rather than a table. Corr\\^{e}a Vianna Filho et al.\\ formulate RFM segmentation as a maximum $k$-cut problem on a customer gr",
+      "target_excerpt": "Một hướng nghiên cứu gần đây hơn xem tập khách hàng là một đồ thị thay vì một bảng. Corrêa Vianna Filho và cộng sự phát biểu bài toán phân khúc RFM thành bài toán lát cắt $k$ cực đ",
+      "source_sha256": "f6922250092ecfd1f4248fade7df1a57cf84357433425a805c851d1b3010ed7d",
+      "target_sha256": "a118cfa5a2b383b70b6c7241e49dd028828076a68ddcbc932f4f100f4ae6aed5",
+      "citation_numbers": [
+        [
+          6
+        ],
+        [
+          1,
+          17
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P004",
+      "section_id": "1",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        94,
+        99
+      ],
+      "target_md_lines": [
+        24,
+        24
+      ],
+      "source_excerpt": "This paper tests that hypothesis and does not find support for it. We build the pipeline the hypothesis calls for---a nine-dimensional behavioural extension of RFM, a $k$-nearest-n",
+      "target_excerpt": "Bài báo này kiểm tra giả thuyết đó và không tìm được bằng chứng ủng hộ. Chúng tôi xây dựng quy trình mà giả thuyết này đòi hỏi — một phiên bản mở rộng RFM theo hành vi với chín chi",
+      "source_sha256": "b5911c840bdda44fdd1caf7e0e011feb9cd696112558e77cf180968f4741ce0c",
+      "target_sha256": "42108a2b42ea6062680c6e649998e2447f2ff3e60c2d2e09a28081607b1dabff",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P005",
+      "section_id": "1",
+      "kind": "numbered_item",
+      "source_tex_lines": [
+        102,
+        105
+      ],
+      "target_md_lines": [
+        26,
+        26
+      ],
+      "source_excerpt": "\\item \\textbf{Fold-local recomputation of the neighbourhood features.} Both are aggregates of the target, so computing them once over the full dataset places test labels inside the",
+      "target_excerpt": "1. **Tính lại các đặc trưng lân cận trong từng phần huấn luyện.** Cả hai đều là các đại lượng tổng hợp của biến đích (target), nên tính chúng một lần trên toàn bộ dữ liệu sẽ đưa nh",
+      "source_sha256": "75aa0065a68bdbec314688f262229fb18f7ee054d36901498c17dbe5a1b5c583",
+      "target_sha256": "4118098be1ea6437aec65db12e41f8ca5ae98867b70d2991156ea0786790ceed",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P006",
+      "section_id": "1",
+      "kind": "numbered_item",
+      "source_tex_lines": [
+        106,
+        111
+      ],
+      "target_md_lines": [
+        27,
+        27
+      ],
+      "source_excerpt": "\\item \\textbf{Repeated cross-validation with a variance-corrected test.} A single split gives a point estimate with no uncertainty attached. We use ten repetitions on a shared fold",
+      "target_excerpt": "2. **Kiểm định chéo lặp lại với một kiểm định có hiệu chỉnh phương sai (variance-corrected test).** Một lần chia dữ liệu cho một ước lượng điểm (point estimate) mà không kèm độ bất",
+      "source_sha256": "67a57da32b4fc770e5e31f3bc41afde0445724c928b47aed6ce5d91afe9cd805",
+      "target_sha256": "9e65fe4273573ca563559f68d905d68f9bf5b1d02783e1bbd21e7731bc8316d1",
+      "citation_numbers": [
+        [
+          15
+        ],
+        [
+          8,
+          2
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P007",
+      "section_id": "1",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        114,
+        115
+      ],
+      "target_md_lines": [
+        29,
+        29
+      ],
+      "source_excerpt": "With both controls in place, the effect the pipeline was built to demonstrate disappears. We state our contributions conservatively:",
+      "target_excerpt": "Khi có cả hai biện pháp kiểm soát, hiệu ứng mà quy trình được xây dựng để chứng minh biến mất. Chúng tôi trình bày các đóng góp một cách thận trọng:",
+      "source_sha256": "9828f226b7f12fe063dbe4b38999b222d92bf48f560a23cdb6036d77827bceb9",
+      "target_sha256": "d51981cf609a2d341fa9bbed6e65b56bc4cf73b7d404df95137b4f54d9259a18",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P008",
+      "section_id": "1",
+      "kind": "bullet_item",
+      "source_tex_lines": [
+        118,
+        121
+      ],
+      "target_md_lines": [
+        31,
+        31
+      ],
+      "source_excerpt": "\\item A negative result, reported as such: neither the behavioural extension nor the graph features improve discrimination over a three-variable RFM baseline, at any graph degree t",
+      "target_excerpt": "- Một kết quả âm tính, được báo cáo đúng với bản chất đó: cả phần mở rộng hành vi lẫn các đặc trưng đồ thị đều không cải thiện khả năng phân biệt (discrimination) so với mô hình cơ",
+      "source_sha256": "adcc6fcbedae0074f88fcbab1f51b05fea27f4d63d6faaf316c1cca58e2260f2",
+      "target_sha256": "0578fca6d2a97f65f24777856f5b1bf431faa76dfd87d23d4d815600758dee04",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P009",
+      "section_id": "1",
+      "kind": "bullet_item",
+      "source_tex_lines": [
+        122,
+        124
+      ],
+      "target_md_lines": [
+        32,
+        32
+      ],
+      "source_excerpt": "\\item An evaluation protocol for this application area, together with the observation that differences below roughly $0.005$ ROC-AUC on this dataset are distinguishable neither fro",
+      "target_excerpt": "- Một giao thức đánh giá (evaluation protocol) cho lĩnh vực ứng dụng này, cùng quan sát rằng các chênh lệch nhỏ hơn khoảng $0.005$ ROC-AUC trên bộ dữ liệu này không thể phân biệt đ",
+      "source_sha256": "50584c264c0b1381d49763494362b8b3cf8f1358ed295c41b3d12a723974c49c",
+      "target_sha256": "3ce3fb74e0cf12cde66a7411a33c9edf92d99810e8efe737d5188787ff82393e",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P010",
+      "section_id": "1",
+      "kind": "bullet_item",
+      "source_tex_lines": [
+        125,
+        127
+      ],
+      "target_md_lines": [
+        33,
+        33
+      ],
+      "source_excerpt": "\\item A dissociation between SHAP attribution rank and predictive contribution, which we state explicitly because feature-importance rankings are frequently read as evidence of use",
+      "target_excerpt": "- Sự tách rời giữa thứ hạng quy gán đóng góp SHAP và đóng góp dự báo, được chúng tôi nêu rõ vì thứ hạng độ quan trọng của đặc trưng (feature importance) thường được xem là bằng chứ",
+      "source_sha256": "dba6eb068d0b34437cdb69c49ff8749c35f03899b5110495251d27ca361784a6",
+      "target_sha256": "d76a7ca3a233b64f48b2d539f5a79a6aa7ef07c18a9bfe4ea82bb73ee3d00dec",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P011",
+      "section_id": "2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        132,
+        133
+      ],
+      "target_md_lines": [
+        37,
+        37
+      ],
+      "source_excerpt": "Three strands meet in this problem, and the tension between them is what makes a negative result informative rather than merely disappointing.",
+      "target_excerpt": "Ba hướng nghiên cứu gặp nhau trong bài toán này, và sự căng thẳng giữa chúng là điều khiến một kết quả âm tính cung cấp thông tin thay vì chỉ gây thất vọng.",
+      "source_sha256": "a0981f5cde3e675409a19eeab92a437b2fd0168b61dca3e881a178c2c97222c4",
+      "target_sha256": "63b2aba230fbe585fc093fa28426639dc8a547400fb5e262ab27e0fdf82e5140",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P012",
+      "section_id": "2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        135,
+        142
+      ],
+      "target_md_lines": [
+        39,
+        39
+      ],
+      "source_excerpt": "The \\emph{representation} strand asks what to measure about a customer. RFM persists because it is cheap and interpretable, and the extensions that follow it generally add dimensio",
+      "target_excerpt": "Hướng **biểu diễn (representation)** hỏi nên đo lường điều gì về một khách hàng. RFM vẫn tồn tại vì chi phí thấp và dễ diễn giải (interpretable), còn các phần mở rộng đi theo nó th",
+      "source_sha256": "023226483d09fbb741c6cfc2eca026dc0fb840900c9675fb3c78a0554da07381",
+      "target_sha256": "6a4795f136a8460b70a6bd3ce07556bc6777722c0cc9d0fdc073e05d54d06cd1",
+      "citation_numbers": [
+        [
+          9
+        ],
+        [
+          14
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P013",
+      "section_id": "2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        144,
+        157
+      ],
+      "target_md_lines": [
+        41,
+        41
+      ],
+      "source_excerpt": "The \\emph{structural} strand asks whether customers should be modelled jointly rather than independently. Vianna Filho et al.\\ make the strongest form of this argument for segmenta",
+      "target_excerpt": "Hướng **cấu trúc (structural)** hỏi liệu có nên mô hình hóa các khách hàng cùng nhau thay vì độc lập. Vianna Filho và cộng sự đưa ra hình thức mạnh nhất của lập luận này đối với ph",
+      "source_sha256": "5298042d45e79b0d3566e8a6439604e74de7b5ff24efd97ff084b580f3e74296",
+      "target_sha256": "e0f409632b584c60ce34a4ad84ce45cf5d669b266fbed8b1886608b2377574ed",
+      "citation_numbers": [
+        [
+          6
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          17
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P014",
+      "section_id": "2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        159,
+        169
+      ],
+      "target_md_lines": [
+        43,
+        43
+      ],
+      "source_excerpt": "The neighbourhood-churn feature is not itself new, and the settings where it has worked are informative. Telecommunications studies build it from call-detail records, where an edge",
+      "target_excerpt": "Bản thân đặc trưng tỷ lệ rời bỏ của nhóm lân cận không mới, và các bối cảnh mà nó đã có tác dụng cung cấp thông tin đáng chú ý. Các nghiên cứu viễn thông xây dựng nó từ bản ghi chi",
+      "source_sha256": "5482cd514b24e816b9c10e66bd44c5d5b160eb95c926d89384013f2738609ff7",
+      "target_sha256": "90640fb7b4bf4db2f5f62bbf4d73ecfa60e231d6515c9cb692bdf88376d10ba3",
+      "citation_numbers": [
+        [
+          11
+        ],
+        [
+          12
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P015",
+      "section_id": "2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        171,
+        182
+      ],
+      "target_md_lines": [
+        45,
+        45
+      ],
+      "source_excerpt": "The \\emph{evaluation} strand is where the applied literature is weakest and where the methodological literature has long been settled. Overlapping resampled training sets inflate T",
+      "target_excerpt": "Hướng **đánh giá (evaluation)** là nơi tài liệu ứng dụng yếu nhất và cũng là nơi tài liệu phương pháp luận đã có lời giải từ lâu. Các tập huấn luyện được lấy mẫu lại và có chồng lấ",
+      "source_sha256": "74694439141660c36659980700fc67b9caab568db9e31cc7bb0fa7834834f69d",
+      "target_sha256": "13e3f005f2eed06e30799cdd0503cb140c41dbb6e441ce79b8a2ddf28238c812",
+      "citation_numbers": [
+        [
+          8
+        ],
+        [
+          15
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P016",
+      "section_id": "2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        184,
+        186
+      ],
+      "target_md_lines": [
+        47,
+        47
+      ],
+      "source_excerpt": "Gradient-boosted trees \\cite{chen2016xgboost,ke2017lightgbm} and additive feature attribution \\cite{lundberg2017shap} are used here as standard tools, not as objects of study.",
+      "target_excerpt": "Cây tăng cường gradient (gradient-boosted tree) [5, 10] và quy gán đóng góp đặc trưng theo dạng cộng (additive feature attribution) [13] được sử dụng ở đây như những công cụ chuẩn,",
+      "source_sha256": "470871230fc94992a7a76f66804098b889c2ef96ecaa8fe141fc4d549bc4e27a",
+      "target_sha256": "b704b79f0859ac55b0720cde87b8157f939e0e076e942a243454f866b08cb174",
+      "citation_numbers": [
+        [
+          5,
+          10
+        ],
+        [
+          13
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P017",
+      "section_id": "3",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        190,
+        195
+      ],
+      "target_md_lines": [
+        51,
+        51
+      ],
+      "source_excerpt": "Figure~\\ref{fig:pipeline} shows the stages and where the two controls sit. The left-to-right upper row builds the representation; the lower row, read right to left, carries it thro",
+      "target_excerpt": "Hình 1 thể hiện các giai đoạn và vị trí của hai biện pháp kiểm soát. Hàng trên, đọc từ trái sang phải, xây dựng biểu diễn; hàng dưới, đọc từ phải sang trái, đưa biểu diễn qua các b",
+      "source_sha256": "80229bfa4fd7b372f03bd9174e05bc8211dc545f44ed0507e7f9ab1d20902b66",
+      "target_sha256": "9029fee36681567915da9c8d91ec3eb4c1ff7db45bea07368cb3e346c9872b31",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P018",
+      "section_id": "4.1",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        230,
+        236
+      ],
+      "target_md_lines": [
+        59,
+        59
+      ],
+      "source_excerpt": "We use Online Retail II, the transaction log of a UK-based non-store retailer covering December 2009 to December 2011, distributed through the UCI Machine Learning Repository \\cite",
+      "target_excerpt": "Chúng tôi dùng Online Retail II, nhật ký giao dịch của một nhà bán lẻ không có cửa hàng đặt tại Vương quốc Anh, bao phủ từ tháng 12 năm 2009 đến tháng 12 năm 2011, được phân phối q",
+      "source_sha256": "7ee48de4d9cd837b893a34c5fb7cb5f7b7a11954409c9bbe089bcd532dc94897",
+      "target_sha256": "b234c5e53d2c023692b41915414c6dfc155346fee907ead53ec2ffb7ddf4d237",
+      "citation_numbers": [
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P019",
+      "section_id": "4.1",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        238,
+        244
+      ],
+      "target_md_lines": [
+        61,
+        61
+      ],
+      "source_excerpt": "Features and labels are separated in time. The observation window runs from 2009-12-01 to 2011-06-30 and is the only period from which features are computed. The prediction window ",
+      "target_excerpt": "Đặc trưng và nhãn được tách biệt theo thời gian. Cửa sổ quan sát (observation window) chạy từ 2009-12-01 đến 2011-06-30 và là khoảng thời gian duy nhất dùng để tính đặc trưng. Cửa ",
+      "source_sha256": "4f72df012c0741afa465bd1026567f9f1abb247f89cefb49b733b32a2522e9d8",
+      "target_sha256": "514bb70fee43895f83e2dc4d2a152e45e9303052f41e075e52716cd03f2c0f22",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P020",
+      "section_id": "4.1",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        246,
+        251
+      ],
+      "target_md_lines": [
+        63,
+        63
+      ],
+      "source_excerpt": "That last number deserves emphasis, because it inverts an assumption often carried into this problem. Churners are the \\emph{majority} class here, not a rare positive to be rescued",
+      "target_excerpt": "Con số cuối cùng đó cần được nhấn mạnh, vì nó đảo ngược một giả định thường được đưa vào bài toán này. Khách hàng rời bỏ là lớp **đa số (majority class)** ở đây, không phải những t",
+      "source_sha256": "774dd48d3e0c39a31a7e52fd610f00f18bf63747e9fafc16cbac2e569b6b4bfc",
+      "target_sha256": "c1313eb445361a0cf5a10e01c74be7fd725d9eff2ea412e39107fca6bebc934b",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P021",
+      "section_id": "4.2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        255,
+        261
+      ],
+      "target_md_lines": [
+        67,
+        67
+      ],
+      "source_excerpt": "Nine customer-level features are computed inside the observation window: length $L$ (days between first and last purchase), recency $R$, frequency $F$ (distinct invoices), monetary",
+      "target_excerpt": "Chín đặc trưng cấp khách hàng được tính trong cửa sổ quan sát: độ dài $L$ (số ngày giữa lần mua đầu tiên và lần mua cuối cùng), độ gần đây $R$, tần suất $F$ (các hóa đơn khác nhau)",
+      "source_sha256": "cdcb99538c2ca257d220accc793a5aa610d9646002ca1c347b6c8d724c0bb758",
+      "target_sha256": "f17edecd22de7110b5df45766fdc64de3983b51ecec36ddf1452f9a0eb96fc69",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P022",
+      "section_id": "5",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        265,
+        270
+      ],
+      "target_md_lines": [
+        71,
+        71
+      ],
+      "source_excerpt": "The nine features are standardised and a $k$-nearest-neighbour graph is built over customers with $k = 10$ and Euclidean distance, with edge weight $w(i,j) = 1/(1 + d(i,j))$. The r",
+      "target_excerpt": "Chín đặc trưng được chuẩn hóa (standardisation), và một đồ thị $k$ láng giềng gần nhất được xây dựng trên các khách hàng với $k = 10$ và khoảng cách Euclid (Euclidean distance), có",
+      "source_sha256": "e63b4e75fed017ccb3bb15c45553380bb0602ee2830865ca3867ab2b96bc0b0c",
+      "target_sha256": "25924b036e0aece3021124b287223d9e9f29556b640e8d8240e91a3b397a7bb4",
+      "citation_numbers": [
+        [
+          1
+        ],
+        [
+          17
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P023",
+      "section_id": "5",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        272,
+        275
+      ],
+      "target_md_lines": [
+        73,
+        73
+      ],
+      "source_excerpt": "The high modularity should not be over-read: a $k$-NN graph with fixed $k$ imposes near-uniform degree and strong local clustering by construction, so a value above $0.8$ reflects ",
+      "target_excerpt": "Không nên diễn giải quá mức độ mô-đun cao: một đồ thị $k$-NN với $k$ cố định áp đặt bậc gần như đồng đều và sự phân cụm cục bộ mạnh ngay từ cách xây dựng, nên một giá trị trên $0.8",
+      "source_sha256": "e11f4d8de21d8e5589fcbe1bdc3dda85b511b69442f71c8738b29d438ff08027",
+      "target_sha256": "65587e0bc3539c078710bf77c8b772247f0d5fb5908f98806be79e521d15dc99",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P024",
+      "section_id": "5",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        277,
+        280
+      ],
+      "target_md_lines": [
+        75,
+        75
+      ],
+      "source_excerpt": "Six graph-derived features are appended: degree, weighted degree, PageRank, clustering coefficient, and the two neighbourhood aggregates that motivate the design---neighbour churn ",
+      "target_excerpt": "Sáu đặc trưng suy ra từ đồ thị được thêm vào: bậc (degree), bậc có trọng số (weighted degree), PageRank, hệ số phân cụm (clustering coefficient), và hai đại lượng tổng hợp lân cận ",
+      "source_sha256": "f09ed0f82850b14ff67f997cc62d8d7b30ed3de4ab842c2b2493854b38c2707c",
+      "target_sha256": "7cdb2383d37368c10a4c170edcda1b8facf777878bb215e9d1ec88966bea6c91",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P025",
+      "section_id": "6",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        284,
+        293
+      ],
+      "target_md_lines": [
+        79,
+        79
+      ],
+      "source_excerpt": "Both neighbourhood aggregates are functions of the target. Computing either over the full dataset before cross-validation lets the label of a test customer influence the training f",
+      "target_excerpt": "Cả hai đại lượng tổng hợp lân cận đều là hàm của biến đích. Tính một trong hai trên toàn bộ dữ liệu trước khi kiểm định chéo cho phép nhãn của một khách hàng kiểm tra tác động đến ",
+      "source_sha256": "16b58587fefeb5b56ef72c34c7a604dfeaf204123dff5ae56faba3f0e073be79",
+      "target_sha256": "28bd6a4993c88239d99028c1b47559e5045e7302d5c101e1344aa586cdbdc676",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P026",
+      "section_id": "6",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        295,
+        299
+      ],
+      "target_md_lines": [
+        81,
+        81
+      ],
+      "source_excerpt": "Three further controls apply throughout: standardisation is fitted inside the cross-validation pipeline rather than on the full matrix; K-means and Louvain cluster identifiers are ",
+      "target_excerpt": "Ba biện pháp kiểm soát nữa được áp dụng xuyên suốt: phép chuẩn hóa được khớp bên trong quy trình kiểm định chéo thay vì trên toàn bộ ma trận; định danh cụm K-means và Louvain được ",
+      "source_sha256": "f39d3c3eb1ad957a1cce9253b110565da53c5a25e3012a460b09cc27ace2e5ce",
+      "target_sha256": "6a0fe005f4f3315668f521bf35ea3ad6d4687ce42c58539c2c7618747b4b4e37",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P027",
+      "section_id": "7.1",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        305,
+        312
+      ],
+      "target_md_lines": [
+        87,
+        87
+      ],
+      "source_excerpt": "Five nested tiers isolate the contribution of each modelling layer: \\textbf{RFM} ($R, F, M$); \\textbf{LRFM} (adding $L$); \\textbf{B-LRFM} (the nine behavioural features); \\textbf{B",
+      "target_excerpt": "Năm tầng lồng nhau tách biệt đóng góp của từng lớp mô hình hóa: **RFM** ($R, F, M$); **LRFM** (thêm $L$); **B-LRFM** (chín đặc trưng hành vi); **B-LRFM+Seg** (thêm 23 biến chỉ báo ",
+      "source_sha256": "23e6bff0a7f2d4d026c419a6aba188991d5dc5680e57ada6f451e57870dbdcbc",
+      "target_sha256": "7545cb0e9081ace9f3250723b2101e3d46ce0cab2f572d45994d3af9a2d904e8",
+      "citation_numbers": [
+        [
+          10
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P028",
+      "section_id": "7.2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        317,
+        321
+      ],
+      "target_md_lines": [
+        91,
+        91
+      ],
+      "source_excerpt": "We run ten repetitions of stratified five-fold cross-validation, giving 50 folds. Within a repetition all five tiers and both classifiers see the \\emph{same} fold partition, so per",
+      "target_excerpt": "Chúng tôi chạy mười lần lặp kiểm định chéo năm phần có phân tầng (stratified five-fold cross-validation), tạo thành 50 phần dữ liệu. Trong một lần lặp, cả năm tầng và hai bộ phân l",
+      "source_sha256": "9ec4a1bac738091f9d2244385bc931d5d31f3cfdca8a2b501c5fc3901792d872",
+      "target_sha256": "6c2cdc9f8491ad35d1ff9a16fe7048105b0e5f0be41dc56c5e1036f28fb6e4c8",
+      "citation_numbers": [
+        [
+          15
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P029",
+      "section_id": "7.2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        327,
+        334
+      ],
+      "target_md_lines": [
+        101,
+        101
+      ],
+      "source_excerpt": "where $n_{2}/n_{1}$ is the ratio of test-set to training-set size, which for five-fold cross-validation is $1/4$. We report $p_{\\mathrm{NB}}$ from this statistic only. Bootstrap co",
+      "target_excerpt": "trong đó $n_{2}/n_{1}$ là tỷ số giữa kích thước tập kiểm tra và tập huấn luyện; với kiểm định chéo năm phần, tỷ số này là $1/4$. Chúng tôi chỉ báo cáo $p_{\\mathrm{NB}}$ từ thống kê",
+      "source_sha256": "73b424213169b44d055a61900db1d619104e5ec42c8f4b6cfb1b0a118c636aed",
+      "target_sha256": "7aed6ad86604939324e96b478f7028ec841589428949da80581a9720b67b62a2",
+      "citation_numbers": [
+        [
+          8
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P030",
+      "section_id": "7.2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        336,
+        339
+      ],
+      "target_md_lines": [
+        103,
+        103
+      ],
+      "source_excerpt": "Run with the single seed used by the original pipeline, the significance harness reproduces that pipeline's per-tier ROC-AUC to four decimal places on all five tiers, so any diverg",
+      "target_excerpt": "Khi chạy với cùng một giá trị khởi tạo ngẫu nhiên (seed) mà quy trình gốc sử dụng, bộ chương trình kiểm định ý nghĩa thống kê tái lập ROC-AUC theo từng tầng của quy trình đó đến bố",
+      "source_sha256": "54fb00ae9ec93026d1f63fa631b06345b7d57eb139695e134264d202a0c40234",
+      "target_sha256": "95ee4578c2ddd42e748673babef695c3e811bc354283ce2c0ac5a1f25e69d31a",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P031",
+      "section_id": "8.1",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        346,
+        352
+      ],
+      "target_md_lines": [
+        109,
+        109
+      ],
+      "source_excerpt": "Table~\\ref{tab:main} puts the two evaluations side by side, and the contrast is the result of this paper. On the single stratified five-fold split this pipeline originally reported",
+      "target_excerpt": "Bảng 1 đặt hai cách đánh giá cạnh nhau, và sự tương phản đó là kết quả của bài báo này. Trên lần chia kiểm định chéo năm phần có phân tầng duy nhất mà quy trình này báo cáo ban đầu",
+      "source_sha256": "03e9e29c4ed834d50b9bca6278f187e8a4443738f7165e1f765f7e658ed54426",
+      "target_sha256": "9eff557ba59e0cfd903a71b6b64ee898cc5e4531b2c239d6b78e3c01b0e6ff56",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P032",
+      "section_id": "8.1",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        378,
+        384
+      ],
+      "target_md_lines": [
+        121,
+        121
+      ],
+      "source_excerpt": "No tier differs significantly from the RFM baseline, and three of the four point differences are negative. The same holds for PR-AUC and for logistic regression as the classifier: ",
+      "target_excerpt": "Không tầng nào khác biệt có ý nghĩa thống kê so với mô hình cơ sở RFM, và ba trong bốn chênh lệch điểm là âm. Điều tương tự cũng đúng với PR-AUC và khi dùng hồi quy logistic làm bộ",
+      "source_sha256": "cda21744c9ee6f61ea6967e5a02c3df408011e8a3fb9147a3b22e25b32cd530b",
+      "target_sha256": "1627188f898a9f6c68e4ad9f2c460e18fdc525fe8d1e57a3fc35e78333eae3d8",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P033",
+      "section_id": "8.2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        388,
+        389
+      ],
+      "target_md_lines": [
+        125,
+        125
+      ],
+      "source_excerpt": "Table~\\ref{tab:cross} reports the comparisons that do reach significance. All of them favour logistic regression over the gradient-boosted graph model.",
+      "target_excerpt": "Bảng 2 báo cáo những phép so sánh thực sự đạt ý nghĩa thống kê. Tất cả đều nghiêng về hồi quy logistic so với mô hình tăng cường gradient dùng đặc trưng đồ thị.",
+      "source_sha256": "ba10d63fc2a9c8968a477b48cf49ca098426ad2e92a0ff6e0110642e947d9cb0",
+      "target_sha256": "a0b2fb40ccce48145191fb423c65a8ca9708e7a3c51a57dd92d3e3ce87c028b6",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P034",
+      "section_id": "8.2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        408,
+        415
+      ],
+      "target_md_lines": [
+        135,
+        135
+      ],
+      "source_excerpt": "A three-variable linear model outperforms a 38-feature gradient-boosted model built on a customer similarity graph. The margin is roughly three times the $+0.0033$ gap that the sin",
+      "target_excerpt": "Một mô hình tuyến tính (linear model) ba biến vượt qua một mô hình tăng cường gradient với 38 đặc trưng được xây dựng trên đồ thị tương đồng khách hàng. Biên chênh lệch xấp xỉ ba l",
+      "source_sha256": "2ca4ee7602cd5f92bb3f33400efdebf810a601e1872f9ee6faa402a5f5b9a989",
+      "target_sha256": "e9a03774f9565ff2a38460a3fa6abf756c5db52214896bdb99438f6813854973",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P035",
+      "section_id": "8.2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        417,
+        423
+      ],
+      "target_md_lines": [
+        137,
+        137
+      ],
+      "source_excerpt": "Figure~\\ref{fig:folds} shows the whole result in one picture. Each line is flat: moving along it---adding tenure, then behaviour, then segments, then the graph---changes nothing vi",
+      "target_excerpt": "Hình 2 thể hiện toàn bộ kết quả trong một hình. Mỗi đường đều phẳng: di chuyển dọc theo nó — thêm thời gian duy trì quan hệ (tenure), rồi hành vi, rồi phân khúc, rồi đồ thị — không",
+      "source_sha256": "ec64fda1683056f62544e5e954f8e902e59d88b2d98dceed46d54d1d73553063",
+      "target_sha256": "a0a17a9981ee19356896d84f663b713f56d94919d00326d673ef86d48b561091",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P036",
+      "section_id": "8.3",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        437,
+        441
+      ],
+      "target_md_lines": [
+        143,
+        143
+      ],
+      "source_excerpt": "A negative result about a graph invites the obvious question of whether it is a result about one particular graph. We therefore rebuilt the graph, the communities and the fold-loca",
+      "target_excerpt": "Một kết quả âm tính về đồ thị dẫn đến câu hỏi hiển nhiên rằng liệu đó có phải là kết quả về một đồ thị cụ thể hay không. Vì vậy, chúng tôi xây dựng lại từ đầu đồ thị, các cộng đồng",
+      "source_sha256": "8d7c81e63abe21b2300dbf566fb7ce98b886ce47f20e258bb7a51cb931dfaaa4",
+      "target_sha256": "72cd7d98bb1344df11833b6fdd33e2b06393658e607d8c6d1d385384ea5f69bb",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P037",
+      "section_id": "8.3",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        462,
+        467
+      ],
+      "target_md_lines": [
+        154,
+        154
+      ],
+      "source_excerpt": "Quadrupling the edge count and halving the number of communities changes the graph substantially and the conclusion not at all: no setting reaches significance, and the sign of the",
+      "target_excerpt": "Tăng số cạnh lên bốn lần và giảm số cộng đồng xuống một nửa làm thay đổi đồ thị đáng kể nhưng hoàn toàn không thay đổi kết luận: không thiết lập nào đạt ý nghĩa thống kê, và ngay c",
+      "source_sha256": "b60b1aa14ed57689e55b7713d52b52556de998d7a57f32f1a9048cfc3805ce2a",
+      "target_sha256": "12cf1f33f08105df72589654d92436362dd92b68cbf17dec2174de30ea6a0eb0",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P038",
+      "section_id": "8.4",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        471,
+        475
+      ],
+      "target_md_lines": [
+        158,
+        158
+      ],
+      "source_excerpt": "Global SHAP values \\cite{lundberg2017shap} on the graph-enhanced model rank recency first ($1.087$) and monetary value second ($0.560$), followed by neighbour churn rate ($0.250$),",
+      "target_excerpt": "Các giá trị SHAP toàn cục (global SHAP value) [13] trên mô hình tăng cường đồ thị xếp độ gần đây thứ nhất ($1.087$) và giá trị tiền tệ thứ hai ($0.560$), tiếp theo là tỷ lệ rời bỏ ",
+      "source_sha256": "4de02dd951cc78636e18d84868bbba6f2715cb325000459ec663d8f87be4654c",
+      "target_sha256": "01dd69cd3821748bda16d014de9351ef53cf8e67de470788452c460618e2b0cd",
+      "citation_numbers": [
+        [
+          13
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P039",
+      "section_id": "8.4",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        477,
+        484
+      ],
+      "target_md_lines": [
+        160,
+        160
+      ],
+      "source_excerpt": "They do not matter for discrimination: the tier without them (B-LRFM+Seg, $0.8044$) and the tier with them (Graph-Enhanced, $0.8044$) are indistinguishable. This is a matter of def",
+      "target_excerpt": "Chúng không có tác dụng đối với khả năng phân biệt: tầng không có chúng (B-LRFM+Seg, $0.8044$) và tầng có chúng (Graph-Enhanced, $0.8044$) không thể phân biệt được. Đây là vấn đề v",
+      "source_sha256": "b278cf8ffd4bb7fa0dbaaebfebf55eef5a74f1454a4396663d4f98e1efe5f2a2",
+      "target_sha256": "c8d4e0acf2f29767060afba6cd5cbd6f273bb072b5be0362ab82548f38551fee",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P040",
+      "section_id": "8.5",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        488,
+        502
+      ],
+      "target_md_lines": [
+        164,
+        164
+      ],
+      "source_excerpt": "Our starting point \\cite{viannafilho2026rfm} segments customers on discrete 1--5 RFM scores in three dimensions; the present work predicts churn in a nine-dimensional continuous sp",
+      "target_excerpt": "Điểm xuất phát của chúng tôi [6] phân khúc khách hàng trên các điểm RFM rời rạc từ 1–5 trong ba chiều; công trình hiện tại dự báo sự rời bỏ trong không gian liên tục chín chiều. Kh",
+      "source_sha256": "5fd7f5eb55ae8c86a6bb0b37804edbd8110ab20f4794fc5c66530bec24c68de2",
+      "target_sha256": "1b1c37aeb5a5dd691be2168eafccf4c336a32e2a96f31a09021be840c6e5264c",
+      "citation_numbers": [
+        [
+          6
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P041",
+      "section_id": "9.1",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        509,
+        516
+      ],
+      "target_md_lines": [
+        170,
+        170
+      ],
+      "source_excerpt": "Two independent sources of variation are the same size as the effects the pipeline was built to detect. The fold partition contributes roughly $0.003$ ROC-AUC, as the sign reversal",
+      "target_excerpt": "Hai nguồn biến thiên độc lập có cùng độ lớn với các hiệu ứng mà quy trình được xây dựng để phát hiện. Cách chia phần dữ liệu đóng góp khoảng $0.003$ ROC-AUC, như sự đảo dấu ở trên ",
+      "source_sha256": "aba2c9653cea428f798b88c05e4b05071c549e9bfa4c77e44a16ce5e374065ee",
+      "target_sha256": "67049a3f9040205324c39e34dfd4a5c20f090e3ab7582a1ebbcc6b9fb4ad9a7f",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P042",
+      "section_id": "9.2",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        521,
+        537
+      ],
+      "target_md_lines": [
+        174,
+        174
+      ],
+      "source_excerpt": "Our result is a failure to reject a null on one dataset with one graph construction, not a demonstration that behavioural peer effects are absent. The most likely explanation is th",
+      "target_excerpt": "Kết quả của chúng tôi là việc không bác bỏ được giả thuyết không (null hypothesis) trên một bộ dữ liệu với một cách xây dựng đồ thị, chứ không phải chứng minh rằng các hiệu ứng từ ",
+      "source_sha256": "dc1067453ae19896da3749b8307204e3424d78a8f29afebbe8459d6ad500d5b3",
+      "target_sha256": "e69b9299c097e2cd0b0d90c6850b8e08c8a852215d32085cafcd97406b3eb6f5",
+      "citation_numbers": [
+        [
+          11,
+          12
+        ]
+      ],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P043",
+      "section_id": "10",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        541,
+        543
+      ],
+      "target_md_lines": [
+        178,
+        178
+      ],
+      "source_excerpt": "\\textbf{Single dataset.} All results come from one retailer over two years. We make no claim about other sectors or horizons; the effect-size floor we report is specific to this da",
+      "target_excerpt": "**Một bộ dữ liệu duy nhất.** Mọi kết quả đều đến từ một nhà bán lẻ trong hai năm. Chúng tôi không đưa ra khẳng định về các lĩnh vực hay khoảng thời gian dự báo khác; ngưỡng độ lớn ",
+      "source_sha256": "1fd2cb5363ed8ee0b8224cfbcae7dae408dac1799a7f81ed88699436218e5253",
+      "target_sha256": "66108eb1bc1a4b92c3f155bc8afeffb8ee3627455a3b98b1418236a72b51156e",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P044",
+      "section_id": "10",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        545,
+        550
+      ],
+      "target_md_lines": [
+        180,
+        180
+      ],
+      "source_excerpt": "\\textbf{One graph family.} The degree sweep in Sect.~\\ref{sec:results} shows the result is not an artefact of $k$, but every setting is still a $k$-nearest neighbour graph on stand",
+      "target_excerpt": "**Một họ đồ thị duy nhất.** Phép khảo sát bậc ở Mục 8 cho thấy kết quả không phải là hệ quả giả tạo của $k$, nhưng mỗi thiết lập vẫn là một đồ thị $k$ láng giềng gần nhất trên các ",
+      "source_sha256": "4be2664efd2c9e9c482147c96d29ffc151fb4480559112405757a5c94d980db4",
+      "target_sha256": "c39d609e252712980d1fd4894baaeb1be43b340a83f1c332d2d1df4b501d846d",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P045",
+      "section_id": "10",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        552,
+        556
+      ],
+      "target_md_lines": [
+        182,
+        182
+      ],
+      "source_excerpt": "\\textbf{Planned components not implemented.} Two components described in our study design were not implemented and form no part of any result reported here: a country-of-origin cat",
+      "target_excerpt": "**Các thành phần dự kiến chưa được triển khai.** Hai thành phần được mô tả trong thiết kế nghiên cứu chưa được triển khai và không thuộc bất kỳ kết quả nào báo cáo ở đây: mã hóa bi",
+      "source_sha256": "af07ef1e5e7865cda06b8984140c80b59c98735d3a057f81ab00a6f0bfebb4f6",
+      "target_sha256": "85dabee3a0a730796592ab7fac52aec77ac3dfa68a5b33d288e2db3d41b51539",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P046",
+      "section_id": "10",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        558,
+        560
+      ],
+      "target_md_lines": [
+        184,
+        184
+      ],
+      "source_excerpt": "\\textbf{Metric choice.} With churners in the majority, PR-AUC does not carry its usual interpretation. We report both metrics and base no conclusion on PR-AUC alone.",
+      "target_excerpt": "**Lựa chọn thước đo.** Khi khách hàng rời bỏ thuộc lớp đa số, PR-AUC không mang cách diễn giải thông thường của nó. Chúng tôi báo cáo cả hai thước đo và không dựa bất kỳ kết luận n",
+      "source_sha256": "85dbecc33dfa78b3ca4f733729ea149912aedbb6b0b9ee5837664d1daed283c8",
+      "target_sha256": "5bc8158281e1e498821c09fc37bfb6248acf67e1eef2ee1b1459b78b578222a4",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P047",
+      "section_id": "10",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        562,
+        567
+      ],
+      "target_md_lines": [
+        186,
+        186
+      ],
+      "source_excerpt": "\\textbf{Literature search is targeted, not exhaustive.} We searched for prior use of neighbourhood-churn features and located the telecommunications and social graph work discussed",
+      "target_excerpt": "**Tìm kiếm tài liệu có mục tiêu, không toàn diện.** Chúng tôi tìm các công trình trước đây sử dụng đặc trưng tỷ lệ rời bỏ của nhóm lân cận và xác định được các công trình về viễn t",
+      "source_sha256": "126142529380560440fc797832cd4233990948e6c650db68e74f60f491ba1115",
+      "target_sha256": "e0962082300c44f8c573dc5105d912ed483761c486bb362e2d2d9faccd1a5372",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P048",
+      "section_id": "10",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        569,
+        571
+      ],
+      "target_md_lines": [
+        188,
+        188
+      ],
+      "source_excerpt": "\\textbf{No business validation.} Expected retention value ranks customers by a model quantity, not by observed campaign response. Its practical value is untested.",
+      "target_excerpt": "**Không có kiểm chứng nghiệp vụ.** Giá trị giữ chân kỳ vọng (expected retention value) xếp hạng khách hàng theo một đại lượng của mô hình, không phải theo phản hồi chiến dịch quan ",
+      "source_sha256": "4b84a358e55565cc327e8f72dcee2604970b8a2efdf6c4d621c44b6b1371971e",
+      "target_sha256": "3b05ccd572698df600a6c2884bec12891c68490c08a69a5a8e58b051a332e4db",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P049",
+      "section_id": "11",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        575,
+        580
+      ],
+      "target_md_lines": [
+        192,
+        192
+      ],
+      "source_excerpt": "We built the pipeline the behavioural-peer-effect hypothesis calls for and evaluated it under fold-local recomputation of the label-derived features and repeated cross-validation w",
+      "target_excerpt": "Chúng tôi xây dựng quy trình mà giả thuyết hiệu ứng từ khách hàng tương đồng về hành vi đòi hỏi và đánh giá nó với việc tính lại các đặc trưng suy ra từ nhãn bên trong từng phần hu",
+      "source_sha256": "8f29c1ff972fdef944e9720afe62337152b49013134403712c7398e36e8b14c2",
+      "target_sha256": "ee7b97ca4b9192414b97d0a57101bc7d413e2b122feb29561008a90bcdda06f5",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P050",
+      "section_id": "11",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        582,
+        588
+      ],
+      "target_md_lines": [
+        194,
+        194
+      ],
+      "source_excerpt": "The methodological point generalises further than the negative result. An evaluation that reports one cross-validated number per configuration cannot distinguish a $0.003$ ROC-AUC ",
+      "target_excerpt": "Luận điểm phương pháp luận có khả năng khái quát rộng hơn kết quả âm tính. Một cách đánh giá báo cáo một con số kiểm định chéo cho mỗi cấu hình không thể phân biệt chênh lệch $0.00",
+      "source_sha256": "4be42afd32fa856cf9b91e78140f944c5928ca4711a45e7041422016c092d14e",
+      "target_sha256": "ba5904852a15ab6012e7776404b38c2fd164e58e2bc03ff74d45da95b7d6f630",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P051",
+      "section_id": "11.reproducibility",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        591,
+        596
+      ],
+      "target_md_lines": [
+        198,
+        198
+      ],
+      "source_excerpt": "Code, per-fold scores, significance summaries and raw run logs are available at \\url{https://github.com/VoDucNhatku/graph-behavioral-lrfm-churn}, tagged \\texttt{v1.0-submission}. L",
+      "target_excerpt": "Mã nguồn, điểm số theo từng phần dữ liệu, các bảng tóm tắt ý nghĩa thống kê và nhật ký chạy thô có tại [https://github.com/VoDucNhatku/graph-behavioral-lrfm-churn](https://github.c",
+      "source_sha256": "1e81c5ae12272a1d2b1cf2ce60ef8c1f2553a5ce2611f2aeaa825fb6d82685c5",
+      "target_sha256": "d7a1be2562e53c921c84783ab561df08b480cfb1302f7f62cdff4fab51486a76",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    },
+    {
+      "unit_id": "P052",
+      "section_id": "11.generative_ai",
+      "kind": "paragraph",
+      "source_tex_lines": [
+        599,
+        603
+      ],
+      "target_md_lines": [
+        202,
+        202
+      ],
+      "source_excerpt": "During the preparation of this work the author used a large language model (Claude, Anthropic) to draft and revise the manuscript, to implement parts of the evaluation and figure c",
+      "target_excerpt": "Trong quá trình chuẩn bị công trình này, tác giả đã dùng một mô hình ngôn ngữ lớn (large language model; Claude, Anthropic) để soạn thảo và sửa bản thảo, triển khai một phần mã đán",
+      "source_sha256": "959b64a0e0e563b587fb17cf15b97f692dad366b828935ee0a4d9528f113c510",
+      "target_sha256": "059b73ee7d59469276fec10146ad57b56c677d40fb3031a655076cee112bfb36",
+      "citation_numbers": [],
+      "coverage": "complete",
+      "inline_math_preservation": "Every source inline math span retained verbatim apart from whitespace."
+    }
+  ],
+  "equations": [
+    {
+      "number": 1,
+      "section_id": "7.2",
+      "original_latex": "t = \\frac{\\bar{d}}\n{\\sqrt{\\hat{\\sigma}^{2}\\left(\\dfrac{1}{n} + \\dfrac{n_{2}}{n_{1}}\\right)}},\n\\qquad \\frac{n_{2}}{n_{1}} = \\frac{1}{4},",
+      "translation_latex": "t = \\frac{\\bar{d}}\n{\\sqrt{\\hat{\\sigma}^{2}\\left(\\dfrac{1}{n} + \\dfrac{n_{2}}{n_{1}}\\right)}},\n\\qquad \\frac{n_{2}}{n_{1}} = \\frac{1}{4},",
+      "verbatim_whitespace_normalised_match": true,
+      "render_note": "Giữ nguyên \\dfrac, \\hat, \\bar và \\qquad; nếu trình dựng mathtext không hỗ trợ \\dfrac, dùng renderer tương thích TeX/MathJax hoặc thay lệnh trình bày tương đương, không thay ý nghĩa. Số (1) được giữ sau khối công thức."
+    },
+    {
+      "number": null,
+      "section_id": "5",
+      "inline_latex": "w(i,j) = 1/(1 + d(i,j))",
+      "coverage": "verbatim"
+    },
+    {
+      "number": null,
+      "section_id": "6",
+      "inline_latex": "\\mathcal{N}(i) \\cap \\mathcal{T}",
+      "coverage": "verbatim"
+    }
+  ],
+  "figures": [
+    {
+      "number": 1,
+      "source_label": "fig:pipeline",
+      "source": "TikZ inline in paper/main.tex",
+      "source_pdf_page": 4,
+      "target_asset": "docs/vietnamese/assets/pipeline-vi.png",
+      "original_caption": "Analysis pipeline. Shaded stages are the two controls that determine the result: label-derived neighbourhood features are recomputed inside every training fold, and every comparison is run over ten repetitions of five-fold cross-validation with a variance-corrected significance test.",
+      "translated_caption": "Quy trình phân tích. Các giai đoạn có tô nền là hai biện pháp kiểm soát quyết định kết quả: các đặc trưng lân cận suy ra từ nhãn được tính lại bên trong từng phần huấn luyện, và mỗi phép so sánh được thực hiện qua mười lần lặp của kiểm định chéo năm phần với một kiểm định ý nghĩa thống kê có hiệu chỉnh phương sai.",
+      "layout": "Hai hàng, ba cột. Hàng trên data → feat → graph; đi xuống comm ở cột phải; hàng dưới comm → leak → eval từ phải sang trái. graph tô xanh lá nhạt, leak và eval tô xanh dương nhạt theo nguyên bản.",
+      "nodes": [
+        {
+          "id": "data",
+          "original_lines": [
+            "Online Retail II",
+            "1,067,371 rows",
+            "5,038 customers, 65.2% churn"
+          ],
+          "translated_lines": [
+            "Online Retail II",
+            "1,067,371 dòng",
+            "5,038 khách hàng, 65.2% rời bỏ"
+          ]
+        },
+        {
+          "id": "feat",
+          "original_lines": [
+            "Behavioural-LRFM",
+            "9 features",
+            "observation window only"
+          ],
+          "translated_lines": [
+            "Behavioural-LRFM",
+            "9 đặc trưng",
+            "chỉ trong cửa sổ quan sát"
+          ]
+        },
+        {
+          "id": "graph",
+          "original_lines": [
+            "$k$-NN similarity graph",
+            "$k=10$",
+            "33,426 edges"
+          ],
+          "translated_lines": [
+            "Đồ thị tương đồng $k$-NN",
+            "$k=10$",
+            "33,426 cạnh"
+          ]
+        },
+        {
+          "id": "comm",
+          "original_lines": [
+            "Communities",
+            "Louvain / Leiden",
+            "20 each, 4 node features"
+          ],
+          "translated_lines": [
+            "Các cộng đồng",
+            "Louvain / Leiden",
+            "mỗi thuật toán: 20, 4 đặc trưng nút"
+          ]
+        },
+        {
+          "id": "leak",
+          "original_lines": [
+            "Leakage control",
+            "NCR and CCR recomputed",
+            "inside each training fold"
+          ],
+          "translated_lines": [
+            "Kiểm soát rò rỉ",
+            "NCR và CCR được tính lại",
+            "trong từng phần huấn luyện"
+          ]
+        },
+        {
+          "id": "eval",
+          "original_lines": [
+            "Repeated evaluation",
+            "$10 \\times 5$ paired folds",
+            "Nadeau–Bengio test"
+          ],
+          "translated_lines": [
+            "Đánh giá lặp lại",
+            "$10 \\times 5$ phần ghép cặp",
+            "Kiểm định Nadeau–Bengio"
+          ]
+        }
+      ],
+      "coverage": "caption and all diagram labels translated; root renders asset"
+    },
+    {
+      "number": 2,
+      "source_label": "fig:folds",
+      "source": "paper/figures/fig_folds.pdf",
+      "source_pdf_page": 8,
+      "target_asset": "docs/vietnamese/assets/folds-vi.png",
+      "original_caption": "Mean ROC-AUC across the five feature tiers for both classifiers. Bands show ±1 standard deviation of the 50 fold scores, that is, the spread an individual split is drawn from. Uncertainty on the paired differences themselves is in Tables 1 and 2.",
+      "translated_caption": "ROC-AUC trung bình trên năm tầng đặc trưng cho cả hai bộ phân loại. Các dải thể hiện ±1 độ lệch chuẩn của 50 điểm số theo phần dữ liệu, tức là độ phân tán mà một lần chia riêng lẻ được lấy từ đó. Độ bất định của chính các chênh lệch ghép cặp nằm trong Bảng 1 và Bảng 2.",
+      "labels": [
+        {
+          "original": "Adding features moves nothing; the classifier moves everything",
+          "translated": "Thêm đặc trưng không làm thay đổi gì; bộ phân loại làm thay đổi mọi thứ"
+        },
+        {
+          "original": "Lines are mean ROC-AUC over 50 folds. Shaded bands are the fold-to-fold spread (±1 SD), far wider than any movement along a line.",
+          "translated": "Các đường là ROC-AUC trung bình trên 50 phần dữ liệu. Các dải tô nền là độ phân tán giữa các phần dữ liệu (±1 độ lệch chuẩn), rộng hơn nhiều so với mọi thay đổi dọc theo một đường."
+        },
+        {
+          "original": "Mean ROC-AUC",
+          "translated": "ROC-AUC trung bình"
+        },
+        {
+          "original": "Logistic regression",
+          "translated": "Hồi quy logistic"
+        },
+        {
+          "original": "LightGBM",
+          "translated": "LightGBM"
+        },
+        {
+          "original": "the only real effect ≈ 0.010",
+          "translated": "hiệu ứng thực sự duy nhất ≈ 0.010"
+        }
+      ],
+      "x_tick_labels": [
+        "RFM",
+        "LRFM",
+        "B-LRFM",
+        "B-LRFM+Seg",
+        "Graph-Enhanced"
+      ],
+      "y_tick_labels": [
+        "0.79",
+        "0.80",
+        "0.81",
+        "0.82",
+        "0.83"
+      ],
+      "annotation_note": "Nhãn ≈ 0.010 là khoảng cách ROC-AUC; không được biến thành p = 0.010. Hình gốc được xem trực quan từ PDF nguồn.",
+      "data_source": "results/significance_folds.csv",
+      "data_summary": [
+        {
+          "tier": "RFM",
+          "classifiers": {
+            "Logistic Regression": {
+              "n": 50,
+              "mean_roc_auc": 0.8143531182611852,
+              "sample_sd": 0.013691453973636124
+            },
+            "LightGBM": {
+              "n": 50,
+              "mean_roc_auc": 0.8065519300925693,
+              "sample_sd": 0.014678459050617574
+            }
+          }
+        },
+        {
+          "tier": "LRFM",
+          "classifiers": {
+            "Logistic Regression": {
+              "n": 50,
+              "mean_roc_auc": 0.8136812900611987,
+              "sample_sd": 0.013917825466427542
+            },
+            "LightGBM": {
+              "n": 50,
+              "mean_roc_auc": 0.8074390263212181,
+              "sample_sd": 0.013542355396907764
+            }
+          }
+        },
+        {
+          "tier": "B-LRFM",
+          "classifiers": {
+            "Logistic Regression": {
+              "n": 50,
+              "mean_roc_auc": 0.8157152714358193,
+              "sample_sd": 0.013791196716708757
+            },
+            "LightGBM": {
+              "n": 50,
+              "mean_roc_auc": 0.8053543196867398,
+              "sample_sd": 0.015216242506457272
+            }
+          }
+        },
+        {
+          "tier": "B-LRFM+Seg",
+          "classifiers": {
+            "Logistic Regression": {
+              "n": 50,
+              "mean_roc_auc": 0.8147085256363795,
+              "sample_sd": 0.013569794865062846
+            },
+            "LightGBM": {
+              "n": 50,
+              "mean_roc_auc": 0.8043709103118539,
+              "sample_sd": 0.015361598002544784
+            }
+          }
+        },
+        {
+          "tier": "Graph-Enhanced",
+          "classifiers": {
+            "Logistic Regression": {
+              "n": 50,
+              "mean_roc_auc": 0.815253306522104,
+              "sample_sd": 0.013779857126996971
+            },
+            "LightGBM": {
+              "n": 50,
+              "mean_roc_auc": 0.804422090767905,
+              "sample_sd": 0.014094452984627963
+            }
+          }
+        }
+      ],
+      "band_definition": "Mean ± sample standard deviation of 50 per-fold AUC values (ddof=1)",
+      "coverage": "caption, all labels and exact source-derived data recorded; root renders asset"
+    }
+  ],
+  "tables": [
+    {
+      "number": 1,
+      "source_label": "tab:main",
+      "section_id": "8.1",
+      "rows": 5,
+      "headers_original": [
+        "Feature tier",
+        "Single split: ROC-AUC",
+        "Repeated CV (10 × 5 folds, paired): ROC-AUC",
+        "Δ vs RFM",
+        "p_NB"
+      ],
+      "data": [
+        [
+          "RFM (baseline)",
+          "0.8065",
+          "0.8066",
+          "—",
+          "—"
+        ],
+        [
+          "LRFM",
+          "0.8071",
+          "0.8074",
+          "+0.0009",
+          "0.755"
+        ],
+        [
+          "B-LRFM",
+          "0.8067",
+          "0.8054",
+          "-0.0012",
+          "0.742"
+        ],
+        [
+          "B-LRFM+Seg",
+          "0.8073",
+          "0.8044",
+          "-0.0022",
+          "0.561"
+        ],
+        [
+          "Graph-Enhanced",
+          "0.8098",
+          "0.8044",
+          "-0.0021",
+          "0.590"
+        ]
+      ],
+      "coverage": "Full caption, group headers, all cells and source bold preserved; merged LaTeX group heading expanded in Markdown column labels."
+    },
+    {
+      "number": 2,
+      "source_label": "tab:cross",
+      "section_id": "8.2",
+      "rows": 3,
+      "headers_original": [
+        "Comparison",
+        "Δ ROC-AUC",
+        "95% CI",
+        "p_NB"
+      ],
+      "data": [
+        [
+          "LogReg / B-LRFM vs. LGBM / Graph-Enh.",
+          "+0.0113",
+          "[+0.0096, +0.0130]",
+          "0.001"
+        ],
+        [
+          "LogReg / RFM vs. LGBM / Graph-Enh.",
+          "+0.0099",
+          "[+0.0080, +0.0119]",
+          "0.010"
+        ],
+        [
+          "LogReg / RFM vs. LGBM / RFM",
+          "+0.0078",
+          "[+0.0056, +0.0100]",
+          "0.068"
+        ]
+      ],
+      "coverage": "Full caption, headers, all cells and source bold preserved."
+    },
+    {
+      "number": 3,
+      "source_label": "tab:ksweep",
+      "section_id": "8.3",
+      "rows": 4,
+      "headers_original": [
+        "k",
+        "Edges",
+        "Communities",
+        "Δ vs RFM",
+        "p_NB"
+      ],
+      "data": [
+        [
+          "5",
+          "16,902",
+          "31",
+          "-0.0006",
+          "0.880"
+        ],
+        [
+          "10",
+          "33,426",
+          "20",
+          "-0.0021",
+          "0.590"
+        ],
+        [
+          "15",
+          "50,054",
+          "16",
+          "+0.0017",
+          "0.666"
+        ],
+        [
+          "20",
+          "66,652",
+          "16",
+          "-0.0027",
+          "0.500"
+        ]
+      ],
+      "coverage": "Full caption, headers and all cells preserved."
+    }
+  ],
+  "bibliography": [
+    {
+      "number": 1,
+      "bibtex_key": "blondel2008louvain",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 2,
+      "bibtex_key": "bouckaert2004replicability",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 3,
+      "bibtex_key": "uci2019onlineretail",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 4,
+      "bibtex_key": "chen2012datamining",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 5,
+      "bibtex_key": "chen2016xgboost",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 6,
+      "bibtex_key": "viannafilho2026rfm",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 7,
+      "bibtex_key": "demsar2006statistical",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 8,
+      "bibtex_key": "dietterich1998approximate",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 9,
+      "bibtex_key": "ho2023extended",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 10,
+      "bibtex_key": "ke2017lightgbm",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 11,
+      "bibtex_key": "kostic2020socialnetwork",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 12,
+      "bibtex_key": "lee2025tempodegraphnet",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 13,
+      "bibtex_key": "lundberg2017shap",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 14,
+      "bibtex_key": "mena2023timevarying",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 15,
+      "bibtex_key": "nadeau2003inference",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 16,
+      "bibtex_key": "newman2004community",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    },
+    {
+      "number": 17,
+      "bibtex_key": "traag2019leiden",
+      "coverage": "Full rendered entry retained in English with author names, title, venue, year, volume/pages and DOI/URL where supplied."
+    }
+  ],
+  "checks": {
+    "all_source_units_mapped_in_order": true,
+    "per_unit_citation_order_and_numbers_match": true,
+    "per_unit_inline_math_preserved": true,
+    "numbered_equation_verbatim_match": true,
+    "all_12_pdf_pages_read": true,
+    "source_main_bbl_present": true,
+    "bibliography_numbering_source": "Actual rendered references in paper/main.pdf, pages 11–12, and identical ordered bibitems in paper/main.bbl; metadata accents checked against paper/refs.bib.",
+    "all_bibliography_entries_match_rendered_bbl_verbatim": true,
+    "all_table_body_cells_match_source": true,
+    "no_source_content_correction": true
+  },
+  "coverage_notes": [
+    "Every substantive prose paragraph and list item has a 1:1 ordered source-to-target mapping; both figure captions, all table captions/cells and all 17 references are included.",
+    "All 11 sections, 11 subsections, 2 subsubsections, abstract, keywords, author/affiliation/email, reproducibility and generative-AI declaration are present.",
+    "No algorithm or footnote exists in the original source. Running heads, page numbers, line-break hyphenation and pure layout commands are omitted as non-substantive.",
+    "The source definition of L as first-to-last purchase and the source reproduction claim at silhouette 0.398 are intentionally unchanged.",
+    "Figure PNG placeholders are intentional; root agent recreates the two figures from this manifest before building the deliverable PDF.",
+    "Glossary and version note are clearly separated additions outside the original paper; no reviewer/audit commentary has been inserted into the translated body."
+  ],
+  "final_public_source_sha256": "be2373b0f8339db3d00c8a2e103b8d2fc2c5c4755cbe5816674f6c7e8b63fbb9",
+  "root_editorial_updates": [
+    "Polished gradient-boosted wording without changing scientific claims",
+    "Clarified glossary basket size outside original paper",
+    "Normalized figure links"
+  ],
+  "root_rendering_status": "Final PDF rendered and checked; editable source retained."
+}

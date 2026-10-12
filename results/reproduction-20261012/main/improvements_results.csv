@@ -1,0 +1,15 @@
+Improvement,k,Silhouette,DBI,CHI,Type,AUC,F1,Recall
+[IMP1] Quintile-Scored B-LRFM K-means,2.0,0.2802,1.4267,2348.1,Segmentation,,,
+[IMP1] Quintile-Scored B-LRFM K-means,3.0,0.212,1.7059,1725.8,Segmentation,,,
+[IMP1] Quintile-Scored B-LRFM K-means,4.0,0.2082,1.6114,1511.7,Segmentation,,,
+[IMP1] Quintile-Scored B-LRFM K-means,5.0,0.1829,1.737,1314.1,Segmentation,,,
+[IMP1] Quintile-Scored B-LRFM + LightGBM,,,,,Churn AUC,0.8097,0.8007,0.7717
+[IMP2] B-LRFM + ΔTemporal-RFM + LightGBM,,,,,Churn AUC,0.8116,0.8146,0.8097
+[IMP3] Voting Ensemble (RF+XGB+LGBM) Graph-Enhanced,,,,,Churn AUC,0.8213,0.8211,0.8304
+[IMP4] PCA(4) Embedding + K-means,2.0,0.2591,1.5508,1271.6,Segmentation,,,
+[IMP4] PCA(4) Embedding + K-means,3.0,0.265,1.1719,1447.1,Segmentation,,,
+[IMP4] PCA(4) Embedding + K-means,4.0,0.2727,1.036,1564.9,Segmentation,,,
+[IMP4] PCA(4) Embedding + K-means,5.0,0.293,1.047,1730.0,Segmentation,,,
+[IMP5] Leiden + LightGBM,,,,,Churn AUC,0.8108,0.8131,0.8222
+[IMP5] Leiden Community Detection,21.0,0.067,1.4611,-,Segmentation,,,
+[IMP6] BEST COMBINED (all improvements),,,,,Churn AUC,0.8223,0.8265,0.8362

@@ -63,3 +63,13 @@ docs/
 
 # stray LaTeX artefact from a mis-scoped invocation
 texput.log
+
+# Vietnamese documents explicitly requested for public release
+!docs/
+docs/*
+!docs/vietnamese/
+!docs/vietnamese/**
+
+# Local document build and validation intermediates
+.tmp/
+tmp/pdfs/

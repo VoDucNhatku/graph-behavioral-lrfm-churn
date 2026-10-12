@@ -1,0 +1,539 @@
+{
+  "kind": "fresh arithmetic from archived folds, NOT model rerun",
+  "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "lightgbm": "missing",
+    "networkx": "missing",
+    "python-louvain": "missing",
+    "leidenalg": "missing"
+  },
+  "checks": [
+    {
+      "suffix": "main",
+      "rows": 500,
+      "max_p_error": 1.1102230246251565e-15
+    },
+    {
+      "suffix": "_k5",
+      "rows": 500,
+      "max_p_error": 6.106226635438361e-16
+    },
+    {
+      "suffix": "_k10",
+      "rows": 500,
+      "max_p_error": 1.1102230246251565e-15
+    },
+    {
+      "suffix": "_k15",
+      "rows": 500,
+      "max_p_error": 8.881784197001252e-16
+    },
+    {
+      "suffix": "_k20",
+      "rows": 500,
+      "max_p_error": 1.2212453270876722e-15
+    }
+  ],
+  "cross_model": [
+    {
+      "metric": "AUC",
+      "comparison": "LogReg/B-LRFM minus LGBM/Graph-Enhanced",
+      "n": 50,
+      "delta": 0.011293180667914298,
+      "p": 0.0011827763070580961,
+      "bootstrap_low": 0.009555663624385076,
+      "bootstrap_high": 0.013011505213879641,
+      "nb_low": 0.0047039469018571745,
+      "nb_high": 0.01788241443397142
+    },
+    {
+      "metric": "AUC",
+      "comparison": "LogReg/RFM minus LGBM/Graph-Enhanced",
+      "n": 50,
+      "delta": 0.009931027493280162,
+      "p": 0.010230574994490477,
+      "bootstrap_low": 0.007987493019974002,
+      "bootstrap_high": 0.01187126273579851,
+      "nb_low": 0.0024597146519915337,
+      "nb_high": 0.01740234033456879
+    },
+    {
+      "metric": "AUC",
+      "comparison": "LogReg/RFM minus LGBM/RFM",
+      "n": 50,
+      "delta": 0.007801188168615871,
+      "p": 0.06788735650231684,
+      "bootstrap_low": 0.005591291678049672,
+      "bootstrap_high": 0.009983378614451676,
+      "nb_low": -0.0005956522602251794,
+      "nb_high": 0.01619802859745692
+    },
+    {
+      "metric": "AUC",
+      "comparison": "LogReg/LRFM minus LGBM/LRFM",
+      "n": 50,
+      "delta": 0.0062422637399806155,
+      "p": 0.1540096113347701,
+      "bootstrap_low": 0.003953232738567592,
+      "bootstrap_high": 0.008587624932708602,
+      "nb_low": -0.0024214382977264136,
+      "nb_high": 0.014905965777687644
+    },
+    {
+      "metric": "AUC",
+      "comparison": "LogReg/B-LRFM minus LGBM/B-LRFM",
+      "n": 50,
+      "delta": 0.010360951749079597,
+      "p": 0.016962750485098394,
+      "bootstrap_low": 0.008190626105390179,
+      "bootstrap_high": 0.012575961351067888,
+      "nb_low": 0.0019376844207527524,
+      "nb_high": 0.01878421907740644
+    },
+    {
+      "metric": "AUC",
+      "comparison": "LogReg/B-LRFM+Seg minus LGBM/B-LRFM+Seg",
+      "n": 50,
+      "delta": 0.01033761532452553,
+      "p": 0.016330494024018417,
+      "bootstrap_low": 0.008204606101660933,
+      "bootstrap_high": 0.012567181574837582,
+      "nb_low": 0.0019849949712946718,
+      "nb_high": 0.018690235677756385
+    },
+    {
+      "metric": "AUC",
+      "comparison": "LogReg/Graph-Enhanced minus LGBM/Graph-Enhanced",
+      "n": 50,
+      "delta": 0.010831215754199017,
+      "p": 0.0024572202819858166,
+      "bootstrap_low": 0.009084049449620239,
+      "bootstrap_high": 0.012611146316336573,
+      "nb_low": 0.0040154791712594656,
+      "nb_high": 0.017646952337138568
+    },
+    {
+      "metric": "PR_AUC",
+      "comparison": "LogReg/B-LRFM minus LGBM/Graph-Enhanced",
+      "n": 50,
+      "delta": 0.007408429838473601,
+      "p": 0.04837753670524134,
+      "bootstrap_low": 0.00549157252739487,
+      "bootstrap_high": 0.009359904944150453,
+      "nb_low": 5.493778379315594e-05,
+      "nb_high": 0.014761921893154045
+    },
+    {
+      "metric": "PR_AUC",
+      "comparison": "LogReg/RFM minus LGBM/Graph-Enhanced",
+      "n": 50,
+      "delta": 0.0065578354569122334,
+      "p": 0.09862362143685396,
+      "bootstrap_low": 0.004527452175652468,
+      "bootstrap_high": 0.00862721128793125,
+      "nb_low": -0.0012697931912520385,
+      "nb_high": 0.014385464105076505
+    },
+    {
+      "metric": "PR_AUC",
+      "comparison": "LogReg/RFM minus LGBM/RFM",
+      "n": 50,
+      "delta": 0.004150839678888294,
+      "p": 0.3818549250054196,
+      "bootstrap_low": 0.0016352716937489745,
+      "bootstrap_high": 0.006606186130287083,
+      "nb_low": -0.0053019888847000785,
+      "nb_high": 0.013603668242476667
+    },
+    {
+      "metric": "PR_AUC",
+      "comparison": "LogReg/LRFM minus LGBM/LRFM",
+      "n": 50,
+      "delta": 0.005739069916938866,
+      "p": 0.27284837531669587,
+      "bootstrap_low": 0.003003834971879329,
+      "bootstrap_high": 0.008523697356182223,
+      "nb_low": -0.004660576330771847,
+      "nb_high": 0.01613871616464958
+    },
+    {
+      "metric": "PR_AUC",
+      "comparison": "LogReg/B-LRFM minus LGBM/B-LRFM",
+      "n": 50,
+      "delta": 0.004517789444179599,
+      "p": 0.2570888376648856,
+      "bootstrap_low": 0.002366974118443703,
+      "bootstrap_high": 0.006568798338306044,
+      "nb_low": -0.0033998153936369933,
+      "nb_high": 0.012435394281996191
+    },
+    {
+      "metric": "PR_AUC",
+      "comparison": "LogReg/B-LRFM+Seg minus LGBM/B-LRFM+Seg",
+      "n": 50,
+      "delta": 0.001997818767477628,
+      "p": 0.6366607266036193,
+      "bootstrap_low": -0.0002450268470365889,
+      "bootstrap_high": 0.004196692759805098,
+      "nb_low": -0.006448374839281318,
+      "nb_high": 0.010444012374236575
+    },
+    {
+      "metric": "PR_AUC",
+      "comparison": "LogReg/Graph-Enhanced minus LGBM/Graph-Enhanced",
+      "n": 50,
+      "delta": 0.005367595080406351,
+      "p": 0.2508711371385285,
+      "bootstrap_low": 0.0029571183536620206,
+      "bootstrap_high": 0.007843475322909795,
+      "nb_low": -0.003915318461816966,
+      "nb_high": 0.014650508622629668
+    }
+  ],
+  "graph_block": [
+    {
+      "metric": "AUC",
+      "model": "LightGBM",
+      "comparison": "Graph-Enhanced minus B-LRFM+Seg (six graph features as a block)",
+      "n": 50,
+      "delta": 5.118045605109422e-05,
+      "p": 0.9869332271482101,
+      "bootstrap_low": -0.0015983707656006037,
+      "bootstrap_high": 0.0017327566131371606,
+      "nb_low": -0.006196869507613908,
+      "nb_high": 0.006299230419716096
+    },
+    {
+      "metric": "AUC",
+      "model": "Logistic Regression",
+      "comparison": "Graph-Enhanced minus B-LRFM+Seg (six graph features as a block)",
+      "n": 50,
+      "delta": 0.0005447808857245828,
+      "p": 0.576885161252757,
+      "bootstrap_low": 2.3301231718322047e-05,
+      "bootstrap_high": 0.0010586028177809114,
+      "nb_low": -0.0014042860874014385,
+      "nb_high": 0.002493847858850604
+    },
+    {
+      "metric": "PR_AUC",
+      "model": "LightGBM",
+      "comparison": "Graph-Enhanced minus B-LRFM+Seg (six graph features as a block)",
+      "n": 50,
+      "delta": -0.002077403587693294,
+      "p": 0.554082743800742,
+      "bootstrap_low": -0.003936740310486649,
+      "bootstrap_high": -0.0002451018577947086,
+      "nb_low": -0.009084844892106078,
+      "nb_high": 0.004930037716719491
+    },
+    {
+      "metric": "PR_AUC",
+      "model": "Logistic Regression",
+      "comparison": "Graph-Enhanced minus B-LRFM+Seg (six graph features as a block)",
+      "n": 50,
+      "delta": 0.001292372725235429,
+      "p": 0.2442893214808062,
+      "bootstrap_low": 0.0007108417780227921,
+      "bootstrap_high": 0.0018641658685587018,
+      "nb_low": -0.0009113805035603638,
+      "nb_high": 0.0034961259540312217
+    }
+  ],
+  "sweep": [
+    {
+      "Metric": "AUC",
+      "Model": "LightGBM",
+      "Delta_vs_RFM": -0.0021298393246642,
+      "p_NadeauBengio": 0.590479796414118,
+      "run": "main"
+    },
+    {
+      "Metric": "AUC",
+      "Model": "Logistic Regression",
+      "Delta_vs_RFM": 0.0009001882609188,
+      "p_NadeauBengio": 0.6863195696993666,
+      "run": "main"
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "LightGBM",
+      "Delta_vs_RFM": -0.0024069957780239,
+      "p_NadeauBengio": 0.5592086592905583,
+      "run": "main"
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "Logistic Regression",
+      "Delta_vs_RFM": -0.0011902403765058,
+      "p_NadeauBengio": 0.6585234764595129,
+      "run": "main"
+    },
+    {
+      "Metric": "AUC",
+      "Model": "LightGBM",
+      "Delta_vs_RFM": -0.0006402951465356,
+      "p_NadeauBengio": 0.8797922089581647,
+      "run": "_k5"
+    },
+    {
+      "Metric": "AUC",
+      "Model": "Logistic Regression",
+      "Delta_vs_RFM": -0.0024086774716911,
+      "p_NadeauBengio": 0.2992028101104799,
+      "run": "_k5"
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "LightGBM",
+      "Delta_vs_RFM": 1.5624903554334324e-05,
+      "p_NadeauBengio": 0.9971689815669014,
+      "run": "_k5"
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "Logistic Regression",
+      "Delta_vs_RFM": -0.0051924061247457,
+      "p_NadeauBengio": 0.0848233078935396,
+      "run": "_k5"
+    },
+    {
+      "Metric": "AUC",
+      "Model": "LightGBM",
+      "Delta_vs_RFM": -0.0021298393246642,
+      "p_NadeauBengio": 0.590479796414118,
+      "run": "_k10"
+    },
+    {
+      "Metric": "AUC",
+      "Model": "Logistic Regression",
+      "Delta_vs_RFM": 0.0009001882609188,
+      "p_NadeauBengio": 0.6863195696993666,
+      "run": "_k10"
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "LightGBM",
+      "Delta_vs_RFM": -0.0024069957780239,
+      "p_NadeauBengio": 0.5592086592905583,
+      "run": "_k10"
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "Logistic Regression",
+      "Delta_vs_RFM": -0.0011902403765058,
+      "p_NadeauBengio": 0.6585234764595129,
+      "run": "_k10"
+    },
+    {
+      "Metric": "AUC",
+      "Model": "LightGBM",
+      "Delta_vs_RFM": 0.0016862326691854,
+      "p_NadeauBengio": 0.6663250324504254,
+      "run": "_k15"
+    },
+    {
+      "Metric": "AUC",
+      "Model": "Logistic Regression",
+      "Delta_vs_RFM": 0.0026407162711576,
+      "p_NadeauBengio": 0.3434038882718864,
+      "run": "_k15"
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "LightGBM",
+      "Delta_vs_RFM": 0.0020630817153544,
+      "p_NadeauBengio": 0.6393743684633093,
+      "run": "_k15"
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "Logistic Regression",
+      "Delta_vs_RFM": 0.0005872866830483,
+      "p_NadeauBengio": 0.8234874249628279,
+      "run": "_k15"
+    },
+    {
+      "Metric": "AUC",
+      "Model": "LightGBM",
+      "Delta_vs_RFM": -0.0026756478089811,
+      "p_NadeauBengio": 0.4996809741796205,
+      "run": "_k20"
+    },
+    {
+      "Metric": "AUC",
+      "Model": "Logistic Regression",
+      "Delta_vs_RFM": 0.00253848470713,
+      "p_NadeauBengio": 0.307174774259321,
+      "run": "_k20"
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "LightGBM",
+      "Delta_vs_RFM": -0.0015076923447104,
+      "p_NadeauBengio": 0.7421124239295764,
+      "run": "_k20"
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "Logistic Regression",
+      "Delta_vs_RFM": 0.0018191478546144,
+      "p_NadeauBengio": 0.4603299697467499,
+      "run": "_k20"
+    }
+  ],
+  "main_min_p": 0.1441629129111896,
+  "means_sd": [
+    {
+      "Metric": "AUC",
+      "Model": "LightGBM",
+      "Tier": "RFM",
+      "Mean": 0.8065519300925693,
+      "Std": 0.0146784590506175
+    },
+    {
+      "Metric": "AUC",
+      "Model": "LightGBM",
+      "Tier": "LRFM",
+      "Mean": 0.8074390263212181,
+      "Std": 0.0135423553969077
+    },
+    {
+      "Metric": "AUC",
+      "Model": "LightGBM",
+      "Tier": "B-LRFM",
+      "Mean": 0.8053543196867397,
+      "Std": 0.0152162425064572
+    },
+    {
+      "Metric": "AUC",
+      "Model": "LightGBM",
+      "Tier": "B-LRFM+Seg",
+      "Mean": 0.8043709103118539,
+      "Std": 0.0153615980025447
+    },
+    {
+      "Metric": "AUC",
+      "Model": "LightGBM",
+      "Tier": "Graph-Enhanced",
+      "Mean": 0.804422090767905,
+      "Std": 0.0140944529846279
+    },
+    {
+      "Metric": "AUC",
+      "Model": "Logistic Regression",
+      "Tier": "RFM",
+      "Mean": 0.8143531182611852,
+      "Std": 0.0136914539736361
+    },
+    {
+      "Metric": "AUC",
+      "Model": "Logistic Regression",
+      "Tier": "LRFM",
+      "Mean": 0.8136812900611987,
+      "Std": 0.0139178254664275
+    },
+    {
+      "Metric": "AUC",
+      "Model": "Logistic Regression",
+      "Tier": "B-LRFM",
+      "Mean": 0.8157152714358195,
+      "Std": 0.0137911967167087
+    },
+    {
+      "Metric": "AUC",
+      "Model": "Logistic Regression",
+      "Tier": "B-LRFM+Seg",
+      "Mean": 0.8147085256363796,
+      "Std": 0.0135697948650628
+    },
+    {
+      "Metric": "AUC",
+      "Model": "Logistic Regression",
+      "Tier": "Graph-Enhanced",
+      "Mean": 0.815253306522104,
+      "Std": 0.0137798571269969
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "LightGBM",
+      "Tier": "RFM",
+      "Mean": 0.8700145314295692,
+      "Std": 0.013973715334359
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "LightGBM",
+      "Tier": "LRFM",
+      "Mean": 0.8683081497109398,
+      "Std": 0.0136755554511436
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "LightGBM",
+      "Tier": "B-LRFM",
+      "Mean": 0.8704981760458392,
+      "Std": 0.0129185214556676
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "LightGBM",
+      "Tier": "B-LRFM+Seg",
+      "Mean": 0.8696849392392386,
+      "Std": 0.0133975348548378
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "LightGBM",
+      "Tier": "Graph-Enhanced",
+      "Mean": 0.8676075356515454,
+      "Std": 0.012849809750928
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "Logistic Regression",
+      "Tier": "RFM",
+      "Mean": 0.8741653711084575,
+      "Std": 0.0127025870708843
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "Logistic Regression",
+      "Tier": "LRFM",
+      "Mean": 0.8740472196278788,
+      "Std": 0.012738570391251
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "Logistic Regression",
+      "Tier": "B-LRFM",
+      "Mean": 0.8750159654900189,
+      "Std": 0.0128673626800572
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "Logistic Regression",
+      "Tier": "B-LRFM+Seg",
+      "Mean": 0.8716827580067162,
+      "Std": 0.013793882174525
+    },
+    {
+      "Metric": "PR_AUC",
+      "Model": "Logistic Regression",
+      "Tier": "Graph-Enhanced",
+      "Mean": 0.8729751307319514,
+      "Std": 0.0140465648042849
+    }
+  ],
+  "main_k10_byte_identical": true,
+  "artifacts_sha256": {
+    "paper\\main.tex": "033087a174c85cd3e9de9a23259e37495435ec502f20503f0a96ea7f7998a984",
+    "paper\\main.pdf": "b3803266c2d3d0601b22d5a51ce7c11e7a05e33c7e27367b2839c2a301b6bbd2",
+    "results\\significance_folds.csv": "702f913eff437a57d6fffbdc84cbbd7005447ebc32be9b59cc4bb4d25ebc0b3f",
+    "results\\significance_summary.csv": "8c6fd9b5a189bfe0679719641510db4984d0ff5bb68a03b53d2acb80eda12d94"
+  }
+}

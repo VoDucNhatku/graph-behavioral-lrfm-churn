@@ -1,0 +1,199 @@
+{
+  "kind": "Public evidence of actual 2026-10-12 Windows CPU rerun",
+  "status": "completed",
+  "started": "2026-10-12T21:37:02.484280+07:00",
+  "finished": "2026-10-12T21:54:44.066390+07:00",
+  "git_commit": "fdbbccfc8c0ee91fcefb8f8f3a82f0ee7ada89a4",
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "logical_cpus": 8,
+  "requirements": {
+    "pandas": {
+      "required": "3.0.3",
+      "installed": "3.0.3"
+    },
+    "numpy": {
+      "required": "2.4.6",
+      "installed": "2.4.6"
+    },
+    "scipy": {
+      "required": "1.17.1",
+      "installed": "1.17.1"
+    },
+    "scikit-learn": {
+      "required": "1.8.0",
+      "installed": "1.8.0"
+    },
+    "xgboost": {
+      "required": "3.2.0",
+      "installed": "3.2.0"
+    },
+    "lightgbm": {
+      "required": "4.6.0",
+      "installed": "4.6.0"
+    },
+    "networkx": {
+      "required": "3.6.1",
+      "installed": "3.6.1"
+    },
+    "python-louvain": {
+      "required": "0.16",
+      "installed": "0.16"
+    },
+    "leidenalg": {
+      "required": "0.12.0",
+      "installed": "0.12.0"
+    },
+    "igraph": {
+      "required": "1.0.0",
+      "installed": "1.0.0"
+    },
+    "shap": {
+      "required": "0.52.0",
+      "installed": "0.52.0"
+    },
+    "matplotlib": {
+      "required": "3.10.9",
+      "installed": "3.10.9"
+    },
+    "seaborn": {
+      "required": "0.13.2",
+      "installed": "0.13.2"
+    },
+    "openpyxl": {
+      "required": "3.1.5",
+      "installed": "3.1.5"
+    }
+  },
+  "dataset": "online_retail_II.xlsx",
+  "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "paper_sha256": "b3803266c2d3d0601b22d5a51ce7c11e7a05e33c7e27367b2839c2a301b6bbd2",
+  "source_sha256": {
+    "audit_paper.py": "9366ea17661b161bac9a06283f83bb99a892bb9b3dce14616b22f83ceff69c4d",
+    "compare_methods_v2.py": "a6ee7089b51bf7a022f3302bf631a352c6a47b5bd3f24720f494b7718044ceb5",
+    "improvements_pipeline.py": "82c0aecec5f77473bbea7b6c3c4b1479299fb6b627aae161c723c33e65257606",
+    "make_paper_figures.py": "905e4888b7ec2e065ca889f1ac1185e7595f67df68d14fad3817bd3244676881",
+    "run_pipeline_v2.py": "8ab768aeeda0fdb3d35f08fc9e0aee361338ea9be65dfd456595dd97e9c30635",
+    "significance_test.py": "b4352ff296055ddfe45d072f387afa5145df52e957937621b4c940e2253a5c3b"
+  },
+  "dataset_unchanged": true,
+  "original_sources_unchanged": true,
+  "tracked_files_compared_at_run": 43,
+  "jobs": [
+    {
+      "name": "pipeline",
+      "script": "run_pipeline_v2.py",
+      "overrides": {},
+      "started": "2026-10-12T21:37:02.584781+07:00",
+      "finished": "2026-10-12T21:40:14.536836+07:00",
+      "seconds": 191.95333630009554,
+      "exit_code": 0,
+      "status": "completed"
+    },
+    {
+      "name": "comparison",
+      "script": "compare_methods_v2.py",
+      "overrides": {},
+      "started": "2026-10-12T21:40:14.608180+07:00",
+      "finished": "2026-10-12T21:42:44.864534+07:00",
+      "seconds": 150.25728659983724,
+      "exit_code": 0,
+      "status": "completed"
+    },
+    {
+      "name": "auxiliary",
+      "script": "improvements_pipeline.py",
+      "overrides": {},
+      "started": "2026-10-12T21:42:44.937571+07:00",
+      "finished": "2026-10-12T21:45:12.329788+07:00",
+      "seconds": 147.39287029998377,
+      "exit_code": 0,
+      "status": "completed"
+    },
+    {
+      "name": "repeated_cv",
+      "script": "significance_test.py",
+      "overrides": {},
+      "started": "2026-10-12T21:45:12.423872+07:00",
+      "finished": "2026-10-12T21:47:58.699555+07:00",
+      "seconds": 166.27652610000223,
+      "exit_code": 0,
+      "status": "completed"
+    },
+    {
+      "name": "knn_k5",
+      "script": "significance_test.py",
+      "overrides": {
+        "LRFM_KNN_K": "5",
+        "LRFM_OUT_SUFFIX": "_k5"
+      },
+      "started": "2026-10-12T21:47:58.784365+07:00",
+      "finished": "2026-10-12T21:49:37.538647+07:00",
+      "seconds": 98.75450909999199,
+      "exit_code": 0,
+      "status": "completed"
+    },
+    {
+      "name": "knn_k10",
+      "script": "significance_test.py",
+      "overrides": {
+        "LRFM_KNN_K": "10",
+        "LRFM_OUT_SUFFIX": "_k10"
+      },
+      "started": "2026-10-12T21:49:37.632858+07:00",
+      "finished": "2026-10-12T21:51:17.670074+07:00",
+      "seconds": 100.03725620009936,
+      "exit_code": 0,
+      "status": "completed"
+    },
+    {
+      "name": "knn_k15",
+      "script": "significance_test.py",
+      "overrides": {
+        "LRFM_KNN_K": "15",
+        "LRFM_OUT_SUFFIX": "_k15"
+      },
+      "started": "2026-10-12T21:51:17.756489+07:00",
+      "finished": "2026-10-12T21:52:50.145075+07:00",
+      "seconds": 92.38845019997098,
+      "exit_code": 0,
+      "status": "completed"
+    },
+    {
+      "name": "knn_k20",
+      "script": "significance_test.py",
+      "overrides": {
+        "LRFM_KNN_K": "20",
+        "LRFM_OUT_SUFFIX": "_k20"
+      },
+      "started": "2026-10-12T21:52:50.221873+07:00",
+      "finished": "2026-10-12T21:54:23.765666+07:00",
+      "seconds": 93.54409560002387,
+      "exit_code": 0,
+      "status": "completed"
+    },
+    {
+      "name": "seed42",
+      "script": "significance_test.py",
+      "overrides": {
+        "LRFM_CV_SEEDS": "42"
+      },
+      "started": "2026-10-12T21:54:23.858637+07:00",
+      "finished": "2026-10-12T21:54:40.470658+07:00",
+      "seconds": 16.611454700119793,
+      "exit_code": 0,
+      "status": "completed"
+    },
+    {
+      "name": "figure",
+      "script": "make_paper_figures.py",
+      "overrides": {},
+      "started": "2026-10-12T21:54:40.577170+07:00",
+      "finished": "2026-10-12T21:54:43.888355+07:00",
+      "seconds": 3.3101409000810236,
+      "exit_code": 0,
+      "status": "completed"
+    }
+  ],
+  "scope": "Unchanged source. The first repeated-CV run builds features from raw XLSX in memory; k-sweep uses its newly written cache. Not a corrected-window model run."
+}

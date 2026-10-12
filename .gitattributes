@@ -1,0 +1,14 @@
+# Preserve generated binary artifacts, including ASCII-encoded PDF streams.
+*.pdf binary
+*.png binary
+*.zip binary
+
+# Keep new editable document sources portable and their hashes stable.
+docs/vietnamese/** text eol=lf
+docs/vietnamese/assets/** binary
+notebooks/** text eol=lf
+notebooks/*.zip binary
+
+# Reproduction hashes refer to the exact emitted aggregate CSV bytes.
+results/reproduction-20261012/** -text
+results/reproduction-20261012/**/*.csv binary

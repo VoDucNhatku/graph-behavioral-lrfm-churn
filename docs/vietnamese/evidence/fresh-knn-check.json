@@ -1,0 +1,12 @@
+{
+  "kind": "fresh kNN-only rebuild from cached features; current sklearn 1.9.0, not community/model rerun",
+  "nodes": 5038,
+  "edges": 33426,
+  "outgoing_NCR_neighbors": 10,
+  "undirected_degree_min": 10,
+  "undirected_degree_mean": 13.2695514092894,
+  "undirected_degree_max": 25,
+  "nodes_with_undirected_degree_gt10": 4498,
+  "self_neighbors_in_retained_knn": 0,
+  "code_churn_rate_cache": 0.6520444620881302
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "path": "results/reproduction-20261012/main/churn_results_v2.csv",
+    "sha256": "f71fd4411c0c1e808b7c03a2518dea7c8e1ca13cd1f1bf7d6f5e00905b0a22c6"
+  },
+  {
+    "path": "results/reproduction-20261012/main/comparison_v2.csv",
+    "sha256": "7ed8c5fade67ca7a184d900c23fb376229ea2fbf9ce4d0d5b23ef9a72d2a996f"
+  },
+  {
+    "path": "results/reproduction-20261012/main/improvements_results.csv",
+    "sha256": "f3064298a6076bc58faaa09a292ebdc5811120abccf8eee31fce2bb449cbe001"
+  },
+  {
+    "path": "results/reproduction-20261012/main/segment_profiles_v2.csv",
+    "sha256": "cbfd55621a7d5b2b2735377446e2fd555c72139d5ba4102c876edba1ee9ded27"
+  },
+  {
+    "path": "results/reproduction-20261012/main/shap_global_v2.csv",
+    "sha256": "ca19b4efb376f16c924f67858e1c1594403cf1c4504c4787486bfef10f288b44"
+  },
+  {
+    "path": "results/reproduction-20261012/main/shap_per_community_v2.csv",
+    "sha256": "d3803744f966928f65ca2e982b70cce2611b1f970ebcad214da548295b548683"
+  },
+  {
+    "path": "results/reproduction-20261012/main/significance_folds.csv",
+    "sha256": "71bafa3ea0c7bbd34487843a1230016c62ff4f31d7dc314a58b6c92cb15829d3"
+  },
+  {
+    "path": "results/reproduction-20261012/main/significance_folds_k10.csv",
+    "sha256": "702f913eff437a57d6fffbdc84cbbd7005447ebc32be9b59cc4bb4d25ebc0b3f"
+  },
+  {
+    "path": "results/reproduction-20261012/main/significance_folds_k15.csv",
+    "sha256": "eda5a26bee2f7fb7f9ba49f754a4421d71d23e87652b3d96abf741e9e8d230e9"
+  },
+  {
+    "path": "results/reproduction-20261012/main/significance_folds_k20.csv",
+    "sha256": "c4b4f4c1ffc60aa0f991cb41dc37ff541654c897e9354cacd34825e66a0d0abe"
+  },
+  {
+    "path": "results/reproduction-20261012/main/significance_folds_k5.csv",
+    "sha256": "3ff1163d6e99fe43bd850c8e96befc229e50dfe538085d282c988c0a7cd2a20b"
+  },
+  {
+    "path": "results/reproduction-20261012/main/significance_summary.csv",
+    "sha256": "0638559f4e26b925c22e37707d52a2fe7f839502239c092e5319c66e8186c938"
+  },
+  {
+    "path": "results/reproduction-20261012/main/significance_summary_k10.csv",
+    "sha256": "8c6fd9b5a189bfe0679719641510db4984d0ff5bb68a03b53d2acb80eda12d94"
+  },
+  {
+    "path": "results/reproduction-20261012/main/significance_summary_k15.csv",
+    "sha256": "ea2eb1212115a33cabaa72086a616591ca9a535898dbcb09147d3d23bbcdea94"
+  },
+  {
+    "path": "results/reproduction-20261012/main/significance_summary_k20.csv",
+    "sha256": "18df5b5952eadbea94e3f7b0b2eadcbb4c70b436674cccd455cb4b1144e4cc98"
+  },
+  {
+    "path": "results/reproduction-20261012/main/significance_summary_k5.csv",
+    "sha256": "6c80985eea4339aa9fa9a300b45172f26079a876c187904cff3e9132c71f08a0"
+  },
+  {
+    "path": "results/reproduction-20261012/seed42/significance_folds.csv",
+    "sha256": "d6279b22339b964dee0770994b61859a2eba4abc3670bc45fc1702399322c598"
+  },
+  {
+    "path": "results/reproduction-20261012/seed42/significance_summary.csv",
+    "sha256": "4468029650860776d8f0f24c6926db955288fafec8451ba97bc39395f58feaec"
+  }
+]

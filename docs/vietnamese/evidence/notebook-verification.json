@@ -1,0 +1,19 @@
+{
+  "notebook_schema": "valid nbformat 4.5 with normalized cell ids",
+  "code_cells_compiled": 9,
+  "embedded_helper_matches_file": true,
+  "data_hash_cell_executed": true,
+  "uci_download_hash_verified": {
+    "source": "https://archive.ics.uci.edu/static/public/502/online%2Bretail%2Bii.zip",
+    "filename": "online_retail_II.xlsx",
+    "bytes": 45622278,
+    "sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980"
+  },
+  "comparison_executed_on_fresh_real_outputs": true,
+  "full_job_plan_matches_local_run": true,
+  "table1_cached_rounding_checks": 5,
+  "fold_files_verified": 5,
+  "existing_output_rejected": true,
+  "download_archive_excludes_raw_data": true,
+  "colab_execution": "not performed; Linux installer and actual Colab speed not measured"
+}

@@ -1,0 +1,823 @@
+{
+  "status": "passed",
+  "visual_review": "All 69 pages inspected via final contact sheets; full-resolution mathematical/table pages and both figures inspected. No clipping, glyph or overlap defect found.",
+  "documents": [
+    {
+      "pdf": "output/pdf/01-kien-thuc-nen-tang-paper.pdf",
+      "pages": 23,
+      "bytes": 441562,
+      "sha256": "53683af27ad957175b940de8b154f148854c13578d9cc1d2e58cd06a9071c09c",
+      "outline_entries": 46,
+      "prose_snippets_checked": 148,
+      "prose_snippets_missing": 0,
+      "page_checks": [
+        {
+          "page": 1,
+          "characters": 447,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 2,
+          "characters": 3200,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 3,
+          "characters": 1801,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 4,
+          "characters": 3532,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 5,
+          "characters": 2314,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 6,
+          "characters": 3647,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 7,
+          "characters": 3261,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 8,
+          "characters": 2559,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 9,
+          "characters": 3536,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 10,
+          "characters": 2937,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 11,
+          "characters": 2759,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 12,
+          "characters": 2798,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 13,
+          "characters": 2734,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 14,
+          "characters": 3405,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 15,
+          "characters": 2738,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 16,
+          "characters": 3151,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 17,
+          "characters": 2428,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 18,
+          "characters": 2903,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 19,
+          "characters": 2401,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 20,
+          "characters": 3592,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 21,
+          "characters": 3009,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 22,
+          "characters": 891,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 23,
+          "characters": 1730,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        }
+      ]
+    },
+    {
+      "pdf": "output/pdf/02-quy-trinh-nghien-cuu.pdf",
+      "pages": 17,
+      "bytes": 249656,
+      "sha256": "a6cbdbeb32f5828ae0e3d3396c418acf0e1d4e601f4cb660851c5202a37f0a3e",
+      "outline_entries": 45,
+      "prose_snippets_checked": 104,
+      "prose_snippets_missing": 0,
+      "page_checks": [
+        {
+          "page": 1,
+          "characters": 459,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 2,
+          "characters": 5019,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 3,
+          "characters": 1317,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 4,
+          "characters": 3398,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 5,
+          "characters": 3634,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 6,
+          "characters": 3256,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 7,
+          "characters": 3356,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 8,
+          "characters": 2731,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 9,
+          "characters": 2465,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 10,
+          "characters": 3286,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 11,
+          "characters": 3447,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 12,
+          "characters": 2926,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 13,
+          "characters": 3147,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 14,
+          "characters": 2259,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 15,
+          "characters": 3414,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 16,
+          "characters": 2677,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 17,
+          "characters": 1920,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Courier",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        }
+      ]
+    },
+    {
+      "pdf": "output/pdf/03-ban-dich-paper-tieng-viet.pdf",
+      "pages": 18,
+      "bytes": 629141,
+      "sha256": "06bc43f4a884f28a93e2f4343b583616a571ff9b4737e4ef4ac64882a4b0bf7c",
+      "outline_entries": 25,
+      "prose_snippets_checked": 73,
+      "prose_snippets_missing": 0,
+      "page_checks": [
+        {
+          "page": 1,
+          "characters": 458,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 2,
+          "characters": 2219,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 3,
+          "characters": 3916,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 4,
+          "characters": 4073,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 5,
+          "characters": 3265,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 6,
+          "characters": 2024,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 7,
+          "characters": 3035,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 8,
+          "characters": 2940,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 9,
+          "characters": 2649,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 10,
+          "characters": 1531,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 11,
+          "characters": 3110,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 12,
+          "characters": 3651,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 13,
+          "characters": 3428,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 14,
+          "characters": 2812,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 15,
+          "characters": 2073,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 16,
+          "characters": 2034,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 17,
+          "characters": 2407,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 18,
+          "characters": 1218,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        }
+      ]
+    },
+    {
+      "pdf": "output/pdf/04-bao-cao-tong-hop.pdf",
+      "pages": 11,
+      "bytes": 147501,
+      "sha256": "4d835e008b10b6ce1d2942b8d5f6259495f2d468496ece9b2d42a883fb81d811",
+      "outline_entries": 28,
+      "prose_snippets_checked": 62,
+      "prose_snippets_missing": 0,
+      "page_checks": [
+        {
+          "page": 1,
+          "characters": 449,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 2,
+          "characters": 3451,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 3,
+          "characters": 3500,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 4,
+          "characters": 2485,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 5,
+          "characters": 2686,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 6,
+          "characters": 2493,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 7,
+          "characters": 2717,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 8,
+          "characters": 3140,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 9,
+          "characters": 2051,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 10,
+          "characters": 2438,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        },
+        {
+          "page": 11,
+          "characters": 1166,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+ArialMT",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true
+        }
+      ]
+    }
+  ],
+  "independent_content_reviews": [
+    "review-report.md",
+    "review-process.md",
+    "review-translation.md",
+    "review-knowledge.md"
+  ],
+  "review_findings_resolution": "No critical factual/fidelity findings. All selected P3 notation, toy-definition, indexing, p-value and SHAP-scale clarifications implemented and rechecked. Report handoff finding closed: all four PDFs exist with embedded fonts.",
+  "scientific_sources_preserved": true
+}
