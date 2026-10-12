@@ -1,5 +1,7 @@
 # Review độc lập tài liệu quy trình nghiên cứu
 
+**Hồ sơ lịch sử của bản trước mở rộng.** Phản hồi người dùng sau đó phát hiện lỗi PDF bị bỏ sót; bản sửa nội dung và bố cục được ghi ở [review-process-revision](review-process-revision.md). Các số dòng/hash bên dưới thuộc source cũ, không phải chứng nhận độc lập cho bản mới.
+
 Paper #366956 · Tài liệu: `docs/vietnamese/02-quy-trinh-nghien-cuu.md` · Reviewer: `knowledge_handbook` · Ngày: 2026-10-13 · Chỉ đọc, không sửa source02.
 
 ## Kết luận

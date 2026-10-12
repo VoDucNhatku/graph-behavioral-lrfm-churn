@@ -10,5 +10,7 @@
 - `notebook-verification.json`: nbformat, code-cell compile, helper comparison/data hash/export checks; không phải actual Colab run.
 - `aggregate-output-hashes.json`: hashes các CSV được public từ fresh run ở `results/reproduction-20261012`.
 - Coverage manifests đi kèm ghi sections, concepts và translation units được đọc/biên soạn; chúng là traceability của tài liệu, không thay model evidence.
+- `review-process-revision.md`, `process-revision-checks.json`: bản quy trình mở rộng sau phản hồi, ví dụ tính tay và regression check lỗi nền che chữ. Review cũ giữ như hồ sơ lịch sử.
+- `pdf-validation.json`: trạng thái layout của PDF hiện tại; kiểm glyph/bounds/prose, raw diagram và paint order, kết hợp xem hình từng trang.
 
 Raw XLSX, per-customer feature cache, email riêng và authentication token không nằm trong package. Các file bằng chứng không sửa kết luận của paper gốc hoặc chứng minh các experiments chưa chạy. Xem báo cáo tổng hợp cho method discrepancies, reviewer feedback và trạng thái camera-ready.

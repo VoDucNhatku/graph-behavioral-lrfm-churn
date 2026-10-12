@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "visual_review": "All 69 pages inspected via final contact sheets; full-resolution mathematical/table pages and both figures inspected. No clipping, glyph or overlap defect found.",
+  "visual_review": "Root inspected all 34 final revised process pages via 6 contact sheets, with detailed diagram/code/table review. Other three PDFs are byte-unchanged; new structural and paint-order checks pass for all 86 pages.",
   "documents": [
     {
       "pdf": "output/pdf/01-kien-thuc-nen-tang-paper.pdf",
@@ -20,7 +20,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 2,
@@ -31,7 +32,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 3,
@@ -42,7 +44,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 4,
@@ -53,7 +56,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 5,
@@ -64,7 +68,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 6,
@@ -75,7 +80,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 7,
@@ -86,7 +92,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 8,
@@ -97,7 +104,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 9,
@@ -108,7 +116,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 10,
@@ -119,7 +128,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 11,
@@ -130,7 +140,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 12,
@@ -141,7 +152,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 13,
@@ -152,7 +164,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 14,
@@ -163,7 +176,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 15,
@@ -174,7 +188,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 16,
@@ -185,7 +200,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 17,
@@ -196,7 +212,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 18,
@@ -207,7 +224,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 19,
@@ -218,7 +236,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 20,
@@ -229,7 +248,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 21,
@@ -240,7 +260,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 22,
@@ -251,7 +272,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 23,
@@ -262,17 +284,18 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         }
       ]
     },
     {
       "pdf": "output/pdf/02-quy-trinh-nghien-cuu.pdf",
-      "pages": 17,
-      "bytes": 249656,
-      "sha256": "a6cbdbeb32f5828ae0e3d3396c418acf0e1d4e601f4cb660851c5202a37f0a3e",
-      "outline_entries": 45,
-      "prose_snippets_checked": 104,
+      "pages": 34,
+      "bytes": 1099672,
+      "sha256": "e94c19e8c614e17f527e3247ef4da96659d0db001166e4fe50db2b2761e54cde",
+      "outline_entries": 64,
+      "prose_snippets_checked": 185,
       "prose_snippets_missing": 0,
       "page_checks": [
         {
@@ -282,202 +305,440 @@
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 2,
-          "characters": 5019,
+          "characters": 4999,
           "fonts": [
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 3,
-          "characters": 1317,
+          "characters": 4018,
           "fonts": [
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 4,
-          "characters": 3398,
+          "characters": 3578,
           "fonts": [
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 5,
-          "characters": 3634,
+          "characters": 3728,
           "fonts": [
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 6,
-          "characters": 3256,
+          "characters": 3250,
           "fonts": [
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 7,
-          "characters": 3356,
+          "characters": 3287,
           "fonts": [
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 8,
-          "characters": 2731,
+          "characters": 3477,
           "fonts": [
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 9,
-          "characters": 2465,
+          "characters": 2953,
           "fonts": [
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 10,
-          "characters": 3286,
-          "fonts": [
-            "AAAAAA+Arial-BoldMT",
-            "AAAAAA+Arial-ItalicMT",
-            "AAAAAA+ArialMT",
-            "Courier",
-            "Helvetica"
-          ],
-          "text_within_safe_bounds": true
-        },
-        {
-          "page": 11,
-          "characters": 3447,
-          "fonts": [
-            "AAAAAA+Arial-BoldMT",
-            "AAAAAA+Arial-ItalicMT",
-            "AAAAAA+ArialMT",
-            "Courier",
-            "Helvetica"
-          ],
-          "text_within_safe_bounds": true
-        },
-        {
-          "page": 12,
-          "characters": 2926,
-          "fonts": [
-            "AAAAAA+Arial-BoldMT",
-            "AAAAAA+Arial-ItalicMT",
-            "AAAAAA+ArialMT",
-            "Courier",
-            "Helvetica"
-          ],
-          "text_within_safe_bounds": true
-        },
-        {
-          "page": 13,
           "characters": 3147,
           "fonts": [
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 11,
+          "characters": 1107,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 12,
+          "characters": 3249,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 13,
+          "characters": 2803,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 14,
-          "characters": 2259,
+          "characters": 2186,
           "fonts": [
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 15,
-          "characters": 3414,
+          "characters": 2323,
           "fonts": [
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 16,
-          "characters": 2677,
+          "characters": 2847,
           "fonts": [
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 17,
-          "characters": 1920,
+          "characters": 3607,
           "fonts": [
             "AAAAAA+Arial-BoldMT",
             "AAAAAA+Arial-ItalicMT",
             "AAAAAA+ArialMT",
-            "Courier",
+            "AAAAAA+Consolas",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 18,
+          "characters": 3290,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 19,
+          "characters": 3692,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 20,
+          "characters": 3067,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 21,
+          "characters": 1244,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 22,
+          "characters": 3398,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 23,
+          "characters": 2191,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 24,
+          "characters": 1745,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 25,
+          "characters": 2762,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 26,
+          "characters": 3083,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 27,
+          "characters": 3080,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 28,
+          "characters": 2602,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 29,
+          "characters": 2978,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 30,
+          "characters": 2748,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 31,
+          "characters": 2188,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 32,
+          "characters": 2908,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 33,
+          "characters": 3045,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
+        },
+        {
+          "page": 34,
+          "characters": 1626,
+          "fonts": [
+            "AAAAAA+Arial-BoldMT",
+            "AAAAAA+Arial-ItalicMT",
+            "AAAAAA+ArialMT",
+            "AAAAAA+Consolas",
+            "Helvetica"
+          ],
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         }
       ]
     },
@@ -499,7 +760,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 2,
@@ -510,7 +772,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 3,
@@ -521,7 +784,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 4,
@@ -532,7 +796,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 5,
@@ -543,7 +808,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 6,
@@ -554,7 +820,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 7,
@@ -565,7 +832,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 8,
@@ -576,7 +844,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 9,
@@ -587,7 +856,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 10,
@@ -598,7 +868,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 11,
@@ -609,7 +880,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 12,
@@ -620,7 +892,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 13,
@@ -631,7 +904,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 14,
@@ -642,7 +916,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 15,
@@ -653,7 +928,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 16,
@@ -664,7 +940,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 17,
@@ -675,7 +952,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 18,
@@ -686,7 +964,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         }
       ]
     },
@@ -707,7 +986,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 2,
@@ -717,7 +997,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 3,
@@ -727,7 +1008,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 4,
@@ -737,7 +1019,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 5,
@@ -747,7 +1030,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 6,
@@ -757,7 +1041,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 7,
@@ -767,7 +1052,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 8,
@@ -777,7 +1063,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 9,
@@ -787,7 +1074,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 10,
@@ -797,7 +1085,8 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         },
         {
           "page": 11,
@@ -807,17 +1096,11 @@
             "AAAAAA+ArialMT",
             "Helvetica"
           ],
-          "text_within_safe_bounds": true
+          "text_within_safe_bounds": true,
+          "opaque_text_overpaints": 0
         }
       ]
     }
   ],
-  "independent_content_reviews": [
-    "review-report.md",
-    "review-process.md",
-    "review-translation.md",
-    "review-knowledge.md"
-  ],
-  "review_findings_resolution": "No critical factual/fidelity findings. All selected P3 notation, toy-definition, indexing, p-value and SHAP-scale clarifications implemented and rechecked. Report handoff finding closed: all four PDFs exist with embedded fonts.",
-  "scientific_sources_preserved": true
+  "revision_note": "Prior 17-page process PDF had 15 text-overpaint findings; initial text/margin/prose checks did not detect them."
 }

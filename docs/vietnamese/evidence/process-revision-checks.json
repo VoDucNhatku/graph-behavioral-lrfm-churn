@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "source": "docs/vietnamese/02-quy-trinh-nghien-cuu.md",
+  "source_sha256": "fe415f3352a341b0aa1cf9b6f6b8862b90e3fbb7b67e90558b0a72c65622989f",
+  "checks": [
+    "All internal links exist",
+    "Mermaid rejected before PDF build",
+    "90 probe rows survive wrapping and page splits exactly once",
+    "No later opaque fill masks probe text",
+    "Feature dates/IPT arithmetic",
+    "Eight-node NCR example",
+    "AUC/AP/F1/accuracy example",
+    "Nadeau-Bengio SE example",
+    "Ten job durations match run manifest"
+  ],
+  "probe_pages": 2,
+  "hypothetical_examples_not_new_model_runs": true
+}

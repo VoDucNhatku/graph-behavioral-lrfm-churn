@@ -17,6 +17,31 @@ def clean(text):
     return ''.join(c for c in unicodedata.normalize('NFKC',text).lower() if c.isalnum())
 
 
+def opaque_text_overpaints(page):
+    """Find later opaque vector fills covering previously drawn text.
+
+    Text extraction and margin checks cannot detect the line-background bug:
+    the glyphs still exist in the PDF but a subsequent fill masks them.
+    """
+    findings=[]
+    drawings=[s for s in page.get_drawings()
+              if s.get('fill') is not None and s.get('fill_opacity',1)>.95]
+    for seq,(kind,coords) in enumerate(page.get_bboxlog()):
+        if kind!='fill-text':
+            continue
+        rect=fitz.Rect(coords)
+        if rect.is_empty:
+            continue
+        for drawing in drawings:
+            if drawing['seqno']<=seq:
+                continue
+            overlap=(rect & drawing['rect']).get_area()/rect.get_area()
+            if overlap>.1:
+                findings.append({'text_seq':seq,'drawing_seq':drawing['seqno'],
+                                 'overlap_fraction':round(overlap,3)})
+    return findings
+
+
 if __name__=='__main__':
     TEMP.mkdir(parents=True,exist_ok=True)
     font=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',16) if Path('C:/Windows/Fonts/arial.ttf').exists() else ImageFont.load_default()
@@ -45,8 +70,12 @@ if __name__=='__main__':
                     if x0<43 or x1>page.rect.width-43 or y0<14 or y1>page.rect.height-13:
                         errors.append([round(v,2) for v in line['bbox']])
             assert not errors, f'Text beyond safe bounds on {pdf.name}:{index+1}: {errors}'
+            overpaints=opaque_text_overpaints(page)
+            assert not overpaints, f'Opaque fills mask text on {pdf.name}:{index+1}: {overpaints[:3]}'
+            assert 'flowchart TD' not in text, f'Unrendered diagram on {pdf.name}:{index+1}'
             font_names=sorted({f[3] for f in page.get_fonts()})
-            page_records.append({'page':index+1,'characters':len(text),'fonts':font_names,'text_within_safe_bounds':True})
+            page_records.append({'page':index+1,'characters':len(text),'fonts':font_names,
+                                 'text_within_safe_bounds':True,'opaque_text_overpaints':0})
             pix=page.get_pixmap(matrix=fitz.Matrix(.65,.65),alpha=False)
             image=Image.frombytes('RGB',[pix.width,pix.height],pix.samples)
             image.thumbnail((365,516))

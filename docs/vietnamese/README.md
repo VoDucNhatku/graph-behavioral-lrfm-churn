@@ -5,7 +5,7 @@ Biên soạn ngày 13/10/2026 cho thành viên đã biết Python và machine le
 | Tài liệu | Nội dung | PDF | Nguồn editable |
 |---|---|---|---|
 | 01. Sổ tay kiến thức | Nền tảng, công thức, ví dụ tính toán, cách đọc paper, câu hỏi ôn tập | [Đọc PDF](../../output/pdf/01-kien-thuc-nen-tang-paper.pdf) | [Markdown](01-kien-thuc-nen-tang.md) |
-| 02. Quy trình nghiên cứu | Năm chương từ câu hỏi đến thiết kế, phân tích, kết quả và bàn giao | [Đọc PDF](../../output/pdf/02-quy-trinh-nghien-cuu.pdf) | [Markdown](02-quy-trinh-nghien-cuu.md) |
+| 02. Quy trình nghiên cứu | Bản mở rộng 34 trang: năm chương, sơ đồ tiếng Việt, tính tay features/fold/metrics, protocol và bàn giao | [Đọc PDF](../../output/pdf/02-quy-trinh-nghien-cuu.pdf) | [Markdown](02-quy-trinh-nghien-cuu.md) |
 | 03. Dịch toàn bộ paper | Giữ đủ nội dung, công thức, ba bảng, hai hình, citations và 17 references | [Đọc PDF](../../output/pdf/03-ban-dich-paper-tieng-viet.pdf) | [Markdown](03-ban-dich-paper.md) |
 | 04. Báo cáo tổng hợp | Hội nghị, accepted identity, code/data, actual rerun, audit và tiến độ | [Đọc PDF](../../output/pdf/04-bao-cao-tong-hop.pdf) | [Markdown](04-bao-cao-tong-hop.md) |
 
@@ -23,12 +23,18 @@ PDF có font tiếng Việt được embed, mục lục và bookmarks. Các ví 
 
 Các PDF dựng bằng Python và ReportLab. Cần `reportlab`, `matplotlib`, `pandas`, `pillow`, `pymupdf`, cùng Arial trên Windows hoặc DejaVu Sans trên Linux.
 
+Kiểm ví dụ bằng `check_process_revision.py` còn dùng `numpy` và `scikit-learn`, đã có trong requirements của bộ thí nghiệm.
+
 ```bash
 python docs/vietnamese/build_figures.py
+python docs/vietnamese/build_process_figures.py
 python docs/vietnamese/build_pdfs.py
+python docs/vietnamese/check_process_revision.py
 python docs/vietnamese/validate_pdfs.py
 ```
 
 `build_figures.py` dùng translated-label manifest và CSV archived để vẽ hình đúng số. `build_pdfs.py` đọc bốn Markdown và assets; math/cache/render trung gian nằm ở `tmp/pdfs` và không publish. `validate_pdfs.py` kiểm pages, text bounds, glyphs, nội dung prose và tạo contact sheets cho người đọc kiểm bố cục. `collect_evidence.py` là script bảo trì để xuất evidence từ local rerun notes; nó cần notes local, không cần để đọc hoặc dựng lại PDF đã public.
+
+Bản quy trình được mở rộng sau phản hồi ngày 13/10/2026. Mermaid đã thay bằng hình dựng sẵn; code blocks được vẽ một nền chung và giữ đoạn ngắn cùng trang. Validation mới kiểm nền vẽ sau che chữ, vì text extraction/margin checks có thể bỏ sót lỗi đó. `check_process_revision.py` kiểm ví dụ tính tay và code block nhiều trang; [hồ sơ sửa](evidence/review-process-revision.md) ghi rõ giới hạn kiểm tra.
 
 Nguồn chính: [paper gốc](../../paper/main.pdf), [code](../../src), [BibTeX](../../paper/refs.bib), UCI Online Retail II và các nguồn phương pháp/công cụ trực tiếp được trích trong tài liệu. Dữ liệu UCI: Chen (2012), DOI 10.24432/C5CG6D, CC BY 4.0. Không đóng gói raw XLSX, per-customer cache, email riêng hoặc authentication token.

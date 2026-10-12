@@ -10,7 +10,6 @@ import argparse
 import hashlib
 import json
 import re
-import textwrap
 import unicodedata
 
 from PIL import Image as PILImage
@@ -21,7 +20,7 @@ from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (BaseDocTemplate, PageTemplate, Frame, Paragraph,
-    Spacer, PageBreak, Image, LongTable, TableStyle, KeepTogether, HRFlowable)
+    Spacer, PageBreak, Image, LongTable, TableStyle, KeepTogether, HRFlowable, Flowable)
 from reportlab.platypus.tableofcontents import TableOfContents
 import matplotlib
 matplotlib.use("Agg")
@@ -61,6 +60,8 @@ def font_setup():
                 pdfmetrics.registerFont(TTFont("DocSans"+suffix, str(folder/filename)))
             pdfmetrics.registerFontFamily("DocSans", normal="DocSans", bold="DocSans-Bold",
                                          italic="DocSans-Italic", boldItalic="DocSans-BoldItalic")
+            mono = Path("C:/Windows/Fonts/consola.ttf") if folder.drive else folder/"DejaVuSansMono.ttf"
+            pdfmetrics.registerFont(TTFont("DocMono", str(mono if mono.exists() else folder/filenames[0])))
             return
     raise RuntimeError("No font with Vietnamese support found. Install Arial or DejaVu Sans.")
 
@@ -147,10 +148,66 @@ def styles():
                                 borderColor=RULE, borderPadding=8, backColor=LIGHT, spaceAfter=9, **common),
         "bullet": ParagraphStyle("Bullet", fontSize=10.3, leading=15.4, leftIndent=13, firstLineIndent=-10,
                                  spaceAfter=5, **common),
-        "code": ParagraphStyle("Code", fontSize=8.6, leading=11.5, fontName="Courier", textColor=INK,
-                               leftIndent=8, rightIndent=8, backColor=colors.HexColor("#F4F6F8"),
-                               borderPadding=6, spaceAfter=1),
+        "code": ParagraphStyle("Code", fontSize=8.8, leading=13.0, fontName="DocMono", textColor=INK),
     }
+
+
+class CodeBlock(Flowable):
+    """Draw one background before all code lines; split only at line boundaries.
+
+    Per-line Paragraph backgrounds with borderPadding painted over preceding
+    glyphs. Measuring actual font widths also avoids an arbitrary character cap.
+    """
+    padding = 10
+
+    def __init__(self, lines, style):
+        super().__init__()
+        self.lines = lines
+        self.style = style
+        self.spaceBefore = 5
+        self.spaceAfter = 10
+
+    def wrap(self, available_width, available_height):
+        self.width = available_width
+        text_width = available_width - 2*self.padding
+        wrapped = []
+        for line in self.lines:
+            remaining = normalized(line.expandtabs(4))
+            if not remaining:
+                wrapped.append("")
+            while remaining:
+                cut = len(remaining)
+                while cut > 1 and pdfmetrics.stringWidth(remaining[:cut], self.style.fontName,
+                                                        self.style.fontSize) > text_width:
+                    cut -= 1
+                wrapped.append(remaining[:cut])
+                remaining = remaining[cut:]
+        self.wrapped = wrapped
+        self.height = 2*self.padding + len(wrapped)*self.style.leading
+        return self.width, self.height
+
+    def split(self, available_width, available_height):
+        if len(self.wrapped) <= 12:
+            return []
+        count = int((available_height-2*self.padding)//self.style.leading)
+        if count < 2:
+            return []
+        return [CodeBlock(self.wrapped[:count], self.style),
+                CodeBlock(self.wrapped[count:], self.style)]
+
+    def draw(self):
+        canvas = self.canv
+        canvas.saveState()
+        canvas.setFillColor(colors.HexColor("#F4F6F8"))
+        canvas.setStrokeColor(RULE)
+        canvas.roundRect(0, 0, self.width, self.height, 4, fill=1, stroke=1)
+        canvas.setFillColor(INK)
+        canvas.setFont(self.style.fontName, self.style.fontSize)
+        y = self.height-self.padding-self.style.fontSize
+        for line in self.wrapped:
+            canvas.drawString(self.padding, y, line)
+            y -= self.style.leading
+        canvas.restoreState()
 
 
 class StudyDoc(BaseDocTemplate):
@@ -223,16 +280,14 @@ def parse_markdown(source, st):
             index += 1
             continue
         if line.startswith("```"):
+            if line[3:].strip().lower() == "mermaid":
+                raise ValueError("Render Mermaid as a labelled figure before creating a PDF; raw diagram code is forbidden.")
             code_lines = []
             index += 1
             while index < len(lines) and not lines[index].strip().startswith("```"):
                 code_lines.append(lines[index])
                 index += 1
-            flow.append(Spacer(1, 5))
-            for code_line in code_lines:
-                for wrapped in textwrap.wrap(code_line.expandtabs(4), width=88, replace_whitespace=False, drop_whitespace=False) or [" "]:
-                    flow.append(Paragraph(escape(wrapped).replace(" ", "&nbsp;"), st["code"]))
-            flow.append(Spacer(1, 9))
+            flow.append(CodeBlock(code_lines, st["code"]))
             index += 1
             continue
         if line.startswith("$$"):
@@ -260,7 +315,10 @@ def parse_markdown(source, st):
             while index < len(lines) and lines[index].strip().startswith("|"):
                 table_lines.append(lines[index])
                 index += 1
-            flow.extend([table(table_lines, st), Spacer(1, 11)])
+            rendered_table = table(table_lines, st)
+            table_height = rendered_table.wrap(CONTENT_W, PAGE_H-100)[1]
+            flow.extend([KeepTogether([rendered_table]) if table_height <= 250 else rendered_table,
+                         Spacer(1, 11)])
             continue
         image_match = re.fullmatch(r"!\[([^\]]*)\]\(([^)]+)\)", line)
         if image_match:

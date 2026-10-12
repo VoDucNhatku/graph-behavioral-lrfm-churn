@@ -73,3 +73,4 @@ docs/*
 # Local document build and validation intermediates
 .tmp/
 tmp/pdfs/
+docs/vietnamese/__pycache__/

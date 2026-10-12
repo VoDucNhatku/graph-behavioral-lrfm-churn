@@ -1,6 +1,6 @@
 # PDF tiếng Việt - paper #366956
 
-Bốn tài liệu: kiến thức 23 trang, quy trình 17 trang, bản dịch đầy đủ 18 trang, báo cáo 11 trang. Tổng 69 trang.
+Bốn tài liệu: kiến thức 23 trang, quy trình mở rộng 34 trang, bản dịch đầy đủ 18 trang, báo cáo 11 trang. Tổng 86 trang.
 
 Xem [mục lục tài liệu và nguồn editable](../../docs/vietnamese/README.md). Bản dịch giữ nội dung accepted gốc; nhận xét audit nằm trong tài liệu khác.
 
