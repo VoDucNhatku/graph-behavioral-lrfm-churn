@@ -1,6 +1,6 @@
 # Graph-Enhanced Behavioral-LRFM Framework for Explainable Churn Prediction in Non-Contractual E-Commerce
 
-**Authors:** Nguyễn Công Minh, Võ Đức Nhật  
+**Author:** Võ Đức Nhật  
 **Mentor:** Nguyễn Hoàng Linh  
 **Sub-committee:** Economic & Business — AI Research Team
 
